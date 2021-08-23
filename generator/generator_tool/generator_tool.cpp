@@ -70,8 +70,6 @@
 
 #include "gflags/gflags.h"
 
-#include "build_version.hpp"
-
 using namespace std;
 
 namespace
@@ -213,13 +211,12 @@ MAIN_WITH_ERROR_HANDLING([](int argc, char ** argv)
 {
   CHECK(IsLittleEndian(), ("Only little-endian architectures are supported."));
 
+  Platform & pl = GetPlatform();
   gflags::SetUsageMessage(
       "Takes OSM XML data from stdin and creates data and index files in several passes.");
-  gflags::SetVersionString(std::to_string(omim::build_version::git::kTimestamp) + " " +
-                           omim::build_version::git::kHash);
+  gflags::SetVersionString(pl.Version());
   gflags::ParseCommandLineFlags(&argc, &argv, true);
 
-  Platform & pl = GetPlatform();
   unsigned threadsCount = FLAGS_threads_count != 0 ? static_cast<unsigned>(FLAGS_threads_count)
                                                    : pl.CpuCores();
 
