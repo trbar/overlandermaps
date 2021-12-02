@@ -1,1 +1,1 @@
-Travel,GPS,Navigation,CarPlay
+GPS, Travel, Navigation

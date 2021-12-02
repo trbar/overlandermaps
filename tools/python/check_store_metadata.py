@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 
 os.chdir(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", ".."))
 
+# https://support.google.com/googleplay/android-developer/answer/9844778?visit_id=637740303439369859-3116807078&rd=1#zippy=%2Cview-list-of-available-languages
 GPLAY_LOCALES = [
     "af", "am", "ar", "hy-AM", "az-AZ", "eu-ES", "be", "bn-BD", "bg", "my-MM",
     "ca", "zh-HK", "zh-CN", "zh-TW", "hr", "cs-CZ", "da-DK", "nl-NL", "en-AU",
@@ -22,6 +23,7 @@ GPLAY_LOCALES = [
     "te-IN", "th", "tr-TR", "uk", "vi", "zu",
 ]
 
+# From a Fastline error message
 APPSTORE_LOCALES = [
     "ar-SA", "ca", "cs", "da", "de-DE", "el", "en-AU", "en-CA",
     "en-GB", "en-US", "es-ES", "es-MX", "fi", "fr-CA", "fr-FR",
