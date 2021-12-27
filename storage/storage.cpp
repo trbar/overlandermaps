@@ -409,7 +409,7 @@ Status Storage::CountryStatusEx(CountryId const & countryId) const
     return status;
 
   auto localFile = GetLatestLocalFile(countryId);
-  if (!localFile || !localFile->OnDisk(MapFileType::Map))
+  if (!localFile || !(localFile->OnDisk(MapFileType::Map) || localFile->IsInBundle()))
     return Status::NotDownloaded;
 
   auto const & countryFile = GetCountryFile(countryId);
@@ -706,8 +706,15 @@ void Storage::RegisterDownloadedFiles(CountryId const & countryId, MapFileType t
 
   CountryFile const countryFile = GetCountryFile(countryId);
   LocalFilePtr localFile = GetLocalFile(countryId, GetCurrentDataVersion());
-  if (!localFile)
+
+  if (!localFile || localFile->IsInBundle())
     localFile = PreparePlaceForCountryFiles(GetCurrentDataVersion(), m_dataDir, countryFile);
+  else
+  {
+    /// @todo If localFile already exists, we will remove it from disk below?
+    LOG(LERROR, ("Downloaded country file for already existing one", *localFile));
+  }
+
   if (!localFile)
   {
     LOG(LERROR, ("Can't prepare LocalCountryFile for", countryFile, "in folder", m_dataDir));
@@ -773,20 +780,18 @@ CountriesVec Storage::FindAllIndexesByFile(CountryId const & name) const
   return result;
 }
 
+/*
 void Storage::GetOutdatedCountries(vector<Country const *> & countries) const
 {
   for (auto const & p : m_localFiles)
   {
     CountryId const & countryId = p.first;
-    string const name = GetCountryFile(countryId).GetName();
     LocalFilePtr file = GetLatestLocalFile(countryId);
-    if (file && file->GetVersion() != GetCurrentDataVersion() && name != WORLD_COASTS_FILE_NAME
-        && name != WORLD_FILE_NAME)
-    {
+    if (file && file->GetVersion() != GetCurrentDataVersion() && !IsWorldCountryID(countryId))
       countries.push_back(&CountryLeafByCountryId(countryId));
-    }
   }
 }
+*/
 
 bool Storage::IsCountryInQueue(CountryId const & countryId) const
 {
@@ -855,7 +860,12 @@ void Storage::RegisterCountryFiles(LocalFilePtr localFile)
   {
     LocalFilePtr existingFile = GetLocalFile(countryId, localFile->GetVersion());
     if (existingFile)
-      ASSERT_EQUAL(localFile.get(), existingFile.get(), ());
+    {
+      if (existingFile->IsInBundle())
+        *existingFile = *localFile;
+      else
+        ASSERT_EQUAL(localFile.get(), existingFile.get(), ());
+    }
     else
       m_localFiles[countryId].push_front(localFile);
   }
@@ -1243,10 +1253,21 @@ bool Storage::IsDisputed(CountryTree::Node const & node) const
   return found.size() > 1;
 }
 
+bool Storage::IsCountryLeaf(CountryTree::Node const & node)
+{
+  return (node.ChildrenCount() == 0 && !IsWorldCountryID(node.Value().Name()));
+}
+
+bool Storage::IsWorldCountryID(CountryId const & country)
+{
+  return strings::StartsWith(country, WORLD_FILE_NAME);
+}
+
 void Storage::CalcMaxMwmSizeBytes()
 {
   m_maxMwmSizeBytes = 0;
-  m_countries.GetRoot().ForEachInSubtree([&](CountryTree::Node const & node) {
+  m_countries.GetRoot().ForEachInSubtree([&](CountryTree::Node const & node)
+  {
     if (node.ChildrenCount() == 0)
     {
       MwmSize mwmSizeBytes = node.Value().GetSubtreeMwmSizeBytes();

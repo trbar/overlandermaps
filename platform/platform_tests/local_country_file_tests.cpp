@@ -96,7 +96,7 @@ UNIT_TEST(LocalCountryFile_DiskFiles)
     TEST(!localFile.OnDisk(MapFileType::Map), ());
     TEST(!localFile.OnDisk(MapFileType::Diff), ());
 
-    string const mapFileName = GetFileName(countryFile.GetName(), MapFileType::Map);
+    string const mapFileName = countryFile.GetFileName(MapFileType::Map);
     string const mapFileContents("map");
     ScopedFile testMapFile(mapFileName, mapFileContents);
 
@@ -156,20 +156,27 @@ UNIT_TEST(LocalCountryFile_CleanupMapFiles)
 
 UNIT_TEST(LocalCountryFile_CleanupPartiallyDownloadedFiles)
 {
+  ScopedDir dataDir("101008");
+  auto const DataFilePath = [&dataDir](char const * file)
+  {
+    return dataDir.GetRelativePath() + "/" + file;
+  };
+
   ScopedDir oldDir("101009");
   ScopedDir latestDir("101010");
 
   ScopedFile toBeDeleted[] = {
-      {"Ireland.mwm.ready", ScopedFile::Mode::Create},
-      {"Netherlands.mwm.routing.downloading2", ScopedFile::Mode::Create},
-      {"Germany.mwm.ready3", ScopedFile::Mode::Create},
-      {"UK_England.mwm.resume4", ScopedFile::Mode::Create},
+      {DataFilePath("Ireland.mwm.ready"), ScopedFile::Mode::Create},
+      {DataFilePath("Netherlands.mwm.routing.downloading2"), ScopedFile::Mode::Create},
+      {DataFilePath("Germany.mwm.ready3"), ScopedFile::Mode::Create},
+      {DataFilePath("UK_England.mwm.resume4"), ScopedFile::Mode::Create},
       {base::JoinPath(oldDir.GetRelativePath(), "Russia_Central.mwm.downloading"),
        ScopedFile::Mode::Create}};
+
   ScopedFile toBeKept[] = {
-      {"Italy.mwm", ScopedFile::Mode::Create},
-      {"Spain.mwm", ScopedFile::Mode::Create},
-      {"Spain.mwm.routing", ScopedFile::Mode::Create},
+      {DataFilePath("Italy.mwm"), ScopedFile::Mode::Create},
+      {DataFilePath("Spain.mwm"), ScopedFile::Mode::Create},
+      {DataFilePath("Spain.mwm.routing"), ScopedFile::Mode::Create},
       {base::JoinPath(latestDir.GetRelativePath(), "Russia_Southern.mwm.downloading"),
        ScopedFile::Mode::Create}};
 
@@ -185,7 +192,9 @@ UNIT_TEST(LocalCountryFile_CleanupPartiallyDownloadedFiles)
 
   for (ScopedFile & file : toBeKept)
     TEST(file.Exists(), (file));
+
   TEST(latestDir.Exists(), (latestDir));
+  TEST(dataDir.Exists(), (dataDir));
 }
 
 // Creates test-dir and following files:

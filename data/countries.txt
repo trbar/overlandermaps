@@ -3,6 +3,16 @@
  "id": "Countries",
  "g": [
   {
+   "id": "World",
+   "s": 35774063,
+   "sha1_base64": "/Vgg/3GsQsZhe12UpCHGVnw7t2U="
+  },
+  {
+   "id": "WorldCoasts",
+   "s": 4796038,
+   "sha1_base64": "E/wmL69u6z+FF4hWBqGzctHTjxI="
+  },
+  {
    "id": "Abkhazia",
    "old": [
     "Georgia"
