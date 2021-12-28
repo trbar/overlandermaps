@@ -995,8 +995,7 @@ int64_t Storage::ParseIndexAndGetDataVersion(std::string const & index) const
     if (root == nullptr || !json_is_array(root))
       return 0;
 
-    /// @todo Get correct value somehow ..
-    int64_t const appVersion = 21042001;
+    int64_t const appVersion = GetPlatform().IntVersion();
     int64_t dataVersion = 0;
 
     size_t const count = json_array_size(root);
@@ -1019,6 +1018,8 @@ int64_t Storage::ParseIndexAndGetDataVersion(std::string const & index) const
       }
     }
 
+    if (dataVersion == 0)
+      LOG(LDEBUG, ("Usable data version not found for App version", appVersion));
     return dataVersion;
   }
   catch (RootException const &)
