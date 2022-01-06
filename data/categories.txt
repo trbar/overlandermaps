@@ -45,6 +45,18 @@
 # <lang>               ::= 'en'|'cs'|'sk'|'de'|'es'|'fr'|'it'|'ja' etc.
 #
 
+overlander-freedomcamp|@freedomcamp
+en:Freedom Camping|Free Camping|Wild Camping|Informal Campsite
+
+overlander-propane|@propane
+en:Propane
+
+overlander-sanidump|@sanidump
+en:Sanitation Dump
+
+overlander-warning|@warning
+en:Warning
+
 @eat
 en:Where to eat|eat|Food
 ru:Где поесть|Поесть|Еда
@@ -1669,7 +1681,7 @@ el:Γλυκά|ζαχαροπλαστική|ζαχαροπλαστείο|κατά
 sk:Cukrovinky
 fa:شیرینی فروشی
 
-shop-laundry
+shop-laundry|overlander-laundry|@laundry
 en:4Laundry|Laundrette|laundromat
 ru:4Прачечная|стирка
 bg:Пране|простир
@@ -2171,7 +2183,7 @@ sk:3Radnica|3pamiatka
 sw:Ukumbi|utalii
 fa:شهرداری
 
-tourism-attraction|@tourism
+tourism-attraction|overlander-tourism|@tourism
 en:3Attraction|U+1F3A0|U+1F3A1|U+1F3A2|U+1F3AA
 ru:4Достопримечательность|3аттракцион
 bg:Забележителност|туристи
@@ -3652,7 +3664,7 @@ sk:3Knižnica
 sw:Maktaba
 fa:کتابخانه
 
-amenity-parking|@parking
+amenity-parking|overlander-parking|@parking
 en:U+1F697|U+1F17F|U+1F698|U+1F699
 ru:Автостоянка|парковка
 bg:Паркинг|престой
@@ -5722,7 +5734,7 @@ sk:3Polícia
 sw:Polisi
 fa:پلیس
 
-amenity-police|@police
+amenity-police|overlander-police|@police
 en:U+1F693|U+1F46E|U+1F694|U+1F482|U+1F6A8
 ru:4милиция|4полиция
 bg:Полиция|милиция
@@ -5859,7 +5871,7 @@ vi:Nước
 zh-Hans:水
 zh-Hant:水
 
-amenity-drinking_water|@water
+amenity-drinking_water|overlander-water|@water
 en:4Drinking Water|3Potable Water|U+1F6B0
 ru:3Питьевая вода
 be:3Пітная вада
@@ -6286,7 +6298,7 @@ sk:Kanál
 sw:Mfereji
 fa:کانال اب
 
-shop-car_repair
+shop-car_repair|overlander-mechanic|@mechanic
 en:3Car Repair Shop|4service station|auto|garage|U+1F527
 ru:3СТО|3автомастерская|автосервис|авто
 bg:Автосервиз|монтьор|автомобил|гараж|сервиз|механик|поправка
@@ -6320,7 +6332,7 @@ sk:3Autoservis|autoopravovňa
 sw:Fundi wa gari
 fa:تعمیرگاه ماشین
 
-tourism-camp_site|@hotel
+tourism-camp_site|overlander-paidcamping|@paidcamping
 en:4Camping|campsite|campground|U+26FA
 ru:4Кемпинг
 bg:Къмпинг
@@ -6354,7 +6366,7 @@ sk:4Camping|kemp|camp|kemping|kempovanie
 sw:Kambi
 fa:محل چادر زنی
 
-tourism-caravan_site
+tourism-caravan_site|@paidcamping
 en:4Caravan Site|RV site|U+1F69A|U+26FA|U+1F69B
 ru:4Автокемпинг|кемпинг|стоянка грузовиков
 bg:къмпинг|стоянка|каравана|паркинг
@@ -6922,7 +6934,7 @@ sk:WiFi|Wi-Fi
 sw:WiFi|Wi-Fi
 fa:وای فای
 
-internet_access|internet_access-wlan|@wifi
+internet_access|internet_access-wlan|overlander-wifi|@wifi
 en:3Internet|U+1F4F6
 ru:3Интернет|вайфай|Internet
 bg:Интернет|уайфай|мрежа
@@ -7521,7 +7533,7 @@ sk:Sauna
 fa:سونا
 
 
-shop-car_repair-tyres|shop-car_repair
+shop-car_repair-tyres|shop-car_repair|@mechanic
 en:Tyre Repair|tyre|puncture repair|tyre puncture repair|flat tyre repair|tyre replacement
 en-US:Tire Repair|tire|puncture repair|tire puncture repair|flat tire repair|tire fix|tire replacement
 ru:Шиномонтаж|шиномонтажная мастерская|балансировка
@@ -9124,7 +9136,7 @@ zh-Hans:支付终端
 zh-Hant:付款終端
 fa:دستگاه کارتخوان
 
-amenity-shower
+amenity-shower|overlander-showers|@showers
 en:Shower
 ru:Душ
 bg:Душ|Баня

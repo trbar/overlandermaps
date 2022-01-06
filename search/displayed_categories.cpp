@@ -8,14 +8,24 @@ namespace search
 {
 DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_holder(holder)
 {
-  m_keys = {"eat",
+  m_keys = {"freedomcamping",
+            "paidcamping",
             "hotel",
+            "eat",
             "food",
             "tourism",
             "wifi",
-            "transport",
             "fuel",
+            "propane",
+            "mechanic",
+            "sanidump",
+            "laundry",
+            "showers",
+            "water",
+            "toilet",
+            "warning",
             "parking",
+            "transport",
             "shopping",
             "atm",
             "nightlife",
@@ -25,7 +35,6 @@ DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_ho
             "hospital",
             "pharmacy",
             "police",
-            "toilet",
             "post"};
 }
 

@@ -156,6 +156,12 @@
 /* Detailed description of Measurement Units settings button */
 "measurement_units_summary" = "Choose between miles and kilometers";
 
+/* Search category for freedom camping, informal campsites, free campsites */
+"freedomcamping" = "Freedom Camping";
+
+/* Search category for paid camping */
+"paidcamping" = "Paid Camping";
+
 /* Search category for cafes, bars, restaurants */
 "eat" = "Where to eat";
 
@@ -167,6 +173,30 @@
 
 /* Search category */
 "fuel" = "Gas";
+
+/* Search category */
+"propane" = "Propane";
+
+/* Search category */
+"mechanic" = "Mechanic";
+
+/* Search category */
+"sanidump" = "Sanitation Dump Station";
+
+/* Search category */
+"laundry" = "Laundry";
+
+/* Search category */
+"showers" = "Showers";
+
+/* Search category */
+"water" = "Water";
+
+/* Search category */
+"toilet" = "Toilet";
+
+/* Search category */
+"warning" = "Warning";
 
 /* Search category */
 "parking" = "Parking";
