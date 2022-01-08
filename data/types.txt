@@ -1347,3 +1347,16 @@ mapswithme
 *hwtag|onedir_bicycle
 *shop|video_games
 *natural|strait
+*overlander|freedomcamping
+*overlander|paidcamping
+*overlander|fuel
+*overlander|propane
+*overlander|mechanic
+*overlander|water
+*overlander|sanidump
+*overlander|tourism
+*overlander|wifi
+*overlander|laundry
+*overlander|showers
+*overlander|police
+*overlander|warning

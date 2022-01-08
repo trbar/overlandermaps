@@ -45,7 +45,7 @@
 # <lang>               ::= 'en'|'cs'|'sk'|'de'|'es'|'fr'|'it'|'ja' etc.
 #
 
-overlander-freedomcamp|@freedomcamp
+overlander-freedomcamping|@freedomcamping
 en:Freedom Camping|Free Camping|Wild Camping|Informal Campsite
 
 overlander-propane|@propane
@@ -771,7 +771,7 @@ sk:3Reštaurácia|pohostinstvo|kaviareň
 sw:Hoteli|restorenti|mgahawa|chakula
 fa:رستوران
 
-amenity-fuel|@fuel
+amenity-fuel|overlander-laundry|@fuel
 en:Gas Station|3fuel|petrol|petrol station|U+26FD
 ru:Бензин|топливо|азс
 bg:Бензиностанция|Гориво|бензин|дизел|газ

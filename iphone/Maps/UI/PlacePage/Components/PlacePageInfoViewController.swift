@@ -91,6 +91,8 @@ class PlacePageInfoViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    _ = placePageInfoData
 
     if let openingHours = placePageInfoData.openingHours {
       openingHoursView.openingHours = openingHours
