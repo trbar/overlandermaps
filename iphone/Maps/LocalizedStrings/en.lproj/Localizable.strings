@@ -160,7 +160,7 @@
 "freedomcamping" = "Freedom Camping";
 
 /* Search category for paid camping */
-"paidcamping" = "Paid Camping";
+"paidcamping" = "Camping";
 
 /* Search category for cafes, bars, restaurants */
 "eat" = "Where to eat";
@@ -178,10 +178,10 @@
 "propane" = "Propane";
 
 /* Search category */
-"mechanic" = "Mechanic";
+"mechanic" = "Car Repair";
 
 /* Search category */
-"sanidump" = "Sanitation Dump Station";
+"sanidump" = "Sanitation Dump";
 
 /* Search category */
 "laundry" = "Laundry";
@@ -1606,6 +1606,32 @@
 "type.amenity.driving_school" = "Driving School";
 
 "type.office.diplomatic" = "Embassy";
+
+"type.overlander.freedomcamping" = "Freedom Camping - iOverlander";
+
+"type.overlander.paidcamping" = "Camping - iOverlander";
+
+"type.overlander.fuel" = "Gas Station - iOverlander";
+
+"type.overlander.propane" = "Propane - iOverlander";
+
+"type.overlander.mechanic" = "Car Repair - iOverlander";
+
+"type.overlander.water" = "Water - iOverlander";
+
+"type.overlander.sanidump" = "Sanitation Dump - iOverlander";
+
+"type.overlander.tourism" = "Tourism - iOverlander";
+
+"type.overlander.wifi" = "Wifi - iOverlander";
+
+"type.overlander.laundry" = "Laundry - iOverlander";
+
+"type.overlander.showers" = "Showers - iOverlander";
+
+"type.overlander.police" = "Police - iOverlander";
+
+"type.overlander.warning" = "Warning - iOverlander";
 
 "type.amenity.fast_food" = "Fast Food";
 

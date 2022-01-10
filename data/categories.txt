@@ -771,7 +771,7 @@ sk:3Reštaurácia|pohostinstvo|kaviareň
 sw:Hoteli|restorenti|mgahawa|chakula
 fa:رستوران
 
-amenity-fuel|overlander-laundry|@fuel
+amenity-fuel|overlander-fuel|@fuel
 en:Gas Station|3fuel|petrol|petrol station|U+26FD
 ru:Бензин|топливо|азс
 bg:Бензиностанция|Гориво|бензин|дизел|газ

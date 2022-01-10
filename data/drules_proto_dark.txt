@@ -42793,121 +42793,24 @@ cont {
   }
   element {
     scale: 18
-    symbol {
-      name: "caravan_site-m"
-      priority: 16632
-      min_distance: 20
-    }
     caption {
       primary {
-        height: 11
+        height: 10
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
       priority: 15632
     }
   }
   element {
     scale: 19
-    symbol {
-      name: "caravan_site-m"
-      priority: 16632
-      min_distance: 20
-    }
     caption {
       primary {
-        height: 11
+        height: 10
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
       priority: 15632
-    }
-  }
-}
-cont {
-  name: "overlander-paidcamping"
-  element {
-    scale: 15
-    symbol {
-      name: "campsite-m"
-      priority: 16663
-      min_distance: 12
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15663
-    }
-  }
-  element {
-    scale: 16
-    symbol {
-      name: "campsite-m"
-      priority: 16663
-      min_distance: 12
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15663
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "campsite-m"
-      priority: 16663
-      min_distance: 12
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15663
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "campsite-m"
-      priority: 16663
-      min_distance: 12
-    }
-    caption {
-      primary {
-        height: 11
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15663
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "campsite-m"
-      priority: 16663
-      min_distance: 12
-    }
-    caption {
-      primary {
-        height: 11
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15663
     }
   }
 }
@@ -42982,10 +42885,6 @@ cont {
   }
   element {
     scale: 18
-    symbol {
-      name: "fuel-m"
-      priority: 16673
-    }
     caption {
       primary {
         height: 11
@@ -42998,9 +42897,242 @@ cont {
   }
   element {
     scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15673
+    }
+  }
+}
+cont {
+  name: "overlander-laundry"
+  element {
+    scale: 16
     symbol {
-      name: "fuel-m"
-      priority: 16673
+      name: "laundry-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "laundry-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "laundry-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "laundry-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+}
+cont {
+  name: "overlander-mechanic"
+  element {
+    scale: 15
+    symbol {
+      name: "car-repair-s"
+      priority: 16683
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "car-repair-m"
+      priority: 16683
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "car-repair-m"
+      priority: 16683
+      min_distance: 24
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "car-repair-m"
+      priority: 16683
+      min_distance: 24
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "car-repair-m"
+      priority: 16683
+      min_distance: 24
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+}
+cont {
+  name: "overlander-paidcamping"
+  element {
+    scale: 15
+    symbol {
+      name: "campsite-m"
+      priority: 16663
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "campsite-m"
+      priority: 16663
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "campsite-m"
+      priority: 16663
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "campsite-m"
+      priority: 16663
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "campsite-m"
+      priority: 16663
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+}
+cont {
+  name: "overlander-police"
+  element {
+    scale: 17
+    symbol {
+      name: "police-m"
+      priority: 16683
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15683
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "police-m"
+      priority: 16683
     }
     caption {
       primary {
@@ -43009,7 +43141,23 @@ cont {
         offset_y: 1
         is_optional: true
       }
-      priority: 15673
+      priority: 15683
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "police-m"
+      priority: 16683
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15683
     }
   }
 }
@@ -43084,10 +43232,6 @@ cont {
   }
   element {
     scale: 18
-    symbol {
-      name: "fuel-m"
-      priority: 16673
-    }
     caption {
       primary {
         height: 11
@@ -43100,342 +43244,47 @@ cont {
   }
   element {
     scale: 19
-    symbol {
-      name: "fuel-m"
-      priority: 16673
-    }
     caption {
       primary {
-        height: 11
+        height: 10
         color: 5592405
         offset_y: 1
         is_optional: true
       }
       priority: 15673
-    }
-  }
-}
-cont {
-  name: "overlander-mechanic"
-  element {
-    scale: 16
-    symbol {
-      name: "car-repair-m"
-      priority: 16632
-      min_distance: 10
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "car-repair-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "car-repair-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "car-repair-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-}
-cont {
-  name: "overlander-water"
-  element {
-    scale: 15
-    symbol {
-      name: "drinking-water-m"
-      priority: 16612
-      min_distance: 36
-    }
-  }
-  element {
-    scale: 16
-    symbol {
-      name: "drinking-water-m"
-      priority: 16612
-      min_distance: 36
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "drinking-water-m"
-      priority: 16612
-      min_distance: 36
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "drinking-water-m"
-      priority: 16612
-      min_distance: 36
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "drinking-water-m"
-      priority: 16612
-      min_distance: 36
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15612
     }
   }
 }
 cont {
   name: "overlander-sanidump"
   element {
-    scale: 17
-    symbol {
-      name: "recycling-m"
-      priority: 16622
-      min_distance: 30
-    }
-  }
-  element {
     scale: 18
     symbol {
       name: "recycling-m"
-      priority: 16622
-      min_distance: 30
+      priority: 16612
     }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "recycling-m"
-      priority: 16622
-      min_distance: 30
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15622
-    }
-  }
-}
-cont {
-  name: "overlander-attraction"
-  element {
-    scale: 18
     caption {
       primary {
         height: 11
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
-      priority: 15632
+      priority: 15612
     }
   }
   element {
     scale: 19
+    symbol {
+      name: "recycling-m"
+      priority: 16612
+    }
     caption {
       primary {
         height: 11
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
-      priority: 15632
-    }
-  }
-}
-cont {
-  name: "overlander-wifi"
-  element {
-    scale: 16
-    symbol {
-      name: "computer-m"
-      priority: 16632
-      min_distance: 10
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "computer-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "computer-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "computer-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-}
-cont {
-  name: "overlander-laundry"
-  element {
-    scale: 16
-    symbol {
-      name: "laundry-m"
-      priority: 16632
-      min_distance: 10
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "laundry-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "laundry-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "laundry-m"
-      priority: 16632
-      min_distance: 24
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15632
+      priority: 15612
     }
   }
 }
@@ -43491,64 +43340,47 @@ cont {
   }
 }
 cont {
-  name: "overlander-police"
+  name: "overlander-tourism"
+  element {
+    scale: 16
+    symbol {
+      name: "photo-shop-m"
+      priority: 16000
+    }
+  }
   element {
     scale: 17
     symbol {
-      name: "police-m"
-      priority: 16683
-    }
-    caption {
-      primary {
-        height: 10
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15683
+      name: "photo-shop-m"
+      priority: 16000
+      min_distance: 24
     }
   }
   element {
     scale: 18
     symbol {
-      name: "police-m"
-      priority: 16683
-    }
-    caption {
-      primary {
-        height: 11
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15683
+      name: "photo-shop-m"
+      priority: 16000
+      min_distance: 24
     }
   }
   element {
     scale: 19
     symbol {
-      name: "police-m"
-      priority: 16683
-    }
-    caption {
-      primary {
-        height: 11
-        color: 5592405
-        offset_y: 1
-        is_optional: true
-      }
-      priority: 15683
+      name: "photo-shop-m"
+      priority: 16000
+      min_distance: 24
     }
   }
 }
 cont {
   name: "overlander-warning"
   element {
-    scale: 16
+    scale: 15
     symbol {
       name: "bcontrol-m"
-      priority: 16632
-      min_distance: 10
+      apply_for_type: 1
+      priority: 16693
     }
     caption {
       primary {
@@ -43556,58 +43388,148 @@ cont {
         color: 5592405
         offset_y: 1
       }
-      priority: 15632
+      priority: 15693
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "bcontrol-m"
+      apply_for_type: 1
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15693
     }
   }
   element {
     scale: 17
     symbol {
       name: "bcontrol-m"
-      priority: 16632
-      min_distance: 24
+      apply_for_type: 1
+      priority: 16693
     }
     caption {
       primary {
         height: 10
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
-      priority: 15632
+      priority: 15693
     }
   }
   element {
     scale: 18
     symbol {
       name: "bcontrol-m"
-      priority: 16632
-      min_distance: 24
+      apply_for_type: 1
+      priority: 16693
     }
     caption {
       primary {
         height: 10
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
-      priority: 15632
+      priority: 15693
     }
   }
   element {
     scale: 19
     symbol {
       name: "bcontrol-m"
-      priority: 16632
-      min_distance: 24
+      apply_for_type: 1
+      priority: 16693
     }
     caption {
       primary {
         height: 10
         color: 5592405
         offset_y: 1
-        is_optional: true
       }
-      priority: 15632
+      priority: 15693
+    }
+  }
+}
+cont {
+  name: "overlander-water"
+  element {
+    scale: 15
+    symbol {
+      name: "drinking-water-m"
+      priority: 16612
+      min_distance: 36
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "drinking-water-m"
+      priority: 16612
+      min_distance: 36
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "drinking-water-m"
+      priority: 16612
+      min_distance: 36
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "drinking-water-m"
+      priority: 16612
+      min_distance: 36
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "drinking-water-m"
+      priority: 16612
+      min_distance: 36
+    }
+  }
+}
+cont {
+  name: "overlander-wifi"
+  element {
+    scale: 16
+    symbol {
+      name: "computer-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
     }
   }
 }

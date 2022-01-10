@@ -62,6 +62,8 @@ node[natural=geyser],
 area[natural=geyser],
 node[amenity=drinking_water],
 area[amenity=drinking_water],
+node[overlander=water],
+area[overlander=water],
 node[man_made=water_tap],
 area[man_made=water_tap],
 node[amenity=water_point],
@@ -69,6 +71,8 @@ area[amenity=water_point],
 node[amenity=water_point],
 area[amenity=water_point],
 node[amenity=waste_basket],
+node[overlander=sanidump],
+area[overlander=sanidump],
 node[amenity=waste_disposal],
 area[amenity=waste_disposal],
 node[man_made=survey_point],
@@ -111,6 +115,8 @@ node[aeroway=gate],
 area[aeroway=gate],
 node[amenity=hunting_stand],
 area[amenity=hunting_stand],
+node[overlander=showers],
+area[overlander=showers],
 node[amenity=shower],
 area[amenity=shower],
 node[amenity=events_venue],
@@ -136,6 +142,8 @@ node[historic=ship],
 area[historic=ship],
 node[tourism=artwork][artwork_type=sculpture],
 area[tourism=artwork][artwork_type=sculpture],
+node[overlander=freedomcamping],
+area[overlander=freedomcamping],
 node[tourism=caravan_site],
 area[tourism=caravan_site],
 node[amenity=bicycle_parking],
@@ -213,6 +221,8 @@ node|z17-[sport=tennis],
 node|z17-[leisure=skiing],
 node[tourism=camp_site],
 area[tourism=camp_site],
+node[overlander=paidcamping],
+area[overlander=paidcamping],
 node[tourism=picnic_site],
 area[tourism=picnic_site],
 node[leisure=picnic_table],
@@ -243,6 +253,10 @@ area[shop=pawnbroker],
 node[amenity=library]
 {z-index: 2500;}
 
+node[overlander=fuel],
+area[overlander=fuel],
+node[overlander=propane],
+area[overlander=propane],
 node[amenity=fuel],
 area[amenity=fuel],
 node[amenity=charging_station],
@@ -263,6 +277,8 @@ node[aerialway=rope_tow],
 node[railway=level_crossing],
 node[shop=supermarket],
 area[shop=supermarket],
+node[overlander=mechanic],
+area[overlander=mechanic],
 node[shop=car_repair][service=tyres],
 area[shop=car_repair][service=tyres],
 node[highway=services],
@@ -289,6 +305,8 @@ node[amenity=college],
 area[amenity=college],
 node[amenity=cinema],
 area[amenity=cinema],
+node[overlander=police],
+area[overlander=police],
 node[amenity=police],
 area[amenity=police],
 node[amenity=prison],
@@ -304,6 +322,7 @@ area[amenity=bus_station],
 node[amenity=ferry_terminal],
 node[man_made=lighthouse],
 area[man_made=lighthouse],
+node[overlander=warning],
 node[barrier=border_control],
 node[boundary=national_park],
 area[boundary=national_park],
@@ -632,6 +651,8 @@ node|z15-[amenity=water_point],
 area|z15-[amenity=water_point],
 node|z15-[amenity=drinking_water],
 area|z15-[amenity=drinking_water],
+node|z15-[overlander=water],
+area|z15-[overlander=water],
 node|z15-[man_made=water_tap],
 area|z15-[man_made=water_tap],
 node|z15-[amenity=water_point] ,
@@ -1169,6 +1190,8 @@ area|z16-[tourism=apartment]
 {text: name;text-offset: 1;font-size: 10;text-color: @poi_label;}
 node|z15-[tourism=camp_site],
 area|z15-[tourism=camp_site],
+node|z15-[overlander=paidcamping],
+area|z15-[overlander=paidcamping],
 node|z16-[tourism=picnic_site],
 area|z16-[tourism=picnic_site],
 node|z16-[leisure=picnic_table],
@@ -1177,6 +1200,8 @@ node|z16-[amenity=shelter],
 area|z16-[amenity=shelter],
 node|z16-[highway=rest_area],
 area|z16-[highway=rest_area],
+node|z16-[overlander=freedomcamping],
+area|z16-[overlander=freedomcamping],
 node|z16-[tourism=caravan_site],
 area|z16-[tourism=caravan_site]
 {text: name;text-color: @poi_label;text-offset: 1;font-size: 10;}
@@ -1234,6 +1259,10 @@ node|z15-[tourism=camp_site],
 area|z15-[tourism=camp_site]
 {icon-image: campsite-m.svg;icon-min-distance: 12;}
 
+node|z15-[overlander=paidcamping],
+area|z15-[overlander=paidcamping]
+{icon-image: campsite-m.svg;icon-min-distance: 12;}
+
 node|z16-[tourism=picnic_site],
 area|z16-[tourism=picnic_site],
 node|z16-[amenity=shelter],
@@ -1245,9 +1274,13 @@ node|z16-[leisure=picnic_table],
 area|z16-[leisure=picnic_table]
 {icon-image: picnic_table-m.svg;icon-min-distance: 10;}
 
+node|z16[overlander=freedomcamping],
+area|z16[overlander=freedomcamping],
 node|z16[tourism=caravan_site],
 area|z16[tourism=caravan_site]
 {icon-image: caravan_site-m.svg;font-size: 11;icon-min-distance: 30;}
+node|z17[overlander=freedomcamping],
+area|z17[overlander=freedomcamping],
 node|z17-[tourism=caravan_site],
 area|z17-[tourism=caravan_site]
 {icon-image: caravan_site-m.svg;font-size: 11;icon-min-distance: 20;}
@@ -1341,6 +1374,7 @@ area|z14-[man_made=lighthouse],
 node|z15-[amenity=hospital],
 node|z15-[landuse=landfill],
 area|z15-[landuse=landfill],
+node|z15-[overlander=warning],
 node|z15-[barrier=border_control],
 node|z16-[building=hospital],
 area|z16-[building=hospital],
@@ -1400,6 +1434,8 @@ node|z17-[amenity=cinema],
 area|z17-[amenity=cinema],
 node|z17-[amenity=police],
 area|z17-[amenity=police],
+node|z17-[overlander=police],
+area|z17-[overlander=police],
 node|z17-[amenity=prison],
 area|z17-[amenity=prison],
 node|z17-[office=diplomatic],
@@ -1410,6 +1446,8 @@ node|z17-[vending=parking_tickets],
 area|z17-[vending=parking_tickets],
 node|z17-[amenity=payment_terminal],
 area|z17-[amenity=payment_terminal],
+node|z17-[overlander=showers],
+area|z17-[overlander=showers],
 node|z17-[amenity=shower],
 area|z17-[amenity=shower],
 node|z17-[amenity=bicycle_rental],
@@ -1443,6 +1481,8 @@ node|z18-[shop=pawnbroker],
 area|z18-[shop=pawnbroker],
 node|z18-[amenity=bureau_de_change],
 node|z18-[amenity=library],
+node|z18-[overlander=sanidump],
+area|z18-[overlander=sanidump],
 node|z18-[amenity=waste_disposal],
 area|z18-[amenity=waste_disposal],
 node|z18-[amenity=hunting_stand],
@@ -1822,6 +1862,7 @@ node|z15-[barrier=toll_booth],
 area|z15-[barrier=toll_booth]
 {icon-image: toll_booth-m.svg;icon-min-distance: 8;text-optional: true;}
 
+node|z15-[overlander=warning]
 node|z15-[barrier=border_control]
 {icon-image:bcontrol-m.svg;}
 
@@ -1895,9 +1936,13 @@ node|z18-[amenity=cinema],
 area|z18-[amenity=cinema]
 {font-size: 11;text-optional: true;}
 
+node|z17-[overlander=police],
+area|z17-[overlander=police],
 node|z17-[amenity=police],
 area|z17-[amenity=police]
 {icon-image: police-m.svg;text-optional: true;}
+node|z18-[overlander=police],
+area|z18-[overlander=police],
 node|z18-[amenity=police],
 area|z18-[amenity=police]
 {font-size: 11;text-optional: true;}
@@ -1959,6 +2004,8 @@ node|z19-[power=substation],
 area|z19-[power=substation]
 {icon-image: power-m.svg;font-size: 11;icon-min-distance: 20;}
 
+node|z17-[overlander=showers],
+area|z17-[overlander=showers],
 node|z17-[amenity=shower],
 area|z17-[amenity=shower]
 {icon-image: shower-m.svg;icon-min-distance: 20;}
@@ -2004,6 +2051,8 @@ node|z18-[amenity=waste_basket]
 
 node|z18-[amenity=library]
 {icon-image: library-m.svg;font-size: 11;text-optional: true;}
+node|z18-[overlander=sanidump],
+area|z18-[overlander=sanidump],
 node|z18-[amenity=waste_disposal],
 area|z18-[amenity=waste_disposal]
 {icon-image: recycling-m.svg;font-size: 11;}
@@ -2041,6 +2090,8 @@ node|z16-[amenity=marketplace],
 area|z16-[amenity=marketplace],
 node|z16-[shop=supermarket],
 area|z16-[shop=supermarket],
+node|z15-[overlander=mechanic],
+area|z15-[overlander=mechanic],
 node|z15-[shop=car_repair][service=tyres],
 area|z15-[shop=car_repair][service=tyres],
 node|z15-[highway=services],
@@ -2076,11 +2127,15 @@ node|z17-[amenity=marketplace],
 area|z17-[amenity=marketplace]
 {icon-image: marketplace-m.svg;font-size: 11;icon-min-distance: 8;}
 
+node|z15[overlander=mechanic],
+area|z15[overlander=mechanic],
 node|z15[shop=car_repair][service=tyres],
 area|z15[shop=car_repair][service=tyres],
 node|z15[highway=services],
 area|z15[highway=services]
 {icon-image: car-repair-s.svg;text-offset: 1;-x-me-text-priority:15500;icon-min-distance: 20;}
+node|z16-[overlander=mechanic],
+area|z16-[overlander=mechanic],
 node|z16-[shop=car_repair][service=tyres],
 area|z16-[shop=car_repair][service=tyres],
 node|z16-[highway=services],
@@ -2126,6 +2181,8 @@ area|z16[shop=motorcycle]
 node|z16[shop=car_parts],
 area|z16[shop=car_parts]
 {icon-image: car-part-m.svg;}
+node|z16[overlander=mechanic],
+area|z16[overlander=mechanic],
 node|z16[shop=car_repair],
 area|z16[shop=car_repair]
 {icon-image: car-repair-m.svg;}
@@ -2138,6 +2195,8 @@ area|z16[shop=chemist]
 node|z16[shop=clothes],
 area|z16[shop=clothes]
 {icon-image: clothes-m.svg;}
+node|z16[overlander=wifi],
+area|z16[overlander=wifi],
 node|z16[shop=computer],
 area|z16[shop=computer],
 node|z16[shop=video_games],
@@ -2166,6 +2225,8 @@ area|z16[shop=convenience]
 node|z16[shop=copyshop],
 area|z16[shop=copyshop]
 {icon-image: copyshop-m.svg;}
+node|z16[overlander=tourism],
+area|z16[overlander=tourism],
 node|z16[shop=photo],
 area|z16[shop=photo]
 {icon-image: photo-shop-m.svg;}
@@ -2216,6 +2277,8 @@ area|z16[shop=jewelry]
 node|z16[shop=kiosk],
 area|z16[shop=kiosk]
 {icon-image: kiosk-m.svg;}
+node|z16[overlander=laundry],
+area|z16[overlander=laundry],
 node|z16[shop=laundry],
 area|z16[shop=laundry]
 {icon-image:laundry-m.svg;}
@@ -2289,6 +2352,8 @@ area|z17-[shop=motorcycle]
 node|z17-[shop=car_parts],
 area|z17-[shop=car_parts]
 {icon-image: car-part-m.svg;icon-min-distance: 24;text-optional: true;}
+node|z17-[overlander=mechanic],
+area|z17-[overlander=mechanic],
 node|z17-[shop=car_repair],
 area|z17-[shop=car_repair]
 {icon-image: car-repair-m.svg;icon-min-distance: 24;text-optional: true;}
@@ -2301,6 +2366,8 @@ area|z17-[shop=chemist]
 node|z17-[shop=clothes],
 area|z17-[shop=clothes]
 {icon-image: clothes-m.svg;icon-min-distance: 24;text-optional: true;}
+node|z17-[overlander=wifi],
+area|z17-[overlander=wifi],
 node|z17-[shop=computer],
 area|z17-[shop=computer],
 node|z17-[shop=video_games],
@@ -2329,6 +2396,8 @@ area|z17-[shop=convenience]
 node|z17-[shop=copyshop],
 area|z17-[shop=copyshop]
 {icon-image: copyshop-m.svg;icon-min-distance: 24;text-optional: true;}
+node|z17-[overlander=tourism],
+area|z17-[overlander=tourism],
 node|z17-[shop=photo],
 area|z17-[shop=photo]
 {icon-image: photo-shop-m.svg;icon-min-distance: 24;text-optional: true;}
@@ -2379,6 +2448,8 @@ area|z17-[shop=jewelry]
 node|z17-[shop=kiosk],
 area|z17-[shop=kiosk]
 {icon-image: kiosk-m.svg;icon-min-distance: 24;text-optional: true;}
+node|z17-[overlander=laundry],
+area|z17-[overlander=laundry],
 node|z17-[shop=laundry],
 area|z17-[shop=laundry]
 {icon-image:laundry-m.svg;icon-min-distance: 24;text-optional: true;}
@@ -2421,6 +2492,10 @@ area|z17-[shop=fabric]
 
 /* 7. CAR */
 
+node|z14-[overlander=fuel],
+area|z14-[overlander=fuel],
+node|z14-[overlander=propane],
+area|z14-[overlander=propane],
 node|z14-[amenity=fuel],
 area|z14-[amenity=fuel],
 node|z14-[amenity=charging_station],
@@ -2441,18 +2516,38 @@ node|z18-[amenity=car_sharing],
 area|z18-[amenity=car_sharing]
 {text: name;text-color: @poi_label;text-offset: 1;font-size: 10;text-optional: true;}
 
+node|z14[overlander=fuel],
+area|z14[overlander=fuel],
+node|z14[overlander=propane],
+area|z14[overlander=propane],
 node|z14[amenity=fuel],
 area|z14[amenity=fuel]
 {icon-image: fuel-s.svg;text-offset: 1;-x-me-text-priority:15500;icon-min-distance: 20;}
+node|z15[overlander=fuel],
+area|z15[overlander=fuel],
+node|z15[overlander=propane],
+area|z15[overlander=propane],
 node|z15[amenity=fuel],
 area|z15[amenity=fuel]
 {icon-image: fuel-m.svg;-x-me-text-priority:15500;icon-min-distance: 20;}
+node|z16[overlander=fuel],
+area|z16[overlander=fuel],
+node|z16[overlander=propane],
+area|z16[overlander=propane],
 node|z16[amenity=fuel],
 area|z16[amenity=fuel]
 {icon-image: fuel-m.svg;-x-me-text-priority:15500;icon-min-distance: 10;}
+node|z17[overlander=fuel],
+area|z17[overlander=fuel],
+node|z17[overlander=propane],
+area|z17[overlander=propane],
 node|z17-[amenity=fuel],
 area|z17-[amenity=fuel]
 {icon-image: fuel-m.svg;}
+node|z18[overlander=fuel],
+area|z18[overlander=fuel],
+node|z18[overlander=propane],
+area|z18[overlander=propane],
 node|z18-[amenity=fuel],
 area|z18-[amenity=fuel]
 {font-size: 11;}

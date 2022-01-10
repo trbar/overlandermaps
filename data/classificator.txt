@@ -642,18 +642,18 @@ world  +
         {}
     overlander  +
         freedomcamping  -
-        paidcamping  -
         fuel  -
-        propane  -
-        mechanic  -
-        water  -
-        sanidump  -
-        tourism  -
-        wifi  -
         laundry  -
-        showers  -
+        mechanic  -
+        paidcamping  -
         police  -
+        propane  -
+        sanidump  -
+        showers  -
+        tourism  -
         warning  -
+        water  -
+        wifi  -
         {}
     piste:lift  +
         j-bar  -

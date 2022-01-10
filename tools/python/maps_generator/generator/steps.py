@@ -62,8 +62,8 @@ def step_download_and_convert_planet(env: Env, force_download: bool, **kwargs):
             env.force_download_files,
         )
 
-        if not is_verified(env.paths.planet_osm_pbf):
-            raise ValidationError(f"Wrong md5 sum for {env.paths.planet_osm_pbf}.")
+        # if not is_verified(env.paths.planet_osm_pbf):
+            # raise ValidationError(f"Wrong md5 sum for {env.paths.planet_osm_pbf}.")
 
     convert_planet(
         env[settings.OSM_TOOL_CONVERT],
