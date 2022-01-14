@@ -77,6 +77,21 @@ class PlacePageInfoViewController: UIViewController {
   private var wifiView: InfoItemViewController?
   private var addressView: InfoItemViewController?
   private var coordinatesView: InfoItemViewController?
+  private var overlanderDescriptionView: InfoItemViewController?
+  private var overlanderOpenView: InfoItemViewController?
+  private var overlanderElectricityView: InfoItemViewController?
+  private var overlanderWifiView: InfoItemViewController?
+  private var overlanderKitchenView: InfoItemViewController?
+  private var overlanderParkingView: InfoItemViewController?
+  private var overlanderRestaurantView: InfoItemViewController?
+  private var overlanderShowersView: InfoItemViewController?
+  private var overlanderWaterView: InfoItemViewController?
+  private var overlanderToiletsView: InfoItemViewController?
+  private var overlanderBigrigfriendlyView: InfoItemViewController?
+  private var overlanderTentfriendlyView: InfoItemViewController?
+  private var overlanderPetfriendlyView: InfoItemViewController?
+  private var overlanderSanidumpView: InfoItemViewController?
+  
 
   var placePageInfoData: PlacePageInfoData!
   weak var delegate: PlacePageInfoViewControllerDelegate?
@@ -130,6 +145,62 @@ class PlacePageInfoViewController: UIViewController {
 
     if let ppOperator = placePageInfoData.ppOperator {
       operatorView = createInfoItem(ppOperator, icon: UIImage(named: "ic_placepage_operator"))
+    }
+    
+    if let overlanderDescription = placePageInfoData.overlanderDescription {
+      overlanderDescriptionView = createInfoItem(overlanderDescription, icon: UIImage(named: "ic_placepage_website"))
+    }
+    
+    if let overlanderOpen = placePageInfoData.overlanderOpen {
+      overlanderOpenView = createInfoItem(overlanderOpen, icon: UIImage(named: "ic_placepage_overlander_open"))
+    }
+    
+    if let overlanderElectricity = placePageInfoData.overlanderElectricity {
+      overlanderElectricityView = createInfoItem(overlanderElectricity, icon: UIImage(named: "ic_placepage_overlander_electricity"))
+    }
+    
+    if let overlanderWifi = placePageInfoData.overlanderWifi {
+      overlanderWifiView = createInfoItem(overlanderWifi, icon: UIImage(named: "ic_placepage_wifi"))
+    }
+    
+    if let overlanderKitchen = placePageInfoData.overlanderKitchen {
+      overlanderKitchenView = createInfoItem(overlanderKitchen, icon: UIImage(named: "ic_placepage_overlander_kitchen"))
+    }
+    
+    if let overlanderParking = placePageInfoData.overlanderParking {
+      overlanderParkingView = createInfoItem(overlanderParking, icon: UIImage(named: "ic_placepage_overlander_parking"))
+    }
+    
+    if let overlanderRestaurant = placePageInfoData.overlanderRestaurant {
+      overlanderRestaurantView = createInfoItem(overlanderRestaurant, icon: UIImage(named: "ic_placepage_overlander_restaurant"))
+    }
+    
+    if let overlanderShowers = placePageInfoData.overlanderShowers {
+      overlanderShowersView = createInfoItem(overlanderShowers, icon: UIImage(named: "ic_placepage_overlander_showers"))
+    }
+    
+    if let overlanderWater = placePageInfoData.overlanderWater {
+      overlanderWaterView = createInfoItem(overlanderWater, icon: UIImage(named: "ic_placepage_overlander_water"))
+    }
+    
+    if let overlanderToilets = placePageInfoData.overlanderToilets {
+      overlanderToiletsView = createInfoItem(overlanderToilets, icon: UIImage(named: "ic_placepage_overlander_toilets"))
+    }
+    
+    if let overlanderBigrigfriendly = placePageInfoData.overlanderBigrigfriendly {
+      overlanderBigrigfriendlyView = createInfoItem(overlanderBigrigfriendly, icon: UIImage(named: "ic_placepage_overlander_bigrigfriendly"))
+    }
+    
+    if let overlanderTentfriendly = placePageInfoData.overlanderTentfriendly {
+      overlanderTentfriendlyView = createInfoItem(overlanderTentfriendly, icon: UIImage(named: "ic_placepage_overlander_tentfriendly"))
+    }
+    
+    if let overlanderPetfriendly = placePageInfoData.overlanderPetfriendly {
+      overlanderPetfriendlyView = createInfoItem(overlanderPetfriendly, icon: UIImage(named: "ic_placepage_overlander_petfriendly"))
+    }
+    
+    if let overlanderSanidump = placePageInfoData.overlanderSanidump {
+      overlanderSanidumpView = createInfoItem(overlanderSanidump, icon: UIImage(named: "ic_placepage_overlander_sanidump"))
     }
 
     if placePageInfoData.wifiAvailable {

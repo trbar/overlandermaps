@@ -559,6 +559,210 @@ void EditableMapObject::SetWikipedia(string const & wikipedia)
   m_metadata.Set(feature::Metadata::FMD_WIKIPEDIA, wikipedia);
 }
 
+void EditableMapObject::SetOverlanderLocation(std::string const & location)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_LOCATION,location);
+}
+
+void EditableMapObject::SetOverlanderDescription(std::string const & description)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_DESCRIPTION,	description);
+}
+
+void EditableMapObject::SetOverlanderOpen(std::string const & open)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_OPEN, open);
+}
+
+void EditableMapObject::SetOverlanderElectricity(std::string const & electricity)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_ELECTRICITY, electricity);
+}
+
+void EditableMapObject::SetOverlanderWifi(std::string const & wifi)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_WIFI, wifi);
+}
+
+void EditableMapObject::SetOverlanderKitchen(std::string const & kitchen)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_KITCHEN, kitchen);
+}
+
+void EditableMapObject::SetOverlanderParking(std::string const & parking)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_PARKING, parking);
+}
+
+void EditableMapObject::SetOverlanderRestaurant(std::string const & restaurant)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_RESTAURANT, restaurant);
+}
+
+void EditableMapObject::SetOverlanderShowers(std::string const & showers)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SHOWERS, showers);
+}
+
+void EditableMapObject::SetOverlanderWater(std::string const & water)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_WATER, water);
+}
+
+void EditableMapObject::SetOverlanderToilets(std::string const & toilets)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_TOILETS, toilets);
+}
+
+void EditableMapObject::SetOverlanderBigrigfriendly(std::string const & bigrigfriendly)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY, bigrigfriendly);
+}
+
+void EditableMapObject::SetOverlanderTentfriendly(std::string const & tentfriendly)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_TENTFRIENDLY, tentfriendly);
+}
+
+void EditableMapObject::SetOverlanderPetfriendly(std::string const & petfriendly)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_PETFRIENDLY, petfriendly);
+}
+
+void EditableMapObject::SetOverlanderSanidump(std::string const & sanidump)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SANIDUMP, sanidump);
+}
+
+void EditableMapObject::SetOverlanderBiofuel(std::string const & biofuel)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_BIOFUEL, biofuel);
+} 
+void EditableMapObject::SetOverlanderRepairsvehicles(std::string const & repairsvehicles)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_REPAIRSVEHICLES, repairsvehicles);
+}
+
+void EditableMapObject::SetOverlanderRepairsmotorcycles(std::string const & repairsmotorcycles)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES, repairsmotorcycles);
+}
+
+void EditableMapObject::SetOverlanderRepairsbicycles(std::string const & repairsbicycles)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_REPAIRSBICYCLES, repairsbicycles);
+}
+
+void EditableMapObject::SetOverlanderSellsparts(std::string const & sellsparts)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SELLSPARTS, sellsparts);
+}
+
+void EditableMapObject::SetOverlanderRecyclesbatteries(std::string const & recyclesbatteries)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_RECYCLESBATTERIES, recyclesbatteries);
+}
+
+void EditableMapObject::SetOverlanderRecyclesoil(std::string const & recyclesoil)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_RECYCLESOIL, recyclesoil);
+}
+
+void EditableMapObject::SetOverlanderCheckin5id(std::string const & checkin5id)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN5ID, checkin5id);
+}
+
+void EditableMapObject::SetOverlanderCheckin5time(std::string const & checkin5time)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN5TIME, checkin5time);
+}
+
+void EditableMapObject::SetOverlanderCheckin5author(std::string const & checkin5author)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR, checkin5author);
+}
+
+void EditableMapObject::SetOverlanderCheckin5comment(std::string const & checkin5comment)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN5COMMENT, checkin5comment);
+}
+
+void EditableMapObject::SetOverlanderCheckin4id(std::string const & checkin4id)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN4ID, checkin4id);
+}
+
+void EditableMapObject::SetOverlanderCheckin4time(std::string const & checkin4time)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN4TIME, checkin4time);
+}
+
+void EditableMapObject::SetOverlanderCheckin4author(std::string const & checkin4author)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR, checkin4author);
+}
+
+void EditableMapObject::SetOverlanderCheckin4comment(std::string const & checkin4comment)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN4COMMENT, checkin4comment);
+}
+
+void EditableMapObject::SetOverlanderCheckin3id(std::string const & checkin3id)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN3ID, checkin3id);
+}
+
+void EditableMapObject::SetOverlanderCheckin3time(std::string const & checkin3time)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN3TIME, checkin3time);
+}
+
+void EditableMapObject::SetOverlanderCheckin3author(std::string const & checkin3author)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR, checkin3author);
+}
+
+void EditableMapObject::SetOverlanderCheckin3comment(std::string const & checkin3comment)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN3COMMENT, checkin3comment);
+}
+
+void EditableMapObject::SetOverlanderCheckin2id(std::string const & checkin2id)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN2ID, checkin2id);
+}
+
+void EditableMapObject::SetOverlanderCheckin2time(std::string const & checkin2time)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN2TIME, checkin2time);
+}
+
+void EditableMapObject::SetOverlanderCheckin2author(std::string const & checkin2author)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR, checkin2author);
+}
+
+void EditableMapObject::SetOverlanderCheckin2comment(std::string const & checkin2comment)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN2COMMENT, checkin2comment);
+}
+
+void EditableMapObject::SetOverlanderCheckin1id(std::string const & checkin1id)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN1ID, checkin1id);
+}
+
+void EditableMapObject::SetOverlanderCheckin1time(std::string const & checkin1time)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN1TIME, checkin1time);
+}
+
+void EditableMapObject::SetOverlanderCheckin1author(std::string const & checkin1author)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR, checkin1author);
+}
+
 void EditableMapObject::SetFlats(string const & flats)
 {
   m_metadata.Set(feature::Metadata::FMD_FLATS, flats);

@@ -48,6 +48,34 @@ using namespace osm;
         case Props::Internet:
           _wifiAvailable = YES;
           break;
+        case Props::OverlanderDescription:
+          _overlanderDescription = @(rawData.GetOverlanderDescription().c_str());
+        case Props::OverlanderOpen:
+          _overlanderOpen = @(rawData.GetOverlanderOpen().c_str());
+        case Props::OverlanderElectricity:
+          _overlanderElectricity = @(rawData.GetOverlanderElectricity().c_str());
+        case Props::OverlanderWifi:
+          _overlanderWifi = @(rawData.GetOverlanderWifi().c_str());
+        case Props::OverlanderKitchen:
+          _overlanderKitchen = @(rawData.GetOverlanderKitchen().c_str());
+        case Props::OverlanderParking:
+          _overlanderParking = @(rawData.GetOverlanderParking().c_str());
+        case Props::OverlanderRestaurant:
+          _overlanderRestaurant = @(rawData.GetOverlanderRestaurant().c_str());
+        case Props::OverlanderShowers:
+          _overlanderShowers = @(rawData.GetOverlanderShowers().c_str());
+        case Props::OverlanderWater:
+          _overlanderWater = @(rawData.GetOverlanderWater().c_str());
+        case Props::OverlanderToilets:
+          _overlanderToilets = @(rawData.GetOverlanderToilets().c_str());
+        case Props::OverlanderBigRigFriendly:
+          _overlanderBigrigfriendly = @(rawData.GetOverlanderBigrigfriendly().c_str());
+        case Props::OverlanderTentFriendly:
+          _overlanderTentfriendly = @(rawData.GetOverlanderTentfriendly().c_str());
+        case Props::OverlanderPetFriendly:
+          _overlanderPetfriendly = @(rawData.GetOverlanderPetfriendly().c_str());
+        case Props::OverlanderSaniDump:
+          _overlanderSanidump = @(rawData.GetOverlanderSanidump().c_str());
         default:
           break;
       }

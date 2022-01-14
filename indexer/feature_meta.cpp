@@ -113,6 +113,88 @@ bool Metadata::TypeFromString(string const & k, Metadata::EType & outType)
     outType = Metadata::FMD_AIRPORT_IATA;
   else if (k == "duration")
     outType = Metadata::FMD_DURATION;
+  else if (k == "overlander:location")
+    outType = Metadata::FMD_OVERLANDER_LOCATION;
+  else if (k == "overlander:description")
+    outType = Metadata::FMD_OVERLANDER_DESCRIPTION;
+  else if (k == "overlander:open")
+    outType = Metadata::FMD_OVERLANDER_OPEN;
+  else if (k == "overlander:electricity")
+    outType = Metadata::FMD_OVERLANDER_ELECTRICITY;
+  else if (k == "overlander:wifi")
+    outType = Metadata::FMD_OVERLANDER_WIFI;
+  else if (k == "overlander:kitchen")
+    outType = Metadata::FMD_OVERLANDER_KITCHEN;
+  else if (k == "overlander:parking")
+    outType = Metadata::FMD_OVERLANDER_PARKING;
+  else if (k == "overlander:restaurant")
+    outType = Metadata::FMD_OVERLANDER_RESTAURANT;
+  else if (k == "overlander:showers")
+    outType = Metadata::FMD_OVERLANDER_SHOWERS;
+  else if (k == "overlander:water")
+    outType = Metadata::FMD_OVERLANDER_WATER;
+  else if (k == "overlander:toilets")
+    outType = Metadata::FMD_OVERLANDER_TOILETS;
+  else if (k == "overlander:bigrigfriendly")
+    outType = Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY;
+  else if (k == "overlander:tentfriendly")
+    outType = Metadata::FMD_OVERLANDER_TENTFRIENDLY;
+  else if (k == "overlander:petfriendly")
+    outType = Metadata::FMD_OVERLANDER_PETFRIENDLY;
+  else if (k == "overlander:sanidump")
+    outType = Metadata::FMD_OVERLANDER_SANIDUMP;
+  else if (k == "overlander:biofuel")
+    outType = Metadata::FMD_OVERLANDER_BIOFUEL;
+  else if (k == "overlander:repairsvehicles")
+    outType = Metadata::FMD_OVERLANDER_REPAIRSVEHICLES;
+  else if (k == "overlander:repairsmotorcycles")
+    outType = Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES;
+  else if (k == "overlander:repairsbicycles")
+    outType = Metadata::FMD_OVERLANDER_REPAIRSBICYCLES;
+  else if (k == "overlander:sellsparts")
+    outType = Metadata::FMD_OVERLANDER_SELLSPARTS;
+  else if (k == "overlander:recyclesbatteries")
+    outType = Metadata::FMD_OVERLANDER_RECYCLESBATTERIES;
+  else if (k == "overlander:recyclesoil")
+    outType = Metadata::FMD_OVERLANDER_RECYCLESOIL;
+  else if (k == "overlander:checkin5id")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN5ID;
+  else if (k == "overlander:checkin5time")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN5TIME;
+  else if (k == "overlander:checkin5author")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR;
+  else if (k == "overlander:checkin5comment")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN5COMMENT;
+  else if (k == "overlander:checkin4id")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN4ID;
+  else if (k == "overlander:checkin4time")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN4TIME;
+  else if (k == "overlander:checkin4author")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR;
+  else if (k == "overlander:checkin4comment")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN4COMMENT;
+  else if (k == "overlander:checkin3id")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN3ID;
+  else if (k == "overlander:checkin3time")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN3TIME;
+  else if (k == "overlander:checkin3author")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR;
+  else if (k == "overlander:checkin3comment")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN3COMMENT;
+  else if (k == "overlander:checkin2id")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN2ID;
+  else if (k == "overlander:checkin2time")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN2TIME;
+  else if (k == "overlander:checkin2author")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR;
+  else if (k == "overlander:checkin2comment")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN2COMMENT;
+  else if (k == "overlander:checkin1id")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN1ID;
+  else if (k == "overlander:checkin1time")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN1TIME;
+  else if (k == "overlander:checkin1author")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR;
   else
     return false;
 
@@ -200,6 +282,47 @@ string ToString(Metadata::EType type)
   case Metadata::FMD_BRAND: return "brand";
   case Metadata::FMD_DURATION: return "duration";
   case Metadata::FMD_COUNT: CHECK(false, ("FMD_COUNT can not be used as a type."));
+  case Metadata::FMD_OVERLANDER_LOCATION: return "overlander:location";
+  case Metadata::FMD_OVERLANDER_DESCRIPTION: return "overlander:description";
+  case Metadata::FMD_OVERLANDER_OPEN: return "overlander:open";
+  case Metadata::FMD_OVERLANDER_ELECTRICITY: return "overlander:electricity";
+  case Metadata::FMD_OVERLANDER_WIFI: return "overlander:wifi";
+  case Metadata::FMD_OVERLANDER_KITCHEN: return "overlander:kitchen";
+  case Metadata::FMD_OVERLANDER_PARKING: return "overlander:parking";
+  case Metadata::FMD_OVERLANDER_RESTAURANT: return "overlander:restaurant";
+  case Metadata::FMD_OVERLANDER_SHOWERS: return "overlander:showers";
+  case Metadata::FMD_OVERLANDER_WATER: return "overlander:water";
+  case Metadata::FMD_OVERLANDER_TOILETS: return "overlander:toilets";
+  case Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY: return "overlander:bigrigfriendly";
+  case Metadata::FMD_OVERLANDER_TENTFRIENDLY: return "overlander:tentfriendly";
+  case Metadata::FMD_OVERLANDER_PETFRIENDLY: return "overlander:petfriendly";
+  case Metadata::FMD_OVERLANDER_SANIDUMP: return "overlander:sanidump";
+  case Metadata::FMD_OVERLANDER_BIOFUEL: return "overlander:biofuel";
+  case Metadata::FMD_OVERLANDER_REPAIRSVEHICLES: return "overlander:repairsvehicles";
+  case Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES: return "overlander:repairsmotorcycles";
+  case Metadata::FMD_OVERLANDER_REPAIRSBICYCLES: return "overlander:repairsbicycles";
+  case Metadata::FMD_OVERLANDER_SELLSPARTS: return "overlander:sellsparts";
+  case Metadata::FMD_OVERLANDER_RECYCLESBATTERIES: return "overlander:recyclesbatteries";
+  case Metadata::FMD_OVERLANDER_RECYCLESOIL: return "overlander:recyclesoil";
+  case Metadata::FMD_OVERLANDER_CHECKIN5ID: return "overlander:checkin5id";
+  case Metadata::FMD_OVERLANDER_CHECKIN5TIME: return "overlander:checkin5time";
+  case Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR: return "overlander:checkin5author";
+  case Metadata::FMD_OVERLANDER_CHECKIN5COMMENT: return "overlander:checkin5comment";
+  case Metadata::FMD_OVERLANDER_CHECKIN4ID: return "overlander:checkin4id";
+  case Metadata::FMD_OVERLANDER_CHECKIN4TIME: return "overlander:checkin4time";
+  case Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR: return "overlander:checkin4author";
+  case Metadata::FMD_OVERLANDER_CHECKIN4COMMENT: return "overlander:checkin4comment";
+  case Metadata::FMD_OVERLANDER_CHECKIN3ID: return "overlander:checkin3id";
+  case Metadata::FMD_OVERLANDER_CHECKIN3TIME: return "overlander:checkin3time";
+  case Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR: return "overlander:checkin3author";
+  case Metadata::FMD_OVERLANDER_CHECKIN3COMMENT: return "overlander:checkin3comment";
+  case Metadata::FMD_OVERLANDER_CHECKIN2ID: return "overlander:checkin2id";
+  case Metadata::FMD_OVERLANDER_CHECKIN2TIME: return "overlander:checkin2time";
+  case Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR: return "overlander:checkin2author";
+  case Metadata::FMD_OVERLANDER_CHECKIN2COMMENT: return "overlander:checkin2comment";
+  case Metadata::FMD_OVERLANDER_CHECKIN1ID: return "overlander:checkin1id";
+  case Metadata::FMD_OVERLANDER_CHECKIN1TIME: return "overlander:checkin1time";
+  case Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR: return "overlander:checkin1author";
   };
 
   return string();
