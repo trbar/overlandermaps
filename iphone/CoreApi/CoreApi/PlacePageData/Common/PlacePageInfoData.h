@@ -32,6 +32,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly, nullable) NSString *overlanderTentfriendly;
 @property(nonatomic, readonly, nullable) NSString *overlanderPetfriendly;
 @property(nonatomic, readonly, nullable) NSString *overlanderSanidump;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin1author;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin1time;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2comment;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2author;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2time;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3comment;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3author;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3time;
 
 
 @end

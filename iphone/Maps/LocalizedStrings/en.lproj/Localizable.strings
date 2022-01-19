@@ -980,6 +980,8 @@
 
 "placepage_delete_bookmark_button" = "Delete Bookmark";
 
+"placepage_place_checkins" = "Checkins";
+
 "editor_edits_sent_message" = "Your suggested changes have been sent";
 
 "editor_comment_hint" = "Comment…";

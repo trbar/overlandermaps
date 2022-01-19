@@ -39,15 +39,29 @@ class PlacePageCommonLayout: NSObject, IPlacePageLayout {
   
   lazy var wikiDescriptionViewController: WikiDescriptionViewController = {
     let vc = storyboard.instantiateViewController(ofType: WikiDescriptionViewController.self)
-    vc.view.isHidden = true
+    vc.view.isHidden = false
     vc.delegate = interactor
+    return vc
+  } ()
+
+  lazy var checkinViewController: PlacePageOverlanderCheckinViewController = {
+    let vc = storyboard.instantiateViewController(ofType: PlacePageOverlanderCheckinViewController.self)
+    vc.placePageInfoData = placePageData.infoData
+    vc.view.isHidden = false
     return vc
   } ()
 
   lazy var descriptionDividerViewController: PlacePageDividerViewController = {
     let vc = storyboard.instantiateViewController(ofType: PlacePageDividerViewController.self)
-    vc.view.isHidden = true
+    vc.view.isHidden = false
     vc.titleText = L("placepage_place_description").uppercased()
+    return vc
+  } ()
+  
+  lazy var checkinsDividerViewController: PlacePageDividerViewController = {
+    let vc = storyboard.instantiateViewController(ofType: PlacePageDividerViewController.self)
+    vc.view.isHidden = false
+    vc.titleText = L("placepage_place_checkins").uppercased()
     return vc
   } ()
 
@@ -106,9 +120,9 @@ class PlacePageCommonLayout: NSObject, IPlacePageLayout {
   private func configureViewControllers() -> [UIViewController] {
     var viewControllers = [UIViewController]()
     viewControllers.append(previewViewController)
-    viewControllers.append(descriptionDividerViewController)
-    viewControllers.append(wikiDescriptionViewController)
-    if let wikiDescriptionHtml = placePageData.wikiDescriptionHtml {
+    if let wikiDescriptionHtml = placePageData.infoData?.overlanderDescription {
+      viewControllers.append(descriptionDividerViewController)
+      viewControllers.append(wikiDescriptionViewController)
       wikiDescriptionViewController.descriptionHtml = wikiDescriptionHtml
       if placePageData.bookmarkData?.bookmarkDescription == nil {
         wikiDescriptionViewController.view.isHidden = false
@@ -129,6 +143,11 @@ class PlacePageCommonLayout: NSObject, IPlacePageLayout {
       viewControllers.append(keyInformationDividerViewController)
       keyInformationDividerViewController.view.isHidden = false
       viewControllers.append(infoViewController)
+    }
+    
+    if placePageData.infoData?.overlanderDescription != nil {
+      viewControllers.append(checkinsDividerViewController)
+      viewControllers.append(checkinViewController)
     }
 
     if placePageData.buttonsData != nil {

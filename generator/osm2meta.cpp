@@ -168,10 +168,10 @@ string MetadataTagProcessorImpl::ValidateAndFormat_email(string const & v) const
 
 string MetadataTagProcessorImpl::ValidateAndFormat_overlander(string const & v) const
 {
-  if (v != "") {
-    return v;
-  else
+  if (v.empty()) {
     return {};
+  else
+    return v;
 }
 
 string MetadataTagProcessorImpl::ValidateAndFormat_postcode(string const & v) const { return v; }

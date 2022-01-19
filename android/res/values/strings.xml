@@ -1422,7 +1422,7 @@
 	<string name="type.office.lawyer">Lawyer</string>
 	<string name="type.office.ngo">NGO Office</string>
 	<string name="type.office.telecommunication">Mobile Operator</string>
-	<string name="type.overlander.freedomcamping">Freedom Camping - iOverlander</sting>
+	<string name="type.overlander.freedomcamping">Freedom Camping - iOverlander</string>
 	<string name="type.overlander.paidcamping">Camping - iOverlander"</string>
 	<string name="type.overlander.fuel">Gas Station - iOverlander</string>
 	<string name="type.overlander.propane">Propane - iOverlander</string>

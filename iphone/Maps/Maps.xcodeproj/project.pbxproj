@@ -473,6 +473,7 @@
 		CDCA27842245090900167D87 /* ListenerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA27832245090900167D87 /* ListenerContainer.swift */; };
 		CDCA278622451F5000167D87 /* RouteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA278522451F5000167D87 /* RouteInfo.swift */; };
 		CDCA278E2248F34C00167D87 /* MWMRoutingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDCA278B2248F34C00167D87 /* MWMRoutingManager.mm */; };
+		EF9D4FB0279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D4FAF279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift */; };
 		F607C1881C032A8800B53A87 /* resources-hdpi_clear in Resources */ = {isa = PBXBuildFile; fileRef = F607C1831C032A8800B53A87 /* resources-hdpi_clear */; };
 		F607C18A1C032A8800B53A87 /* resources-hdpi_dark in Resources */ = {isa = PBXBuildFile; fileRef = F607C1841C032A8800B53A87 /* resources-hdpi_dark */; };
 		F623DA6C1C9C2731006A3436 /* opening_hours_how_to_edit.html in Resources */ = {isa = PBXBuildFile; fileRef = F623DA6A1C9C2731006A3436 /* opening_hours_how_to_edit.html */; };
@@ -1355,6 +1356,7 @@
 		EED10A4411F78D120095FAD4 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = MapViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EEFE7C1212F8C9E1006AF8C3 /* fonts_blacklist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fonts_blacklist.txt; path = ../../data/fonts_blacklist.txt; sourceTree = "<group>"; };
 		EEFE7C1312F8C9E1006AF8C3 /* fonts_whitelist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fonts_whitelist.txt; path = ../../data/fonts_whitelist.txt; sourceTree = "<group>"; };
+		EF9D4FAF279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePageOverlanderCheckinViewController.swift; sourceTree = "<group>"; };
 		F607C1831C032A8800B53A87 /* resources-hdpi_clear */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "resources-hdpi_clear"; path = "../../data/resources-hdpi_clear"; sourceTree = "<group>"; };
 		F607C1841C032A8800B53A87 /* resources-hdpi_dark */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "resources-hdpi_dark"; path = "../../data/resources-hdpi_dark"; sourceTree = "<group>"; };
 		F607C18C1C047FDC00B53A87 /* MWMSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMSegue.h; sourceTree = "<group>"; };
@@ -2780,6 +2782,7 @@
 				99A906D923F6F7030005872B /* PlacePageInfoViewController.swift */,
 				99A906DC23F6F7030005872B /* PlacePagePreviewViewController.swift */,
 				99A906D823F6F7030005872B /* WikiDescriptionViewController.swift */,
+				EF9D4FAF279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift */,
 				4726254821C27D4B00C7BAAD /* PlacePageDescriptionViewController.swift */,
 				993416F72534427300526F6E /* PlacePageDividerViewController.swift */,
 				99C964222428C0D500E41723 /* PlacePageHeader */,
@@ -4340,6 +4343,7 @@
 				34845DB31E165E24003D55B9 /* SearchNoResultsViewController.swift in Sources */,
 				34AB660B1FC5AA320078E451 /* MWMNavigationDashboardEntity.mm in Sources */,
 				47E3C72B2111E62A008B3B27 /* FadeOutAnimatedTransitioning.swift in Sources */,
+				EF9D4FB0279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift in Sources */,
 				471A7BC4248471BE00A0D4C1 /* BookmarkUIUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

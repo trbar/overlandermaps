@@ -1,0 +1,297 @@
+[
+    {
+        "id": 69221,
+        "name": "Centre commercial River",
+        "description": "Centre commercial offrant eau et vidange sur le parking du bas. Accès par la rampe au niveau du rond-point de la station service Riveroil. Possibilité de dormir sur le parking. Magasin d'un bon rapport qualité/prix et à deux pas. Faire les courses au magasin avant de faire l'essence pour obtenir un rabais.\r\n\r\nShopping center offering water and dumping on the parking of the bottom. Access via the ramp at the roundabout of the Riveroil gas station. Possibility of sleeping in the parking. Store a good value for money and close. Shop at the store before refueling for a discount.",
+        "date_verified": "2020-11-13 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/sanitation-9f324e6a4196afefaf9b3f8e37695d4169d20a92ae67636754c50a9aec33cde1.png",
+        "category_icon_pin_path": "/assets/icons/sanitation-pin-0bf64d8cb515d472c55b0d798bebc6350a2a9b965085e074de43ef38a9c203ca.png",
+        "category_icon_pin_closed_path": "/assets/icons/sanitation-pin_closed-15407288c1497875f55db915850a294f5682c8e1622e3347691d28c138daa7f6.png",
+        "amenities": {
+            "Open": "Yes"
+        },
+        "country": "Andorra",
+        "category": "Sanitation Dump Station",
+        "location": {
+            "latitude": 42.45431,
+            "longitude": 1.48611,
+            "altitude": 874.6668357849121,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 69226,
+        "name": "Parking station Granvalira Grau Roig",
+        "description": "Immense parking donnant accès aux pistes de l'immense domaine skiable de Granvalira. Autorisé hiver comme été par la station. Pas de services. Toilettes ouvertes en journée en saison hivernale.\r\n\r\nHuge parking with access to the slopes of the huge ski resort of Granvalira. Allowed winter as summer by the station. No services. Toilets open during the day in the winter season.",
+        "date_verified": "2017-02-27 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/informal-camp-f07e54b9f95dac612a043295f5c02e5591f33428b6d68a6c46de38ba5a1aade3.png",
+        "category_icon_pin_path": "/assets/icons/informal-camp-pin-b1d3eb9535e3e2b5a3879eb3e4b7085699fd9c3a87e3b12180db59c6b56341c7.png",
+        "category_icon_pin_closed_path": "/assets/icons/informal-camp-pin_closed-ef968ee9662ffab9572dc9d824ea12f85195ce07e793e39732eb1a88fb6f050f.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "Yes - Slow",
+            "Kitchen": "No",
+            "Restaurant": "Yes",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "Yes",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "No",
+            "Pet Friendly": "No"
+        },
+        "country": "Andorra",
+        "category": "Informal Campsite",
+        "location": {
+            "latitude": 42.53382,
+            "longitude": 1.70161,
+            "altitude": null,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 69227,
+        "name": "Parking station Granvalira El Tarter",
+        "description": "Immense parking donnant accès aux pistes de l'immense domaine skiable de Granvalira. Autorisé hiver comme été par la station (limité à 48h en hiver). Pas de services. Toilettes ouvertes en journée en saison hivernale.\r\n\r\nHuge parking with access to the slopes of the huge ski resort of Granvalira. Allowed winter and summer by the resort (limited to 48h in winter). No services. Toilets open during the day in the winter season.",
+        "date_verified": "2017-02-27 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/informal-camp-f07e54b9f95dac612a043295f5c02e5591f33428b6d68a6c46de38ba5a1aade3.png",
+        "category_icon_pin_path": "/assets/icons/informal-camp-pin-b1d3eb9535e3e2b5a3879eb3e4b7085699fd9c3a87e3b12180db59c6b56341c7.png",
+        "category_icon_pin_closed_path": "/assets/icons/informal-camp-pin_closed-ef968ee9662ffab9572dc9d824ea12f85195ce07e793e39732eb1a88fb6f050f.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "Yes - Slow",
+            "Kitchen": "No",
+            "Restaurant": "Yes",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "Yes",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "No",
+            "Pet Friendly": "No"
+        },
+        "country": "Andorra",
+        "category": "Informal Campsite",
+        "location": {
+            "latitude": 42.57833,
+            "longitude": 1.64747,
+            "altitude": null,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 104191,
+        "name": "COEX picnic spot (besides CG2)",
+        "description": "5 spaces and 3 picnic benches plus (bizarrely) free WiFi (useful as Andorra is outside of the EU roaming area).\r\n\r\nLovely views, some bins and picnic benches but no services. Next to the large snow plough garage.",
+        "date_verified": "2019-08-11 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/informal-camp-f07e54b9f95dac612a043295f5c02e5591f33428b6d68a6c46de38ba5a1aade3.png",
+        "category_icon_pin_path": "/assets/icons/informal-camp-pin-b1d3eb9535e3e2b5a3879eb3e4b7085699fd9c3a87e3b12180db59c6b56341c7.png",
+        "category_icon_pin_closed_path": "/assets/icons/informal-camp-pin_closed-ef968ee9662ffab9572dc9d824ea12f85195ce07e793e39732eb1a88fb6f050f.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "Yes - Slow",
+            "Kitchen": "No",
+            "Restaurant": "No",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "No",
+            "Big Rig Friendly": "No",
+            "Tent Friendly": "No",
+            "Pet Friendly": "Unknown"
+        },
+        "country": "Andorra",
+        "category": "Informal Campsite",
+        "location": {
+            "latitude": 42.54246779,
+            "longitude": 1.70369368,
+            "altitude": 2182.0,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 104325,
+        "name": "Andorra and Spain border",
+        "description": "Beautiful spot on the border of Andorra and Spain. Incredible views there is space for few big rig vans. Its about half an hour drive to Andorra City Centre and 10 mins drive away there is cable car lift with fresh water access. It's little busy during the day but quiet at night. ",
+        "date_verified": "2020-08-14 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/wild-camp-f910ec32e5acbce82a3719ca8d1e4b9970f8682688f72d9d7978b27f628ebc61.png",
+        "category_icon_pin_path": "/assets/icons/wild-camp-pin-e04fcb3c10cd4d39ab9eeaa3597ea3c567c95ee51b585cd3296caa6e4f5d85e1.png",
+        "category_icon_pin_closed_path": "/assets/icons/wild-camp-pin_closed-d099f816420d8b3102180bb85fadd97dff3e2be4bcc391f293909246111552d0.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "No",
+            "Kitchen": "No",
+            "Restaurant": "No",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "No",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "Unknown",
+            "Pet Friendly": "Yes"
+        },
+        "country": "Andorra",
+        "category": "Wild Camping",
+        "location": {
+            "latitude": 42.5461846,
+            "longitude": 1.41960546,
+            "altitude": 2352.0,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 133491,
+        "name": "Pas de la Casa",
+        "description": "Absolute calm from the street. Ground clearance required. Strong incline. Then the best views.\r\n\r\nAbsolute Ruhe da ab von der Strasse. Bodenfreiheit erforderlich. Starke Steigung. Dann beste Aussichten.",
+        "date_verified": "2020-07-23 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/wild-camp-f910ec32e5acbce82a3719ca8d1e4b9970f8682688f72d9d7978b27f628ebc61.png",
+        "category_icon_pin_path": "/assets/icons/wild-camp-pin-e04fcb3c10cd4d39ab9eeaa3597ea3c567c95ee51b585cd3296caa6e4f5d85e1.png",
+        "category_icon_pin_closed_path": "/assets/icons/wild-camp-pin_closed-d099f816420d8b3102180bb85fadd97dff3e2be4bcc391f293909246111552d0.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "No",
+            "Kitchen": "No",
+            "Restaurant": "No",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "No",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "Yes",
+            "Pet Friendly": "Yes"
+        },
+        "country": "Andorra",
+        "category": "Wild Camping",
+        "location": {
+            "latitude": 42.546124999999996,
+            "longitude": 1.7185166666666665,
+            "altitude": 2445.2,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 133586,
+        "name": "Road GC3",
+        "description": "Nice little grassy spot with nice view. Access through non-paved road. 300m further from 'La Coma 2.200m'. Furthher up the road is unfortunately forbidden.\r\n\r\n\r\nNette kleine Wiese mit Ausblick. Zufahrt über Piste. Ab Bahnstation nur ab 16:30. Weiterfahrt 300 Meter weiter, dann leider verboten.",
+        "date_verified": "2020-07-24 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/wild-camp-f910ec32e5acbce82a3719ca8d1e4b9970f8682688f72d9d7978b27f628ebc61.png",
+        "category_icon_pin_path": "/assets/icons/wild-camp-pin-e04fcb3c10cd4d39ab9eeaa3597ea3c567c95ee51b585cd3296caa6e4f5d85e1.png",
+        "category_icon_pin_closed_path": "/assets/icons/wild-camp-pin_closed-d099f816420d8b3102180bb85fadd97dff3e2be4bcc391f293909246111552d0.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "No",
+            "Kitchen": "No",
+            "Restaurant": "No",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "No",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "Yes",
+            "Pet Friendly": "Yes"
+        },
+        "country": "Andorra",
+        "category": "Wild Camping",
+        "location": {
+            "latitude": 42.62582666666667,
+            "longitude": 1.4792583333333336,
+            "altitude": 2353.1,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 133798,
+        "name": "2527 Meter",
+        "description": "Camp auf über 2500 Meter über Meer. Hammer Panorama. Nur mit 4x4 und guter Bodenfreiheit erreichbar.",
+        "date_verified": "2020-07-26 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/wild-camp-f910ec32e5acbce82a3719ca8d1e4b9970f8682688f72d9d7978b27f628ebc61.png",
+        "category_icon_pin_path": "/assets/icons/wild-camp-pin-e04fcb3c10cd4d39ab9eeaa3597ea3c567c95ee51b585cd3296caa6e4f5d85e1.png",
+        "category_icon_pin_closed_path": "/assets/icons/wild-camp-pin_closed-d099f816420d8b3102180bb85fadd97dff3e2be4bcc391f293909246111552d0.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "No",
+            "Kitchen": "No",
+            "Restaurant": "No",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "No",
+            "Big Rig Friendly": "No",
+            "Tent Friendly": "No",
+            "Pet Friendly": "Yes"
+        },
+        "country": "Andorra",
+        "category": "Wild Camping",
+        "location": {
+            "latitude": 42.47187166666666,
+            "longitude": 1.5441633333333333,
+            "altitude": 2580.8,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 133799,
+        "name": "Andorra Camper",
+        "description": "Camping Artikel. Tische, Stühle, Kompressor Kühlboxen, Kanister, Grill, WC, ...",
+        "date_verified": "2020-07-27 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/shopping-897b647a86452402c419cc19fb9f64b94cbff735f1e801c85f575a6f7b687b5f.png",
+        "category_icon_pin_path": "/assets/icons/shopping-pin-9508562291a46957ef09b945f13d7dfc1c60dc5cfc1886050bbf2dabfc82f538.png",
+        "category_icon_pin_closed_path": "/assets/icons/shopping-pin_closed-835518abe0db4e0d3e1cb447240a02bb1ef7cb1e22e5b1639bac6038c845bfd3.png",
+        "amenities": {
+            "Open": "Yes",
+            "Outdoor Gear": "Yes",
+            "Groceries": "Unknown",
+            "Artisan Goods": "No",
+            "Bakery": "No",
+            "Rarity in this Area": "No"
+        },
+        "country": "Andorra",
+        "category": "Shopping",
+        "location": {
+            "latitude": 42.46604833333334,
+            "longitude": 1.4907949999999999,
+            "altitude": 923.5,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    },
+    {
+        "id": 134487,
+        "name": "Pic de Maia",
+        "description": "It can't be better. But only recommended with 4x4!\r\n360 degree panorama.\r\n\r\n\r\nBesser geht nicht. Aber nur mit Allrad zu empfehlen!\r\n360 Grad Panorama",
+        "date_verified": "2020-08-06 00:00:00 UTC",
+        "category_icon_path": "/assets/icons/wild-camp-f910ec32e5acbce82a3719ca8d1e4b9970f8682688f72d9d7978b27f628ebc61.png",
+        "category_icon_pin_path": "/assets/icons/wild-camp-pin-e04fcb3c10cd4d39ab9eeaa3597ea3c567c95ee51b585cd3296caa6e4f5d85e1.png",
+        "category_icon_pin_closed_path": "/assets/icons/wild-camp-pin_closed-d099f816420d8b3102180bb85fadd97dff3e2be4bcc391f293909246111552d0.png",
+        "amenities": {
+            "Open": "Yes",
+            "Electricity": "No",
+            "Wifi": "No",
+            "Kitchen": "No",
+            "Restaurant": "Unknown",
+            "Showers": "No",
+            "Water": "No",
+            "Toilets": "Unknown",
+            "Big Rig Friendly": "Yes",
+            "Tent Friendly": "No",
+            "Pet Friendly": "Unknown"
+        },
+        "country": "Andorra",
+        "category": "Wild Camping",
+        "location": {
+            "latitude": 42.55535499999999,
+            "longitude": 1.7204816666666667,
+            "altitude": 2624.7,
+            "horizontal_accuracy": null,
+            "vertical_accuracy": null
+        }
+    }
+]
