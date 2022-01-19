@@ -210,6 +210,30 @@
 /* Search category */
 "police" = "Police";
 
+/* Search category */
+"freedomcamping" = "Camping Gratuit";
+
+/* Search category */
+"paidcamping" = "Camping Payant";
+
+/* Search category */
+"propane" = "Propane";
+
+/* Search category */
+"mechanic" = "Garagiste";
+
+/* Search category */
+"sanidump" = "Vidange Sanitaire";
+
+/* Search category */
+"laundry" = "Laverie";
+
+/* Search category */
+"showers" = "Douches";
+
+/* Search category */
+"warning" = "Attention";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 
@@ -795,6 +819,24 @@
 
 "phone" = "Numéro de téléphone";
 
+"open" = "Ouvert";
+
+"electricity" = "Électricité";
+
+"kitchen" = "Cuisine";
+
+"restaurant" = "Restaurant";
+
+"showers" = "Douches";
+
+"toilets" = "Toilettes";
+
+"big_rig_friendly" = "Grande Caravane OK";
+
+"tent_friendly" = "Tente OK";
+
+"pet_friendly" = "Animaux Domestiques OK";
+
 "editor_add_phone" = "Ajouter un numéro de téléphone";
 
 "please_note" = "À noter";
@@ -943,6 +985,8 @@
 "placepage_call_button" = "Appeler";
 
 "placepage_edit_bookmark_button" = "Éditer le signet";
+
+"placepage_place_checkins" = "Commentaires";
 
 "placepage_bookmark_name_hint" = "Nom du signet";
 
@@ -1576,6 +1620,32 @@
 "type.amenity.driving_school" = "Auto-école";
 
 "type.office.diplomatic" = "Ambassade";
+
+"type.overlander.freedomcamping" = "Camping Gratuit - iOverlander";
+
+"type.overlander.paidcamping" = "Camping Payant - iOverlander";
+
+"type.overlander.fuel" = "Station Service - iOverlander";
+
+"type.overlander.propane" = "Propane - iOverlander";
+
+"type.overlander.mechanic" = "Garagiste - iOverlander";
+
+"type.overlander.water" = "Eau - iOverlander";
+
+"type.overlander.sanidump" = "Vidange Sanitaire - iOverlander";
+
+"type.overlander.tourism" = "Site touristique - iOverlander";
+
+"type.overlander.wifi" = "Wifi - iOverlander";
+
+"type.overlander.laundry" = "Laverie - iOverlander";
+
+"type.overlander.showers" = "Douches - iOverlander";
+
+"type.overlander.police" = "Police - iOverlander";
+
+"type.overlander.warning" = "Attention - iOverlander";
 
 "type.amenity.fast_food" = "Restauration rapide";
 

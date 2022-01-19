@@ -240,6 +240,30 @@
 /* Search category */
 "police" = "Police";
 
+/* Search category */
+"freedomcamping" = "Freedom Camping";
+
+/* Search category */
+"paidcamping" = "Paid Camping";
+
+/* Search category */
+"propane" = "Propane";
+
+/* Search category */
+"mechanic" = "Car Repair";
+
+/* Search category */
+"sanidump" = "Sanitation Dump";
+
+/* Search category */
+"laundry" = "Laundry";
+
+/* Search category */
+"showers" = "Showers";
+
+/* Search category */
+"warning" = "Warning";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 
@@ -824,6 +848,24 @@
 "email_or_username" = "Email or username";
 
 "phone" = "Phone";
+
+"open" = "Open";
+
+"electricity" = "Electricity";
+
+"kitchen" = "Kitchen";
+
+"restaurant" = "Restaurant";
+
+"showers" = "Showers";
+
+"toilets" = "Toilets";
+
+"big_rig_friendly" = "Big Rig Friendly";
+
+"tent_friendly" = "Tent Friendly";
+
+"pet_friendly" = "Pet Friendly";
 
 "editor_add_phone" = "Add Phone";
 

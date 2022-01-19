@@ -47,15 +47,19 @@
 
 overlander-freedomcamping|@freedomcamping
 en:Freedom Camping|Free Camping|Wild Camping|Informal Campsite
+fr:Camping Gratuit
 
 overlander-propane|@propane
 en:Propane
+fr:Propane
 
 overlander-sanidump|@sanidump
 en:Sanitation Dump
+fr:Vidange Sanitaire
 
 overlander-warning|@warning
 en:Warning
+fr:Attention
 
 @eat
 en:Where to eat|eat|Food
@@ -6307,7 +6311,7 @@ cs:3Auto opravna|auto|auta|Půjčení
 da:3Garage|3bilværksted|service station
 nl:3Auto reparatie|auto|wagen|garage
 fi:Autokorjaamo
-fr:3Réparation d'automobiles|3garage|4station service|voiture|auto
+fr:3Réparation d'automobiles|3garage|4station service|voiture|auto|Garagiste
 de:3Autowerkstatt|Kfz|Reparaturwerkstatt|Auto|Werkstatt
 hu:3Autószerelő|Autószerviz|Gépkocsiszerviz|Autójavító|4javítóműhely|kocsi
 id:Bengkel mobil
@@ -6341,7 +6345,7 @@ cs:4Kempování|camping|kemp|camp
 da:Camping|campingplads|teltplads|lejrplads
 nl:4Camping|kamperen|kampeerplek
 fi:Retkeily
-fr:4Camping|terrain de camping
+fr:4Camping|terrain de camping|Camping Payant
 de:4Zeltplatz|Zelten|Campingplatz|Camping
 hu:4Kemping|sátrazóhely
 id:Perkemahan
@@ -6375,7 +6379,7 @@ cs:Kemp pro obytné přívěsy
 da:Autocamperplads|husvogn
 nl:Caravan site|camping|woonwagenkamp
 fi:Asuntovaunupaikka|Retkeily
-fr:4Parc caravanier|VR|caravane|camping-car
+fr:4Parc caravanier|VR|caravane|camping-car|Camping Payant
 de:4Wohnwagenstellplatz|Campingplatz|Wohnwagenplatz|Wohnmobilpark
 hu:4Lakókocsihely|kemping
 id:Lokasi perkemahan
@@ -9147,7 +9151,7 @@ de:Dusche
 el:Ντους
 es:Ducha
 fi:Suihku
-fr:Douche
+fr:Douche|Douches
 hu:Zuhany|tusoló
 id:Pancuran
 it:Doccia

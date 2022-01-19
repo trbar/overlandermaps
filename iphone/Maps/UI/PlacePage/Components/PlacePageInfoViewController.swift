@@ -146,79 +146,69 @@ class PlacePageInfoViewController: UIViewController {
       operatorView = createInfoItem(ppOperator, icon: UIImage(named: "ic_placepage_operator"))
     }
     
-    if let overlanderOpen = placePageInfoData.overlanderOpen {
-      overlanderOpenView = createInfoItem(overlanderOpen, icon: UIImage(named: "ic_placepage_overlander_open"))
+    if (placePageInfoData.overlanderOpen != "No" && placePageInfoData.overlanderOpen != "" && placePageInfoData.overlanderOpen != nil) {
+      let overlanderOpenString = L("open") + " - " + placePageInfoData.overlanderOpen!
+      overlanderOpenView = createInfoItem(overlanderOpenString, icon: UIImage(named: "ic_placepage_overlander_open"))
     }
     
-    if (placePageInfoData.overlanderElectricity != "No" && placePageInfoData.overlanderElectricity != "") {
-      if let overlanderElectricity = placePageInfoData.overlanderElectricity {
-        overlanderElectricityView = createInfoItem(overlanderElectricity, icon: UIImage(named: "ic_placepage_overlander_electricity"))
-      }
+    if (placePageInfoData.overlanderElectricity != "No" && placePageInfoData.overlanderElectricity != "" && placePageInfoData.overlanderElectricity != nil) {
+      let overlanderElectricityString = L("electricity") + " - " + placePageInfoData.overlanderElectricity!
+      overlanderElectricityView = createInfoItem(overlanderElectricityString, icon: UIImage(named: "ic_placepage_overlander_electricity"))
     }
     
-    if (placePageInfoData.overlanderWifi != "No" && placePageInfoData.overlanderWifi != "") {
-      if let overlanderWifi = placePageInfoData.overlanderWifi {
-        overlanderWifiView = createInfoItem(overlanderWifi, icon: UIImage(named: "ic_placepage_wifi"))
-      }
+    if (placePageInfoData.overlanderWifi != "No" && placePageInfoData.overlanderWifi != "" && placePageInfoData.overlanderWifi != nil) {
+      let overlanderWifiString = L("wifi") + " - " + placePageInfoData.overlanderWifi!
+      overlanderWifiView = createInfoItem(overlanderWifiString, icon: UIImage(named: "ic_placepage_wifi"))
     }
     
-    if (placePageInfoData.overlanderKitchen != "No" && placePageInfoData.overlanderKitchen != "") {
-      if let overlanderKitchen = placePageInfoData.overlanderKitchen {
-        overlanderKitchenView = createInfoItem(overlanderKitchen, icon: UIImage(named: "ic_placepage_overlander_kitchen"))
-      }
+    if (placePageInfoData.overlanderKitchen != "No" && placePageInfoData.overlanderKitchen != "" && placePageInfoData.overlanderKitchen != nil) {
+      let overlanderKitchenString = L("kitchen") + " - " + placePageInfoData.overlanderKitchen!
+      overlanderKitchenView = createInfoItem(overlanderKitchenString, icon: UIImage(named: "ic_placepage_overlander_kitchen"))
     }
     
-    if (placePageInfoData.overlanderParking != "No" && placePageInfoData.overlanderParking != "") {
-      if let overlanderParking = placePageInfoData.overlanderParking {
-        overlanderParkingView = createInfoItem(overlanderParking, icon: UIImage(named: "ic_placepage_overlander_parking"))
-      }
+    if (placePageInfoData.overlanderParking != "No" && placePageInfoData.overlanderParking != "" && placePageInfoData.overlanderParking != nil) {
+      let overlanderParkingString = L("parking") + " - " + placePageInfoData.overlanderParking!
+      overlanderParkingView = createInfoItem(overlanderParkingString, icon: UIImage(named: "ic_placepage_overlander_parking"))
     }
     
-    if (placePageInfoData.overlanderRestaurant != "No" && placePageInfoData.overlanderRestaurant != "") {
-      if let overlanderRestaurant = placePageInfoData.overlanderRestaurant {
-        overlanderRestaurantView = createInfoItem(overlanderRestaurant, icon: UIImage(named: "ic_placepage_overlander_restaurant"))
-      }
+    if (placePageInfoData.overlanderRestaurant != "No" && placePageInfoData.overlanderRestaurant != "" && placePageInfoData.overlanderRestaurant != nil) {
+      let overlanderRestaurantString = L("restaurant") + " - " + placePageInfoData.overlanderRestaurant!
+      overlanderRestaurantView = createInfoItem(overlanderRestaurantString, icon: UIImage(named: "ic_placepage_overlander_restaurant"))
     }
     
-    if (placePageInfoData.overlanderShowers != "No" && placePageInfoData.overlanderShowers != "") {
-      if let overlanderShowers = placePageInfoData.overlanderShowers {
-        overlanderShowersView = createInfoItem(overlanderShowers, icon: UIImage(named: "ic_placepage_overlander_showers"))
-      }
+    if (placePageInfoData.overlanderShowers != "No" && placePageInfoData.overlanderShowers != "" && placePageInfoData.overlanderShowers != nil) {
+      let overlanderShowersString = L("showers") + " - " +  placePageInfoData.overlanderShowers!
+      overlanderShowersView = createInfoItem(overlanderShowersString, icon: UIImage(named: "ic_placepage_overlander_showers"))
     }
     
-    if (placePageInfoData.overlanderWater != "No" && placePageInfoData.overlanderWater != "") {
-      if let overlanderWater = placePageInfoData.overlanderWater {
-        overlanderWaterView = createInfoItem(overlanderWater, icon: UIImage(named: "ic_placepage_overlander_water"))
-      }
+    if (placePageInfoData.overlanderWater != "No" && placePageInfoData.overlanderWater != "" && placePageInfoData.overlanderWater != nil) {
+      let overlanderWaterString = L("water") + " - " +  placePageInfoData.overlanderWater!
+      overlanderWaterView = createInfoItem(overlanderWaterString, icon: UIImage(named: "ic_placepage_overlander_water"))
     }
     
-    if (placePageInfoData.overlanderToilets != "No" && placePageInfoData.overlanderToilets != "") {
-      if let overlanderToilets = placePageInfoData.overlanderToilets {
-        overlanderToiletsView = createInfoItem(overlanderToilets, icon: UIImage(named: "ic_placepage_overlander_toilets"))
-      }
+    if (placePageInfoData.overlanderToilets != "No" && placePageInfoData.overlanderToilets != "" && placePageInfoData.overlanderToilets != nil) {
+      let overlanderToiletsString = L("toilets") + " - " + placePageInfoData.overlanderToilets!
+      overlanderToiletsView = createInfoItem(overlanderToiletsString, icon: UIImage(named: "ic_placepage_overlander_toilets"))
     }
     
-    if (placePageInfoData.overlanderBigrigfriendly != "No" && placePageInfoData.overlanderBigrigfriendly != "") {
-      if let overlanderBigrigfriendly = placePageInfoData.overlanderBigrigfriendly {
-        overlanderBigrigfriendlyView = createInfoItem(overlanderBigrigfriendly, icon: UIImage(named: "ic_placepage_overlander_bigrigfriendly"))
-      }
+    if (placePageInfoData.overlanderBigrigfriendly != "No" && placePageInfoData.overlanderBigrigfriendly != ""  && placePageInfoData.overlanderBigrigfriendly != nil) {
+      let overlanderBigrigfriendlyString = L("big_rig_friendly") + " - " + placePageInfoData.overlanderBigrigfriendly!
+      overlanderBigrigfriendlyView = createInfoItem(overlanderBigrigfriendlyString, icon: UIImage(named: "ic_placepage_overlander_bigrigfriendly"))
     }
     
-    if (placePageInfoData.overlanderTentfriendly != "No" && placePageInfoData.overlanderTentfriendly != "") {
-      if let overlanderTentfriendly = placePageInfoData.overlanderTentfriendly {
-        overlanderTentfriendlyView = createInfoItem(overlanderTentfriendly, icon: UIImage(named: "ic_placepage_overlander_tentfriendly"))
-      }
+    if (placePageInfoData.overlanderTentfriendly != "No" && placePageInfoData.overlanderTentfriendly != "" && placePageInfoData.overlanderTentfriendly != nil) {
+      let overlanderTentfriendlyString = L("tent_friendly") + " - " + placePageInfoData.overlanderTentfriendly!
+      overlanderTentfriendlyView = createInfoItem(overlanderTentfriendlyString, icon: UIImage(named: "ic_placepage_overlander_tentfriendly"))
     }
     
-    if (placePageInfoData.overlanderPetfriendly != "No" && placePageInfoData.overlanderPetfriendly != "") {
-      if let overlanderPetfriendly = placePageInfoData.overlanderPetfriendly {
-        overlanderPetfriendlyView = createInfoItem(overlanderPetfriendly, icon: UIImage(named: "ic_placepage_overlander_petfriendly"))
-      }
+    if (placePageInfoData.overlanderPetfriendly != "No" && placePageInfoData.overlanderPetfriendly != "" && placePageInfoData.overlanderPetfriendly != nil) {
+      let overlanderPetfriendlyString = L("pet_friendly") + " - " + placePageInfoData.overlanderPetfriendly!
+      overlanderPetfriendlyView = createInfoItem(overlanderPetfriendlyString, icon: UIImage(named: "ic_placepage_overlander_petfriendly"))
     }
-    if (placePageInfoData.overlanderSanidump != "No" && placePageInfoData.overlanderSanidump != "") {
-      if let overlanderSanidump = placePageInfoData.overlanderSanidump {
-        overlanderSanidumpView = createInfoItem(overlanderSanidump, icon: UIImage(named: "ic_placepage_overlander_sanidump"))
-      }
+
+    if (placePageInfoData.overlanderSanidump != "No" && placePageInfoData.overlanderSanidump != "" && placePageInfoData.overlanderSanidump != nil) {
+      let overlanderSanidumpString = L("sanidump") + " - " + placePageInfoData.overlanderSanidump!
+      overlanderSanidumpView = createInfoItem(overlanderSanidumpString, icon: UIImage(named: "ic_placepage_overlander_sanidump"))
     }
 
     if placePageInfoData.wifiAvailable {
