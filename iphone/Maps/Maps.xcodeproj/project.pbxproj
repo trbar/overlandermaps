@@ -4482,7 +4482,7 @@
 				CODE_SIGN_ENTITLEMENTS = "OMaps-Debug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5Y6W4QKDJ;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4502,7 +4502,7 @@
 				CODE_SIGN_ENTITLEMENTS = "OMaps-Release.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = D5Y6W4QKDJ;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
