@@ -168,7 +168,7 @@ string MetadataTagProcessorImpl::ValidateAndFormat_email(string const & v) const
 
 string MetadataTagProcessorImpl::ValidateAndFormat_overlander(string const & v) const
 {
-  if (v.empty()) {
+  if (v.empty())
     return {};
   else
     return v;
