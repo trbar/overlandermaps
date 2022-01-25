@@ -646,8 +646,10 @@ world  +
         laundry  -
         mechanic  -
         paidcamping  -
+        picnic  -
         police  -
         propane  -
+        restarea  -
         sanidump  -
         showers  -
         tourism  -

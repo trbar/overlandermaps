@@ -1358,3 +1358,5 @@ overlander|laundry;[overlander=laundry];;name;int_name;1359;
 overlander|showers;[overlander=showers];;name;int_name;1360;
 overlander|police;[overlander=police];;name;int_name;1361;
 overlander|warning;[overlander=warning];;name;int_name;1362;
+overlander|picnic;[overlander=picnic];;name;int_name;1363;
+overlander|restarea;[overlander=restarea];;name;int_name;1364;

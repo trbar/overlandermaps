@@ -2323,7 +2323,7 @@ sk:4Infocentrum|4turistické informácie
 sw:Taarifa ya utalii|taarifa
 fa:اطلاعات گردشگری
 
-tourism-picnic_site|amenity-bbq|leisure-picnic_table
+tourism-picnic_site|amenity-bbq|leisure-picnic_table|overlander-picnic|@picnic
 en:3Picnic Site
 ru:Место для пикника|3Пикник
 bg:пикник|тревна площ
@@ -7873,7 +7873,7 @@ el:Γκαράζ
 sk:Garáž
 fa:گاراژ
 
-highway-rest_area
+highway-rest_area|overlander-restarea|@restarea
 en:Highway Rest Area
 en-GB:Lay By|rest area
 en-AU:Rest Area|lay by

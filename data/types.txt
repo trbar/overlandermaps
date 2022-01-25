@@ -1360,3 +1360,5 @@ mapswithme
 *overlander|showers
 *overlander|police
 *overlander|warning
+*overlander|picnic
+*overlander|restarea

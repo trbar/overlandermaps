@@ -21,6 +21,8 @@ DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_ho
             "parking",
             "wifi",
             "fuel",
+            "picnic",
+            "restarea",
             "warning",
             "police",
             "hotel",

@@ -234,6 +234,12 @@
 /* Search category */
 "warning" = "Attention";
 
+/* Search category */
+"picnic" = "Picnic";
+
+/* Search category */
+"rest area" = "Aire de Repos";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 
@@ -1646,6 +1652,10 @@
 "type.overlander.police" = "Police - iOverlander";
 
 "type.overlander.warning" = "Attention - iOverlander";
+
+"type.overlander.picnic" = "Picnic - iOverlander";
+
+"type.overlander.restarea" = "Aire de Repos - iOverlander";
 
 "type.amenity.fast_food" = "Restauration rapide";
 

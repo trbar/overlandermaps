@@ -264,6 +264,12 @@
 /* Search category */
 "warning" = "Warning";
 
+/* Search category */
+"picnic" = "Picnic";
+
+/* Search category */
+"rest area" = "Rest Area";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 
@@ -1676,6 +1682,10 @@
 "type.overlander.police" = "Police - iOverlander";
 
 "type.overlander.warning" = "Warning - iOverlander";
+
+"type.overlander.picnic" = "Picnic - iOverlander";
+
+"type.overlander.restarea" = "Rest Area - iOverlander";
 
 "type.amenity.fast_food" = "Fast Food";
 
