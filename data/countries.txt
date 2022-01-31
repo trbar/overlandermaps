@@ -154,7 +154,7 @@
    "affiliations": [
     "Andorra"
    ],
-   "s": 2613060,
+   "s": 1328628,
    "sha1_base64": "zj8lryHgPnr5nTu9h+9GYJ15kss="
   },
   {

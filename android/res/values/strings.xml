@@ -135,6 +135,26 @@
 	<string name="post">Post</string>
 	<!-- Search category -->
 	<string name="police">Police</string>
+	<!-- Search category -->
+	<string name="freedomcamping">Freedom camping</string>
+	<!-- Search category -->
+	<string name="paidcamping">Paid camping</string>
+	<!-- Search category -->
+	<string name="laundry">Laundry</string>
+	<!-- Search category -->
+	<string name="showers">Showers</string>
+	<!-- Search category -->
+	<string name="sanidump">Sanitation Dump</string>
+	<!-- Search category -->
+	<string name="propane">Propane</string>
+	<!-- Search category -->
+	<string name="mechanic">Car Repair</string>
+	<!-- Search category -->
+	<string name="warning">Warning</string>
+	<!-- Search category -->
+	<string name="picnic">Picnic</string>
+	<!-- Search category -->
+	<string name="restarea">Rest Area</string>
 	<!-- Notes field in Bookmarks view -->
 	<string name="description">Notes</string>
 	<!-- Email Subject when sharing bookmark list -->

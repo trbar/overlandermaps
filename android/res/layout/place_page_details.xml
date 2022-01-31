@@ -71,6 +71,34 @@
     <include layout="@layout/place_page_cuisine"/>
 
     <include layout="@layout/place_page_latlon"/>
+
+    <include layout="@layout/place_page_overlander_location"/>
+
+    <include layout="@layout/place_page_overlander_open"/>
+
+    <include layout="@layout/place_page_overlander_electricity"/>
+
+    <include layout="@layout/place_page_overlander_wifi"/>
+
+    <include layout="@layout/place_page_overlander_kitchen"/>
+
+    <include layout="@layout/place_page_overlander_parking"/>
+
+    <include layout="@layout/place_page_overlander_restaurant"/>
+
+    <include layout="@layout/place_page_overlander_showers"/>
+
+    <include layout="@layout/place_page_overlander_water"/>
+
+    <include layout="@layout/place_page_overlander_toilets"/>
+
+    <include layout="@layout/place_page_overlander_bigrigfriendly"/>
+
+    <include layout="@layout/place_page_overlander_tentfriendly"/>
+
+    <include layout="@layout/place_page_overlander_petfriendly"/>
+
+    <include layout="@layout/place_page_overlander_sanidump"/>
   </LinearLayout>
 
   <include

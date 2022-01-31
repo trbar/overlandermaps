@@ -149,6 +149,36 @@ public class PlacePageView extends NestedScrollViewClickFixed
   // Place page buttons
   private PlacePageButtons mButtons;
   private ImageView mBookmarkButtonIcon;
+  // Overlander
+  private View mOverlanderLocation;
+  private TextView mTvOverlanderLocation;
+  private View mOverlanderOpen;
+  private TextView mTvOverlanderOpen;
+  private View mOverlanderElectricity;
+  private TextView mTvOverlanderElectricity;
+  private View mOverlanderWifi;
+  private TextView mTvOverlanderWifi;
+  private View mOverlanderKitchen;
+  private TextView mTvOverlanderKitchen;
+  private View mOverlanderParking;
+  private TextView mTvOverlanderParking;
+  private View mOverlanderRestaurant;
+  private TextView mTvOverlanderRestaurant;
+  private View mOverlanderShowers;
+  private TextView mTvOverlanderShowers;
+  private View mOverlanderWater;
+  private TextView mTvOverlanderWater;
+  private View mOverlanderToilets;
+  private TextView mTvOverlanderToilets;
+  private View mOverlanderBigrigfriendly;
+  private TextView mTvOverlanderBigrigfriendly;
+  private View mOverlanderTentfriendly;
+  private TextView mTvOverlanderTentfriendly;
+  private View mOverlanderPetfriendly;
+  private TextView mTvOverlanderPetfriendly;
+  private View mOverlanderSanidump;
+  private TextView mTvOverlanderSanidump;
+
   @Nullable
   private View mBookmarkButtonFrame;
 
@@ -355,6 +385,35 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mVkPage.setOnClickListener(this);
     mVkPage.setOnLongClickListener(this);
     mTvVkPage = findViewById(R.id.tv__place_vk_page);
+
+    mOverlanderLocation = findViewById(R.id.ll__place_overlander_location);
+    mTvOverlanderLocation = findViewById(R.id.tv__place_overlander_location);
+    mOverlanderOpen = findViewById(R.id.ll__place_overlander_open);
+    mTvOverlanderOpen = findViewById(R.id.tv__place_overlander_open);
+    mOverlanderElectricity = findViewById(R.id.ll__place_overlander_electricity);
+    mTvOverlanderElectricity = findViewById(R.id.tv__place_overlander_electricity);
+    mOverlanderWifi = findViewById(R.id.ll__place_overlander_wifi);
+    mTvOverlanderWifi = findViewById(R.id.tv__place_overlander_wifi);
+    mOverlanderKitchen = findViewById(R.id.ll__place_overlander_kitchen);
+    mTvOverlanderKitchen = findViewById(R.id.tv__place_overlander_kitchen);
+    mOverlanderParking = findViewById(R.id.ll__place_overlander_parking);
+    mTvOverlanderParking = findViewById(R.id.tv__place_overlander_parking);
+    mOverlanderRestaurant = findViewById(R.id.ll__place_overlander_restaurant);
+    mTvOverlanderRestaurant = findViewById(R.id.tv__place_overlander_restaurant);
+    mOverlanderShowers = findViewById(R.id.ll__place_overlander_showers);
+    mTvOverlanderShowers = findViewById(R.id.tv__place_overlander_showers);
+    mOverlanderWater = findViewById(R.id.ll__place_overlander_water);
+    mTvOverlanderWater = findViewById(R.id.tv__place_overlander_water);
+    mOverlanderToilets = findViewById(R.id.ll__place_overlander_toilets);
+    mTvOverlanderToilets = findViewById(R.id.tv__place_overlander_toilets);
+    mOverlanderBigrigfriendly = findViewById(R.id.ll__place_overlander_bigrigfriendly);
+    mTvOverlanderBigrigfriendly = findViewById(R.id.tv__place_overlander_bigrigfriendly);
+    mOverlanderTentfriendly = findViewById(R.id.ll__place_overlander_tentfriendly);
+    mTvOverlanderTentfriendly = findViewById(R.id.tv__place_overlander_tentfriendly);
+    mOverlanderPetfriendly = findViewById(R.id.ll__place_overlander_petfriendly);
+    mTvOverlanderPetfriendly = findViewById(R.id.tv__place_overlander_petfriendly);
+    mOverlanderSanidump = findViewById(R.id.ll__place_overlander_sanidump);
+    mTvOverlanderSanidump = findViewById(R.id.tv__place_overlander_sanidump);
 
     mLinePage = findViewById(R.id.ll__place_line);
     mLinePage.setOnClickListener(this);
@@ -827,11 +886,15 @@ public class PlacePageView extends NestedScrollViewClickFixed
     boolean isBookmark = MapObject.isOfType(MapObject.BOOKMARK, mapObject);
     if (TextUtils.isEmpty(mapObject.getDescription()) && !isBookmark)
     {
-      UiUtils.hide(mPlaceDescriptionContainer, mPlaceDescriptionHeaderContainer);
-      return;
+      if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION))) {
+        mPlaceDescriptionView.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION));
+      } else {
+        UiUtils.hide(mPlaceDescriptionContainer, mPlaceDescriptionHeaderContainer);
+        return;
+      }
     }
 
-    if (isBookmark)
+    if (isBookmark && TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION)))
     {
       final Bookmark bmk = (Bookmark) mapObject;
       UiUtils.showIf(!TextUtils.isEmpty(bmk.getBookmarkDescription()), mPlaceDescriptionHeaderContainer);
@@ -839,7 +902,9 @@ public class PlacePageView extends NestedScrollViewClickFixed
       return;
     }
     UiUtils.show(mPlaceDescriptionContainer, mPlaceDescriptionHeaderContainer);
-    mPlaceDescriptionView.setText(Html.fromHtml(mapObject.getDescription()));
+    if (TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION))) {
+      mPlaceDescriptionView.setText(Html.fromHtml(mapObject.getDescription()));
+    }
   }
 
   private void setTextAndColorizeSubtitle(@NonNull MapObject mapObject)
@@ -891,6 +956,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
     refreshMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_FLATS), mEntrance, mTvEntrance);
     refreshOpeningHours(mapObject);
     refreshSocialLinks(mapObject);
+    refreshOverlanderDetails(mapObject);
 
 //    showTaxiOffer(mapObject);
 
@@ -1033,6 +1099,24 @@ public class PlacePageView extends NestedScrollViewClickFixed
       else
         tvSocialPage.setText("@" + socialPage);
     }
+  }
+
+  private void refreshOverlanderDetails(@NonNull MapObject mapObject)
+  {
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LOCATION), mOverlanderLocation, mTvOverlanderLocation);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_OPEN), mOverlanderOpen, mTvOverlanderOpen);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ELECTRICITY), mOverlanderElectricity, mTvOverlanderElectricity);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WIFI), mOverlanderWifi, mTvOverlanderWifi);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_KITCHEN), mOverlanderKitchen, mTvOverlanderKitchen);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PARKING), mOverlanderParking, mTvOverlanderParking);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_RESTAURANT), mOverlanderRestaurant, mTvOverlanderRestaurant);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SHOWERS), mOverlanderShowers, mTvOverlanderShowers);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WATER), mOverlanderWater, mTvOverlanderWater);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TOILETS), mOverlanderToilets, mTvOverlanderToilets);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_BIGRIGFRIENDLY), mOverlanderBigrigfriendly, mTvOverlanderBigrigfriendly);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TENTFRIENDLY), mOverlanderTentfriendly, mTvOverlanderTentfriendly);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PETFRIENDLY), mOverlanderPetfriendly, mTvOverlanderPetfriendly);
+    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SANIDUMP), mOverlanderSanidump, mTvOverlanderSanidump);
   }
 
   // Tag `contact:line` could contain urls from domains: line.me, liff.line.me, page.line.me, etc.
@@ -1254,6 +1338,20 @@ public class PlacePageView extends NestedScrollViewClickFixed
     final double lon = mapObject.getLon();
     final String latLon = Framework.nativeFormatLatLon(lat, lon, mCoordsFormat.getId());
     mTvLatlon.setText(latLon);
+  }
+
+  private static void refreshOverlanderMetadataOrHide(String metadata, View metaLayout, TextView metaTv)
+  {
+    if (!TextUtils.isEmpty(metadata) | (!TextUtils.equals(metadata, "No") & !TextUtils.equals(metadata, "")))
+    {
+      if (!TextUtils.equals(metadata, "No")) {
+        metaLayout.setVisibility(View.VISIBLE);
+        if (metaTv != null)
+          metaTv.setText(metadata);
+      }
+    }
+    else
+      metaLayout.setVisibility(View.GONE);
   }
 
   private static void refreshMetadataOrHide(String metadata, View metaLayout, TextView metaTv)
