@@ -190,6 +190,74 @@ public class PlacePageView extends NestedScrollViewClickFixed
   @NonNull
   private View mPlaceDescriptionHeaderContainer;
 
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceDetailsHeaderContainer;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckinsHeaderContainer;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckin1Container;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin1AuthorDate;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin1Comment;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckin2Container;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin2AuthorDate;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin2Comment;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckin3Container;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin3AuthorDate;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin3Comment;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckin4Container;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin4AuthorDate;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin4Comment;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private View mPlaceOverlanderCheckin5Container;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin5AuthorDate;
+
+  @SuppressWarnings("NotNullFieldNotInitialized")
+  @NonNull
+  private TextView mPlaceOverlanderCheckin5Comment;
+
   @SuppressWarnings("NullableProblems")
   @NonNull
   private TextView mPlaceDescriptionView;
@@ -476,6 +544,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
       setBackgroundResource(0);
 
     initPlaceDescriptionView();
+    initPlaceOverlanderCheckinsView();
   }
 
   public void initButtons(@NonNull ViewGroup buttons)
@@ -733,6 +802,27 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mPlaceDescriptionMoreBtn.setOnClickListener(v -> showDescriptionScreen());
   }
 
+  private void initPlaceOverlanderCheckinsView()
+  {
+    mPlaceDetailsHeaderContainer = findViewById(R.id.pp_details_header_container);
+    mPlaceOverlanderCheckinsHeaderContainer = findViewById(R.id.pp_checkins_header_container);
+    mPlaceOverlanderCheckin1Container = findViewById(R.id.pp_checkins_checkin1_container);
+    mPlaceOverlanderCheckin1AuthorDate = findViewById(R.id.pp_checkins_checkin1_author_date);
+    mPlaceOverlanderCheckin1Comment = findViewById(R.id.pp_checkins_checkin1_comment);
+    mPlaceOverlanderCheckin2Container = findViewById(R.id.pp_checkins_checkin2_container);
+    mPlaceOverlanderCheckin2AuthorDate = findViewById(R.id.pp_checkins_checkin2_author_date);
+    mPlaceOverlanderCheckin2Comment = findViewById(R.id.pp_checkins_checkin2_comment);
+    mPlaceOverlanderCheckin3Container = findViewById(R.id.pp_checkins_checkin3_container);
+    mPlaceOverlanderCheckin3AuthorDate = findViewById(R.id.pp_checkins_checkin3_author_date);
+    mPlaceOverlanderCheckin3Comment = findViewById(R.id.pp_checkins_checkin3_comment);
+    mPlaceOverlanderCheckin4Container = findViewById(R.id.pp_checkins_checkin4_container);
+    mPlaceOverlanderCheckin4AuthorDate = findViewById(R.id.pp_checkins_checkin4_author_date);
+    mPlaceOverlanderCheckin4Comment = findViewById(R.id.pp_checkins_checkin4_comment);
+    mPlaceOverlanderCheckin5Container = findViewById(R.id.pp_checkins_checkin5_container);
+    mPlaceOverlanderCheckin5AuthorDate = findViewById(R.id.pp_checkins_checkin5_author_date);
+    mPlaceOverlanderCheckin5Comment = findViewById(R.id.pp_checkins_checkin5_comment);
+  }
+
   private void showDescriptionScreen()
   {
     Context context = mPlaceDescriptionContainer.getContext();
@@ -867,6 +957,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         hideBookmarkDetails();
         setButtons(mapObject, false, true);
         setPlaceDescription(mapObject);
+        setPlaceOverlanderCheckins(mapObject);
         break;
       case MapObject.API_POINT:
         refreshDistanceToObject(mapObject, loc);
@@ -904,6 +995,51 @@ public class PlacePageView extends NestedScrollViewClickFixed
     UiUtils.show(mPlaceDescriptionContainer, mPlaceDescriptionHeaderContainer);
     if (TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION))) {
       mPlaceDescriptionView.setText(Html.fromHtml(mapObject.getDescription()));
+    }
+  }
+
+  private void setPlaceOverlanderCheckins(@NonNull MapObject mapObject)
+  {
+    UiUtils.showIf(!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION)), mPlaceDetailsHeaderContainer, mPlaceOverlanderCheckinsHeaderContainer);
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION))){
+      String checkin1AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1TIME) + getResources().getString(R.string.placepage_place_overlander_by) + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1AUTHOR);
+      mPlaceOverlanderCheckin1AuthorDate.setText(checkin1AuthorAndDate);
+      mPlaceOverlanderCheckin1Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION));
+      UiUtils.show(mPlaceOverlanderCheckin1Container);
+    } else {
+      UiUtils.hide(mPlaceOverlanderCheckin1Container);
+    }
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2COMMENT))){
+      String checkin2AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2TIME) + " " + R.string.placepage_place_overlander_by + " " + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2AUTHOR);
+      mPlaceOverlanderCheckin2AuthorDate.setText(checkin2AuthorAndDate);
+      mPlaceOverlanderCheckin2Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2COMMENT));
+      UiUtils.show(mPlaceOverlanderCheckin2Container);
+    } else {
+      UiUtils.hide(mPlaceOverlanderCheckin2Container);
+    }
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3COMMENT))){
+      String checkin3AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3AUTHOR);
+      mPlaceOverlanderCheckin3AuthorDate.setText(checkin3AuthorAndDate);
+      mPlaceOverlanderCheckin3Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3COMMENT));
+      UiUtils.show(mPlaceOverlanderCheckin3Container);
+    } else {
+      UiUtils.hide(mPlaceOverlanderCheckin3Container);
+    }
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4COMMENT))){
+      String checkin4AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4AUTHOR);
+      mPlaceOverlanderCheckin4AuthorDate.setText(checkin4AuthorAndDate);
+      mPlaceOverlanderCheckin4Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4COMMENT));
+      UiUtils.show(mPlaceOverlanderCheckin4Container);
+    } else {
+      UiUtils.hide(mPlaceOverlanderCheckin4Container);
+    }
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5COMMENT))){
+      String checkin5AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5AUTHOR);
+      mPlaceOverlanderCheckin5AuthorDate.setText(checkin5AuthorAndDate);
+      mPlaceOverlanderCheckin5Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5COMMENT));
+      UiUtils.show(mPlaceOverlanderCheckin5Container);
+    } else {
+      UiUtils.hide(mPlaceOverlanderCheckin5Container);
     }
   }
 
@@ -973,6 +1109,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
                      || UiUtils.isVisible(mAddOrganisation)
                      || UiUtils.isVisible(mAddPlace), mEditTopSpace);
     }
+    setPlaceOverlanderCheckins(mapObject);
     setPlaceDescription(mapObject);
   }
 
@@ -1103,20 +1240,20 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   private void refreshOverlanderDetails(@NonNull MapObject mapObject)
   {
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LOCATION), mOverlanderLocation, mTvOverlanderLocation);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_OPEN), mOverlanderOpen, mTvOverlanderOpen);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ELECTRICITY), mOverlanderElectricity, mTvOverlanderElectricity);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WIFI), mOverlanderWifi, mTvOverlanderWifi);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_KITCHEN), mOverlanderKitchen, mTvOverlanderKitchen);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PARKING), mOverlanderParking, mTvOverlanderParking);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_RESTAURANT), mOverlanderRestaurant, mTvOverlanderRestaurant);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SHOWERS), mOverlanderShowers, mTvOverlanderShowers);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WATER), mOverlanderWater, mTvOverlanderWater);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TOILETS), mOverlanderToilets, mTvOverlanderToilets);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_BIGRIGFRIENDLY), mOverlanderBigrigfriendly, mTvOverlanderBigrigfriendly);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TENTFRIENDLY), mOverlanderTentfriendly, mTvOverlanderTentfriendly);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PETFRIENDLY), mOverlanderPetfriendly, mTvOverlanderPetfriendly);
-    refreshOverlanderMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SANIDUMP), mOverlanderSanidump, mTvOverlanderSanidump);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.details), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LOCATION), mOverlanderLocation, mTvOverlanderLocation);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.open), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_OPEN), mOverlanderOpen, mTvOverlanderOpen);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.electricity), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ELECTRICITY), mOverlanderElectricity, mTvOverlanderElectricity);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.wifi), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WIFI), mOverlanderWifi, mTvOverlanderWifi);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.kitchen), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_KITCHEN), mOverlanderKitchen, mTvOverlanderKitchen);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.parking), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PARKING), mOverlanderParking, mTvOverlanderParking);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.restaurant), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_RESTAURANT), mOverlanderRestaurant, mTvOverlanderRestaurant);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.showers), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SHOWERS), mOverlanderShowers, mTvOverlanderShowers);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.water), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WATER), mOverlanderWater, mTvOverlanderWater);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.toilets), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TOILETS), mOverlanderToilets, mTvOverlanderToilets);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.big_rig_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_BIGRIGFRIENDLY), mOverlanderBigrigfriendly, mTvOverlanderBigrigfriendly);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.tent_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TENTFRIENDLY), mOverlanderTentfriendly, mTvOverlanderTentfriendly);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.pet_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PETFRIENDLY), mOverlanderPetfriendly, mTvOverlanderPetfriendly);
+    refreshOverlanderMetadataOrHide(getResources().getString(R.string.sanidump), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SANIDUMP), mOverlanderSanidump, mTvOverlanderSanidump);
   }
 
   // Tag `contact:line` could contain urls from domains: line.me, liff.line.me, page.line.me, etc.
@@ -1340,14 +1477,16 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mTvLatlon.setText(latLon);
   }
 
-  private static void refreshOverlanderMetadataOrHide(String metadata, View metaLayout, TextView metaTv)
+  private static void refreshOverlanderMetadataOrHide(String amenity, String metadata, View metaLayout, TextView metaTv)
   {
     if (!TextUtils.isEmpty(metadata) | (!TextUtils.equals(metadata, "No") & !TextUtils.equals(metadata, "")))
     {
       if (!TextUtils.equals(metadata, "No")) {
         metaLayout.setVisibility(View.VISIBLE);
-        if (metaTv != null)
-          metaTv.setText(metadata);
+        if (metaTv != null) {
+          String metadataString = amenity + " " + metadata;
+          metaTv.setText(metadataString);
+        }
       }
     }
     else
