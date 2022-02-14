@@ -2717,7 +2717,7 @@
       "Santander",
       "Sucre"
      ],
-     "s": 88057365,
+     "s": 87991019,
      "sha1_base64": "asfKzlLdd6GvXwdY0h+HSKf/FNE="
     },
     {
@@ -2741,7 +2741,7 @@
       "Tolima",
       "Valle del Cauca"
      ],
-     "s": 89887743,
+     "s": 86521219,
      "sha1_base64": "xDiSQw+Ana+xb9S8ITrs/3fbhmk="
     },
     {
@@ -2762,7 +2762,7 @@
       "Vaup\u00e9s",
       "Vichada"
      ],
-     "s": 26727946,
+     "s": 28340153,
      "sha1_base64": "qCo7SMeALWVzuTi4mZek7JoNOTo="
     }
    ]
@@ -4263,7 +4263,7 @@
         "France",
         "Languedoc-Roussillon-Midi-Pyr\u00e9n\u00e9es"
        ],
-       "s": 35689102,
+       "s": 32597570,
        "sha1_base64": "RRkRfoJYkdOR5KJg6tbdsVb2aLs="
       },
       {
@@ -4275,7 +4275,7 @@
         "France",
         "Languedoc-Roussillon-Midi-Pyr\u00e9n\u00e9es"
        ],
-       "s": 44006945,
+       "s": 38238036,
        "sha1_base64": "qjAiAiqnD6BMrmP8RxMWkTUxxj8="
       },
       {
@@ -4287,7 +4287,7 @@
         "France",
         "Languedoc-Roussillon-Midi-Pyr\u00e9n\u00e9es"
        ],
-       "s": 61542435,
+       "s": 55117070,
        "sha1_base64": "pIAK5WKkVhA+tcKxpLWzUQa+6Yk="
       },
       {
@@ -4299,7 +4299,7 @@
         "France",
         "Languedoc-Roussillon-Midi-Pyr\u00e9n\u00e9es"
        ],
-       "s": 20045371,
+       "s": 12699949,
        "sha1_base64": "PKjVcGyFdNJzg6SJVAXwvM5bXHc="
       },
       {
@@ -4311,7 +4311,7 @@
         "France",
         "Languedoc-Roussillon-Midi-Pyr\u00e9n\u00e9es"
        ],
-       "s": 32883839,
+       "s": 30565748,
        "sha1_base64": "xS18EQOXKKSc+wMFpwW7XQ9TyyI="
       }
      ]
@@ -4848,7 +4848,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 46341841,
+       "s": 41270132,
        "sha1_base64": "fBdj/X/9052IDKU1n2rbTkouhaA="
       },
       {
@@ -4860,7 +4860,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 38018430,
+       "s": 29814322,
        "sha1_base64": "Tdfjsi/in+mm6erWBxc8oPHg2Rw="
       },
       {
@@ -4873,7 +4873,7 @@
         "France",
         "Provence-Alpes-C\u00f4te d'Azur"
        ],
-       "s": 42071423,
+       "s": 32794714,
        "sha1_base64": "eQQ7C7qrU3Pouh0f4QadDLRDJws="
       },
       {
@@ -4885,7 +4885,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 49975866,
+       "s": 40746821,
        "sha1_base64": "IAqCM+sQSeX+28+eTxh5eH4YgVc="
       },
       {
@@ -4897,7 +4897,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 64268020,
+       "s": 51233856,
        "sha1_base64": "Bgu+dhb42op1PpEjx7c1yswaeSc="
       },
       {
@@ -4909,7 +4909,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 46775193,
+       "s": 45023791,
        "sha1_base64": "HvP62zGYRsw8dt+/1qVKZ8RcqXQ="
       },
       {
@@ -4921,7 +4921,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 57654515,
+       "s": 52960150,
        "sha1_base64": "8kuqxOB2bLhDXAHhhVutqwunXwk="
       },
       {
@@ -4933,7 +4933,7 @@
         "Auvergne-Rh\u00f4ne-Alpes",
         "France"
        ],
-       "s": 38184903,
+       "s": 28748211,
        "sha1_base64": "JX2yvr+fkeYWtZoR0aPKHuABDgM="
       }
      ]
