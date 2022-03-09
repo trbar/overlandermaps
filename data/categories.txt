@@ -46,12 +46,28 @@
 #
 
 overlander-freedomcamping|@freedomcamping
-en:Freedom Camping|Free Camping|Wild Camping|Informal Campsite
-fr:Camping Gratuit
+en:Freedom Camping|Free Camping|Informal Campsite
+fr:Camping gratuit
+
+overlander-wildfreedomcamping|@wildfreedomcamping
+en:Wild Freedom Camping|Free Wild Camping|Wild Camping
+fr:Camping sauvage
+
+overlander-homestaycamping|@homestaycamping
+en:Homestay Camping
+fr:Camping chez l'habitant
+
+overlander-wintercamping|@wintercamping
+en:Winter Camping
+fr:Camping d'hiver
 
 overlander-propane|@propane
 en:Propane
 fr:Propane
+
+overlander-lpg|@lpg
+en:LPG
+fr:LPG
 
 overlander-sanidump|@sanidump
 en:Sanitation Dump
@@ -60,6 +76,50 @@ fr:Vidange Sanitaire
 overlander-warning|@warning
 en:Warning
 fr:Attention
+
+overlander-pets|@pets
+en:Pets
+fr:Animaux Domestiques
+
+overlander-4g|@4g
+en:4G Internet
+fr:4G Internet
+
+overlander-activitymotorcycle|@activitymotorcycle
+en:Motorcycle trailhead
+fr:Motorcycle debut de sentier
+
+overlander-activitysurfing|@activitysurfing
+en:Surf Spot
+fr:Surf Spot
+
+overlander-activitymountainbike|@activitymountainbike
+en:Mountain biking
+fr:Mountain biking
+
+overlander-activityhiking|@activityhiking
+en:Hiking trailhead
+fr:Debut du sentier rando
+
+overlander-activityfishing|@activityfishing
+en:Fishing
+fr:Peche
+
+overlander-activitybeachfishing|@activitybeachfishing
+en:Beach Fishing
+fr:Peche du Plage
+
+overlander-activitykayak|@activitykayak
+en:Kayak
+fr:Kayak
+
+overlander-activityclimbing|@activityclimbing
+en:Climbing
+fr:Escalade
+
+overlander-activityswimming|@activityswimming
+en:Swimming
+fr:Nager
 
 @eat
 en:Where to eat|eat|Food
@@ -2255,7 +2315,7 @@ sk:3Umelecké diela
 sw:Kazi ya kisanaa|utalii
 fa:اثارهنری
 
-tourism-viewpoint|@tourism
+tourism-viewpoint|overlander-viewpoint|@tourism|@viewpoint
 en:4Viewpoint
 ru:4Обзорная площадка
 bg:пейзаж|гледка|забележителност|туризъм
@@ -2758,7 +2818,7 @@ sk:Zámok|atrakcia
 sw:Ngome|kivutio|utalii
 fa:قلعه تاریخی
 
-historic-memorial|@tourism
+historic-memorial|@tourism|@monuments
 en:Memorial|monument|U+1F5FC|U+1F5FD|U+1F5FF
 ru:Памятник|мемориал
 bg:Паметник|мемориал
@@ -2792,7 +2852,7 @@ sk:Pomník|pamiatka|atrakcia|zaujímavosť
 sw:Makumbusho|kumbukumbu ya kihistoria|kivutio|utalii
 fa:یادبود تاریخی
 
-historic-monument|@tourism
+historic-monument|overlander-monument|@tourism|monuments
 en:Monument|U+1F5FD|U+1F5FF
 ru:Монумент
 bg:монумент|паметник
@@ -2884,7 +2944,7 @@ pt:Túmulo|2Sepultura|memorial
 pt-BR:Túmulo|2Sepultura|memorial
 de:Grab|Gedenkstätte
 
-leisure-dog_park
+leisure-dog_park|@pets
 en:3Dog area|Dog park
 ru:Место для выгула собак|Площадка для собак|4Собачья площадка
 bg:Кучешка зона|домашни любимци
@@ -3840,7 +3900,7 @@ sk:poštový úrad
 fa:اداره پست
 
 
-amenity-waste_disposal
+amenity-waste_disposal|overlander-garbage|@garbage|@recycling
 en:Dumpster|Trash|bin|garbage|waste disposal|U+1F6AE
 en-GB:4Waste disposal|Trash|bin|garbage|U+1F6AE
 en-AU:4Waste disposal|Trash|bin|garbage|U+1F6AE
@@ -5148,7 +5208,7 @@ sk:Les
 sw:Msitu
 fa:جنگل
 
-leisure-park|@tourism
+leisure-park|overlander-park|@tourism|@park
 en:Park|U+1F332|U+1F333|U+1F60C
 ru:Парк
 bg:Парк|отдих
@@ -5445,7 +5505,7 @@ sk:Štadión|4šport
 sw:Kiwanja cha michezo
 fa:استادیوم
 
-leisure-playground|@children
+leisure-playground|@children|@park|@playground
 en:Playground
 ru:Детская площадка
 bg:Детска площадка|игрище
@@ -5582,7 +5642,7 @@ sk:Športovisko|šport
 sw:Uwanja|michezo
 fa:زمین ورزشی
 
-leisure-swimming_pool
+leisure-swimming_pool|overlander-swimmingpool|@swimmingpool
 en:4Swimming Pool|sport|U+1F3CA
 ru:4Бассейн|спорт
 bg:басейн|спорт|плуване
@@ -7234,7 +7294,7 @@ el:Βουλκανιζατέρ|κατάστημα ελαστικών
 sk:Obchod s pneumatikami
 fa:فروشگاه لاستیک
 
-amenity-car_wash
+amenity-car_wash|overlander-carwash|@carwash
 en:Car Wash
 ru:Автомойка
 bg:Автомивка
@@ -7605,7 +7665,7 @@ sk:Drogéria
 sw:Duka la Kemikali na Dawa za Nyumbani
 fa:فروشگاه مواد شیمیایی
 
-shop-pet
+shop-pet|@pets
 en:Pet Shop|Pet Store
 ru:Зоотовары
 bg:Магазин|домашни любимци
@@ -9750,7 +9810,7 @@ pl:Park tematyczny
 pt:Parque de diversões|parque temático
 pt-BR:Parque de diversão|parque temático
 
-boundary-national_park|@tourism
+boundary-national_park|@tourism|@park
 en:National Park
 ru:Национальный парк
 bg:Национален парк
