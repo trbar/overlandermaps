@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+            <solid android:color="#FF3C4044" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_category_image_beachfishing"/>
+</layer-list>

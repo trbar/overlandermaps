@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_category_image_water_alt"/>
+</layer-list>
