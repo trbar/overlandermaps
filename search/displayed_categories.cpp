@@ -8,24 +8,19 @@ namespace search
 {
 DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_holder(holder)
 {
-  m_keys = {"freedomcamping",
-            "paidcamping",
-            "laundry",
+  m_keys = {"laundry",
             "showers",
             "water",
             "toilet",
             "sanidump",
             "propane",
             "mechanic",
-            "tourism",
             "parking",
             "wifi",
             "fuel",
             "picnic",
-            "restarea",
             "warning",
             "police",
-            "hotel",
             "eat",
             "food",
             "transport",
@@ -47,9 +42,29 @@ void DisplayedCategories::Modify(CategoriesModifier & modifier)
 
 std::vector<std::string> const & DisplayedCategories::GetKeys() const { return m_keys; }
 
+DisplayedPlacesCategories::DisplayedPlacesCategories(CategoriesHolder const & holder) : m_holder(holder)
+{
+  m_keys = {"wildfreedomcamping",
+            "freedomcamping",
+            "paidcamping",
+            "homestaycamping",
+            "wintercamping",
+            "restarea",
+            "parking",
+            "hotel"};
+}
+
+void DisplayedPlacesCategories::Modify(CategoriesModifier & modifier)
+{
+  modifier.Modify(m_keys);
+}
+
+std::vector<std::string> const & DisplayedPlacesCategories::GetKeys() const { return m_keys; }
+
 DisplayedActivitiesCategories::DisplayedActivitiesCategories(CategoriesHolder const & holder) : m_holder(holder)
 {
-  m_keys = {"motorcycle",
+  m_keys = {"tourism",
+            "motorcycle",
             "surfing",
             "mountainbike",
             "hiking",

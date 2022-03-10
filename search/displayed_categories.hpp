@@ -42,6 +42,39 @@ public:
   Keys m_keys;
 };
 
+class DisplayedPlacesCategories
+{
+public:
+  using Keys = std::vector<std::string>;
+
+  DisplayedPlacesCategories(CategoriesHolder const & holder);
+
+  void Modify(CategoriesModifier & modifier);
+
+  // Returns a list of English names of displayed places for the places search tab.
+  // The list may be modified during the application runtime in order to support sponsored or
+  // featured categories. Keys may be used as parts of resources ids.
+  Keys const & GetKeys() const;
+
+  // Calls |fn| on each pair (synonym name, synonym locale) for the
+  // |key|.
+  template <typename Fn>
+  void ForEachSynonym(std::string const & key, Fn && fn) const
+  {
+    auto const & translations = m_holder.GetGroupTranslations();
+    auto const it = translations.find("@" + key);
+    if (it == translations.end())
+      return;
+
+    for (auto const & name : it->second)
+      fn(name.m_name, CategoriesHolder::MapIntegerToLocale(name.m_locale));
+  }
+
+ private:
+  CategoriesHolder const & m_holder;
+  Keys m_keys;
+};
+
 class DisplayedActivitiesCategories
 {
 public:

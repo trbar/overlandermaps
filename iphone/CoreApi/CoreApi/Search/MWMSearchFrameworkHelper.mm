@@ -17,6 +17,17 @@
   return [result copy];
 }
 
+- (NSArray<NSString *> *)searchPlacesCategories
+{
+  NSMutableArray * result = [NSMutableArray array];
+  auto const & places = GetFramework().GetDisplayedPlacesCategories().GetKeys();
+  for (auto const & item : places)
+  {
+    [result addObject:@(item.c_str())];
+  }
+  return [result copy];
+}
+
 - (NSArray<NSString *> *)searchActivitiesCategories
 {
   NSMutableArray * result = [NSMutableArray array];

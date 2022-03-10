@@ -16,9 +16,14 @@
     return;
 
   auto const & categories = GetFramework().GetDisplayedCategories();
-  auto const & activities = GetFramework().GetDisplayedActivitiesCategories();
   auto const & categoriesKeys = categories.GetKeys();
+  
+  /* Overlander specific */
+  auto const & places = GetFramework().GetDisplayedPlacesCategories();
+  auto const & activities = GetFramework().GetDisplayedActivitiesCategories();
+  auto const & placesKeys = places.GetKeys();
   auto const & activitiesKeys = activities.GetKeys();
+  
   NSMutableArray<CSSearchableItem *> * items = [@[] mutableCopy];
 
   for (auto const & categoryKey : categoriesKeys)

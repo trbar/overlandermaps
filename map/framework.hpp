@@ -161,6 +161,7 @@ protected:
   // The order matters here: DisplayedCategories may be used only
   // after classificator is loaded by |m_featuresFetcher|.
   std::unique_ptr<search::DisplayedCategories> m_displayedCategories;
+  std::unique_ptr<search::DisplayedPlacesCategories> m_displayedPlacesCategories;
   std::unique_ptr<search::DisplayedActivitiesCategories> m_displayedActivitiesCategories;
 
   // The order matters here: storage::CountryInfoGetter and
@@ -276,6 +277,7 @@ public:
   storage::Storage & GetStorage() { return m_storage; }
   storage::Storage const & GetStorage() const { return m_storage; }
   search::DisplayedCategories const & GetDisplayedCategories();
+  search::DisplayedPlacesCategories const & GetDisplayedPlacesCategories();
   search::DisplayedActivitiesCategories const & GetDisplayedActivitiesCategories();
   storage::CountryInfoGetter const & GetCountryInfoGetter() { return *m_infoGetter; }
   StorageDownloadingPolicy & GetDownloadingPolicy() { return m_storageDownloadingPolicy; }

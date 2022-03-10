@@ -15,9 +15,3 @@ CategoriesHolder const & GetDefaultCuisineCategories()
   static CategoriesHolder const instance(GetPlatform().GetReader(SEARCH_CUISINE_CATEGORIES_FILE_NAME));
   return instance;
 }
-
-CategoriesHolder const & GetDefaultActivitiesCategories()
-{
-  static CategoriesHolder const instance(GetPlatform().GetReader(SEARCH_ACTIVITIES_CATEGORIES_FILE_NAME));
-  return instance;
-}

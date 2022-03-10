@@ -5,6 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MWMSearchFrameworkHelper : NSObject
 
 - (NSArray<NSString *> *)searchCategories;
+- (NSArray<NSString *> *)searchPlacesCategories;
 - (NSArray<NSString *> *)searchActivitiesCategories;
 
 - (BOOL)isSearchHistoryEmpty;

@@ -268,7 +268,7 @@
 "picnic" = "Picnic";
 
 /* Search category */
-"rest area" = "Rest Area";
+"restarea" = "Rest Area";
 
 /* Search category */
 "wildfreedomcamping" = "Wild Freedom Camping";
@@ -769,7 +769,7 @@
 
 "history" = "History";
 
-"places" = "Places";
+"camping_places" = "Places";
 
 "services" = "Services";
 

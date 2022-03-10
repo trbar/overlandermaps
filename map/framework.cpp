@@ -357,7 +357,8 @@ Framework::Framework(FrameworkParams const & params)
   LOG(LDEBUG, ("Classificator initialized"));
 
   m_displayedCategories = make_unique<search::DisplayedCategories>(GetDefaultCategories());
-  m_displayedActivitiesCategories = make_unique<search::DisplayedActivitiesCategories>(GetDefaultActivitiesCategories());
+  m_displayedPlacesCategories = make_unique<search::DisplayedPlacesCategories>(GetDefaultCategories());
+  m_displayedActivitiesCategories = make_unique<search::DisplayedActivitiesCategories>(GetDefaultCategories());
 
   // To avoid possible races - init country info getter in constructor.
   InitCountryInfoGetter();
@@ -1270,6 +1271,12 @@ search::DisplayedCategories const & Framework::GetDisplayedCategories()
 {
   ASSERT(m_displayedCategories, ());
   return *m_displayedCategories;
+}
+
+search::DisplayedPlacesCategories const & Framework::GetDisplayedPlacesCategories()
+{
+  ASSERT(m_displayedPlacesCategories, ());
+  return *m_displayedPlacesCategories;
 }
 
 search::DisplayedActivitiesCategories const & Framework::GetDisplayedActivitiesCategories()

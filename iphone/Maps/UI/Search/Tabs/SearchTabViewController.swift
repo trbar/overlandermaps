@@ -6,7 +6,7 @@ protocol SearchTabViewControllerDelegate: AnyObject {
 @objc(MWMSearchTabViewController)
 final class SearchTabViewController: TabViewController {
   private enum SearchActiveTab: Int {
-    case history = 0
+    case places = 0
     case categories
     case activities
   }
@@ -32,14 +32,18 @@ final class SearchTabViewController: TabViewController {
                                               delegate: self)
     history.title = L("history")
     
+    let places = SearchPlacesCategoriesViewController(frameworkHelper: frameworkHelper,
+                                                    delegate: self)
+    places.title = L("camping_places")
+    
     let categories = SearchCategoriesViewController(frameworkHelper: frameworkHelper,
                                                     delegate: self)
-    categories.title = L("categories")
+    categories.title = L("services")
     
     let activities = SearchActivitiesCategoriesViewController(frameworkHelper: frameworkHelper,
                                                     delegate: self)
     activities.title = L("activities")
-    viewControllers = [history, categories, activities]
+    viewControllers = [places, categories, activities]
     
     if frameworkHelper.isSearchHistoryEmpty() {
       tabView.selectedIndex = SearchActiveTab.categories.rawValue
@@ -71,6 +75,14 @@ extension SearchTabViewController: SearchHistoryViewControllerDelegate {
 
 extension SearchTabViewController: SearchActivitiesCategoriesViewControllerDelegate {
   func activitiesCategoriesViewController(_ viewController: SearchActivitiesCategoriesViewController,
+                                didSelect category: String) {
+    let query = L(category) + " "
+    delegate?.searchTabController(self, didSearch: query)
+  }
+}
+
+extension SearchTabViewController: SearchPlacesCategoriesViewControllerDelegate {
+  func placesCategoriesViewController(_ viewController: SearchPlacesCategoriesViewController,
                                 didSelect category: String) {
     let query = L(category) + " "
     delegate?.searchTabController(self, didSearch: query)
