@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "filename" : "ic_mechanic_light.png",
       "idiom" : "universal",
+      "filename" : "ic_mechanic_light.png",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_mechanic_light@2x.png",
       "idiom" : "universal",
+      "filename" : "ic_mechanic_light@2x.png",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_mechanic_light@3x.png",
       "idiom" : "universal",
+      "filename" : "ic_mechanic_light@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }
