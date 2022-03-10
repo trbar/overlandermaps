@@ -215,3 +215,4 @@ inline void swap(CategoriesHolder & a, CategoriesHolder & b)
 // Defined in categories_holder_loader.cpp.
 CategoriesHolder const & GetDefaultCategories();
 CategoriesHolder const & GetDefaultCuisineCategories();
+CategoriesHolder const & GetDefaultActivitiesCategories();

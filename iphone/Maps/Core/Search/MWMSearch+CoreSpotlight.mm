@@ -16,7 +16,9 @@
     return;
 
   auto const & categories = GetFramework().GetDisplayedCategories();
+  auto const & activities = GetFramework().GetDisplayedActivitiesCategories();
   auto const & categoriesKeys = categories.GetKeys();
+  auto const & activitiesKeys = activities.GetKeys();
   NSMutableArray<CSSearchableItem *> * items = [@[] mutableCopy];
 
   for (auto const & categoryKey : categoriesKeys)

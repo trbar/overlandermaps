@@ -473,6 +473,8 @@
 		CDCA27842245090900167D87 /* ListenerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA27832245090900167D87 /* ListenerContainer.swift */; };
 		CDCA278622451F5000167D87 /* RouteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCA278522451F5000167D87 /* RouteInfo.swift */; };
 		CDCA278E2248F34C00167D87 /* MWMRoutingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDCA278B2248F34C00167D87 /* MWMRoutingManager.mm */; };
+		EF3EC91E27DA5B9300F577D7 /* SearchActivitiesCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3EC91D27DA5B9300F577D7 /* SearchActivitiesCategoriesViewController.swift */; };
+		EF7BBBA727DA9C82006A5BAE /* activities.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF7BBBA427DA9C82006A5BAE /* activities.txt */; };
 		EF9D4FB0279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9D4FAF279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift */; };
 		F607C1881C032A8800B53A87 /* resources-hdpi_clear in Resources */ = {isa = PBXBuildFile; fileRef = F607C1831C032A8800B53A87 /* resources-hdpi_clear */; };
 		F607C18A1C032A8800B53A87 /* resources-hdpi_dark in Resources */ = {isa = PBXBuildFile; fileRef = F607C1841C032A8800B53A87 /* resources-hdpi_dark */; };
@@ -1356,6 +1358,8 @@
 		EED10A4411F78D120095FAD4 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = MapViewController.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EEFE7C1212F8C9E1006AF8C3 /* fonts_blacklist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fonts_blacklist.txt; path = ../../data/fonts_blacklist.txt; sourceTree = "<group>"; };
 		EEFE7C1312F8C9E1006AF8C3 /* fonts_whitelist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fonts_whitelist.txt; path = ../../data/fonts_whitelist.txt; sourceTree = "<group>"; };
+		EF3EC91D27DA5B9300F577D7 /* SearchActivitiesCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchActivitiesCategoriesViewController.swift; sourceTree = "<group>"; };
+		EF7BBBA427DA9C82006A5BAE /* activities.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = activities.txt; path = ../../data/activities.txt; sourceTree = "<group>"; };
 		EF9D4FAF279583EC007A78F5 /* PlacePageOverlanderCheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePageOverlanderCheckinViewController.swift; sourceTree = "<group>"; };
 		F607C1831C032A8800B53A87 /* resources-hdpi_clear */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "resources-hdpi_clear"; path = "../../data/resources-hdpi_clear"; sourceTree = "<group>"; };
 		F607C1841C032A8800B53A87 /* resources-hdpi_dark */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "resources-hdpi_dark"; path = "../../data/resources-hdpi_dark"; sourceTree = "<group>"; };
@@ -1725,6 +1729,7 @@
 		29B97314FDCFA39411CA2CEA /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				EF7BBBA427DA9C82006A5BAE /* activities.txt */,
 				FA456C4026BDCC8E00B83C20 /* shaders.xcodeproj */,
 				FA36B8011540388B004560CC /* Bookmarks */,
 				3454D7981E07F045004AF2AD /* Categories */,
@@ -2929,6 +2934,14 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		EF3EC91A27DA5B6A00F577D7 /* ActivitiesTab */ = {
+			isa = PBXGroup;
+			children = (
+				EF3EC91D27DA5B9300F577D7 /* SearchActivitiesCategoriesViewController.swift */,
+			);
+			path = ActivitiesTab;
+			sourceTree = "<group>";
+		};
 		F607C18B1C047FCA00B53A87 /* Segue */ = {
 			isa = PBXGroup;
 			children = (
@@ -3428,6 +3441,7 @@
 		F6E2FD021E097B9F0083EBEC /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				EF3EC91A27DA5B6A00F577D7 /* ActivitiesTab */,
 				F6E2FD091E097B9F0083EBEC /* CategoriesTab */,
 				F6E2FD0F1E097B9F0083EBEC /* HistoryTab */,
 				F6E2FD231E097BA00083EBEC /* MWMSearchTabbedViewProtocol.h */,
@@ -3734,6 +3748,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7BBBA727DA9C82006A5BAE /* activities.txt in Resources */,
 				47AEF8402231249E00D20538 /* categories_brands.txt in Resources */,
 				F6C3A1B221AC22810060EEC8 /* Alert 5.m4a in Resources */,
 				6741A9531BF340DE002C974C /* 01_dejavusans.ttf in Resources */,
@@ -4073,6 +4088,7 @@
 				993DF10A23F6BDB100AC231A /* UISwitchRenderer.swift in Sources */,
 				99C9642C2428C0F700E41723 /* PlacePageHeaderBuilder.swift in Sources */,
 				99C9642B2428C0F700E41723 /* PlacePageHeaderViewController.swift in Sources */,
+				EF3EC91E27DA5B9300F577D7 /* SearchActivitiesCategoriesViewController.swift in Sources */,
 				F6FE3C391CC50FFD00A73196 /* MWMPlaceDoesntExistAlert.m in Sources */,
 				F6E2FDFE1E097BA00083EBEC /* MWMOpeningHoursClosedSpanTableViewCell.mm in Sources */,
 				34B846A12029DCC10081ECCD /* BMCCategoriesHeader.swift in Sources */,

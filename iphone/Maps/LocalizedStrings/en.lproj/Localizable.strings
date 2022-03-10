@@ -270,6 +270,72 @@
 /* Search category */
 "rest area" = "Rest Area";
 
+/* Search category */
+"wildfreedomcamping" = "Wild Freedom Camping";
+
+/* Search category */
+"homestaycamping" = "Homestay Camping";
+
+/* Search category */
+"wintercamping" = "Winter Camping";
+
+/* Search category */
+"parking" = "Parking";
+
+/* Search category */
+"lpg" = "LPG";
+
+/* Search category */
+"pets" = "Pets";
+
+/* Search category */
+"4g" = "4G Data";
+
+/* Search category */
+"viewpoint" = "Viewpoint";
+
+/* Search category */
+"monument" = "Monument";
+
+/* Search category */
+"garbage" = "Garbage";
+
+/* Search category */
+"park" = "Park";
+
+/* Search category */
+"swimmingpool" = "Swimming Pool";
+
+/* Search category */
+"carwash" = "Car Wash";
+
+/* Search category */
+"motorcycle" = "Motorcycling";
+
+/* Search category */
+"surfing" = "Surfing";
+
+/* Search category */
+"mountainbike" = "Mountain Biking";
+
+/* Search category */
+"hiking" = "Hiking";
+
+/* Search category */
+"fishing" = "Fishing";
+
+/* Search category */
+"beachfishing" = "Beach Fishing";
+
+/* Search category */
+"kayak" = "Kayaking";
+
+/* Search category */
+"climbing" = "Climbing";
+
+/* Search category */
+"swimming" = "Swimming";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 
@@ -702,6 +768,12 @@
 "categories" = "Categories";
 
 "history" = "History";
+
+"places" = "Places";
+
+"services" = "Services";
+
+"activities" = "Activities";
 
 "closed" = "Closed";
 

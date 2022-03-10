@@ -46,4 +46,24 @@ void DisplayedCategories::Modify(CategoriesModifier & modifier)
 }
 
 std::vector<std::string> const & DisplayedCategories::GetKeys() const { return m_keys; }
+
+DisplayedActivitiesCategories::DisplayedActivitiesCategories(CategoriesHolder const & holder) : m_holder(holder)
+{
+  m_keys = {"motorcycle",
+            "surfing",
+            "mountainbike",
+            "hiking",
+            "fishing",
+            "beachfishing",
+            "kayak",
+            "climbing",
+            "swimming"};
+}
+
+void DisplayedActivitiesCategories::Modify(CategoriesModifier & modifier)
+{
+  modifier.Modify(m_keys);
+}
+
+std::vector<std::string> const & DisplayedActivitiesCategories::GetKeys() const { return m_keys; }
 }  // namespace search

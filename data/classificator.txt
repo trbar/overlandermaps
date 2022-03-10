@@ -642,26 +642,25 @@ world  +
         {}
     overlander  +
         4g  -
-        activitybeachfishing  -
-        activityclimbing  -
-        activityfishing  -
-        activityhiking  -
-        activitykayak  -
-        activitymotorcycle  -
-        activitymountainbike  -
-        activitysurfing  -
-        activityswimming  -
+        beachfishing  -
         carwash  -
+        climbing  -
+        fishing  -
         freedomcamping  -
         fuel  -
         garbage  -
+        hiking  -
         homestaycamping  -
+        kayak  -
         laundry  -
         lpg  -
         mechanic  -
         monument  -
+        motorcycle  -
+        mountainbike  -
         paidcamping  -
         park  -
+        parking  -
         pets  -
         picnic  -
         police  -
@@ -669,6 +668,8 @@ world  +
         restarea  -
         sanidump  -
         showers  -
+        surfing  -
+        swimming  -
         swimmingpool  -
         tourism  -
         viewpoint  -

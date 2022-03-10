@@ -17,6 +17,17 @@
   return [result copy];
 }
 
+- (NSArray<NSString *> *)searchActivitiesCategories
+{
+  NSMutableArray * result = [NSMutableArray array];
+  auto const & activities = GetFramework().GetDisplayedActivitiesCategories().GetKeys();
+  for (auto const & item : activities)
+  {
+    [result addObject:@(item.c_str())];
+  }
+  return [result copy];
+}
+
 - (BOOL)isSearchHistoryEmpty
 {
   return GetFramework().GetSearchAPI().GetLastSearchQueries().empty();

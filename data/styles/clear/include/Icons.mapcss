@@ -215,7 +215,7 @@ area|z18-[sport=scuba_diving]
 {z-index: 2440;}
 
 node|z18-[sport=swimming],
-node|z18-[overlander=activityswimming],
+node|z18-[overlander=swimming],
 node|z18-[sport=baseball],
 node|z18-[sport=basketball],
 node|z18-[sport=american_football],
@@ -1735,10 +1735,10 @@ node|z17-[leisure=fitness_station]
 node|z17-[leisure=sports_centre]
 {icon-image: pitch-m.svg;-x-me-text-priority: 15500;icon-min-distance: 10;}
 node|z17-[leisure=sports_centre][sport=climbing],
-node|z17-[overlander=activityclimbing]
+node|z17-[overlander=climbing]
 {icon-image: climbing-m.svg;-x-me-text-priority: 15500;icon-min-distance: 10;}
 node|z17-[leisure=sports_centre][sport=swimming],
-node|z17-[overlander=activityswimming]
+node|z17-[overlander=swimming]
 {icon-image: swimming-m.svg;-x-me-text-priority: 15500;icon-min-distance: 10;}
 node|z17-[leisure=fitness_centre]
 {icon-image: gym-m.svg;-x-me-text-priority: 15500;icon-min-distance: 10;}
@@ -1790,7 +1790,7 @@ area|z17-[sport=scuba_diving]
 {icon-image: diving-m.svg;font-size: 11;icon-min-distance: 10;}
 
 node|z18-[sport=swimming],
-node|z18-[overlander=activityswimming],
+node|z18-[overlander=swimming],
 {icon-image: swimming-m.svg;font-size: 11;text-optional: true;}
 node|z18-[sport=baseball]
 {icon-image: baseball-m.svg;font-size: 11;text-optional: true;}
@@ -1962,20 +1962,20 @@ line|z16-[barrier=stile],
 
 node|z16-[highway=ford],
 node|z16-[power=tower],
-node|z16-[overlander=activitymotorcycle],
-area|z16-[overlander=activitymotorcycle],
-node|z16-[overlander=activitysurfing],
-area|z16-[overlander=activitysurfing],
-node|z16-[overlander=activitymountainbike],
-area|z16-[overlander=activitymountainbike],
-node|z16-[overlander=activityhiking],
-area|z16-[overlander=activityhiking],
-node|z16-[overlander=activityfishing],
-area|z16-[overlander=activityfishing],
-node|z16-[overlander=activitybeachfishing],
-area|z16-[overlander=activitybeachfishing],
-node|z16-[overlander=activitykayak],
-area|z16-[overlander=activitykayak],
+node|z16-[overlander=motorcycle],
+area|z16-[overlander=motorcycle],
+node|z16-[overlander=surfing],
+area|z16-[overlander=surfing],
+node|z16-[overlander=mountainbike],
+area|z16-[overlander=mountainbike],
+node|z16-[overlander=hiking],
+area|z16-[overlander=hiking],
+node|z16-[overlander=fishing],
+area|z16-[overlander=fishing],
+node|z16-[overlander=beachfishing],
+area|z16-[overlander=beachfishing],
+node|z16-[overlander=kayak],
+area|z16-[overlander=kayak],
 {icon-image: dot-m.svg;}
 
 node|z16-[amenity=taxi],
@@ -2618,6 +2618,8 @@ node|z17-[amenity=car_wash],
 area|z17-[amenity=car_wash],
 node|z17-[overlander=carwash],
 area|z17-[overlander=carwash],
+node|z18-[overlander=parking],
+area|z18-[overlander=parking],
 node|z18-[amenity=parking],
 area|z18-[amenity=parking],
 node|z18-[amenity=parking_space],
@@ -2708,6 +2710,8 @@ area|z18-[amenity=car_sharing]
 
 node|z16[amenity=parking],
 area|z16[amenity=parking],
+node|z16[overlander=parking],
+area|z16[overlander=parking],
 node|z16[amenity=parking_space],
 area|z16[amenity=parking_space]
 {icon-image: parking-s.svg;icon-min-distance: 25;}
@@ -2721,6 +2725,8 @@ area|z16[amenity=parking_space][access=private]
 
 node|z17[amenity=parking],
 area|z17[amenity=parking],
+node|z17[overlander=parking],
+area|z17[overlander=parking],
 node|z17[amenity=parking_space],
 area|z17[amenity=parking_space]
 {icon-image: parking-m.svg;}
@@ -2734,6 +2740,8 @@ area|z17[amenity=parking_space][access=private]
 
 node|z18-[amenity=parking],
 area|z18-[amenity=parking],
+node|z18-[overlander=parking],
+area|z18-[overlander=parking],
 node|z18-[amenity=parking_space],
 area|z18-[amenity=parking_space]
 {icon-image: parking-m.svg;font-size: 11;text-optional: true;}

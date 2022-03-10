@@ -90,6 +90,8 @@
 #define SEARCH_CUISINE_CATEGORIES_FILE_NAME "categories_cuisines.txt"
 #define SEARCH_BRAND_CATEGORIES_FILE_NAME "categories_brands.txt"
 
+#define SEARCH_ACTIVITIES_CATEGORIES_FILE_NAME "activities.txt"
+
 #define PACKED_POLYGONS_INFO_TAG "info"
 #define PACKED_POLYGONS_FILE "packed_polygons.bin"
 

@@ -85,39 +85,39 @@ overlander-4g|@4g
 en:4G Internet
 fr:4G Internet
 
-overlander-activitymotorcycle|@activitymotorcycle
+overlander-motorcycle|@motorcycle
 en:Motorcycle trailhead
 fr:Motorcycle debut de sentier
 
-overlander-activitysurfing|@activitysurfing
+overlander-surfing|@surfing
 en:Surf Spot
 fr:Surf Spot
 
-overlander-activitymountainbike|@activitymountainbike
+overlander-mountainbike|@mountainbike
 en:Mountain biking
 fr:Mountain biking
 
-overlander-activityhiking|@activityhiking
+overlander-hiking|@hiking
 en:Hiking trailhead
 fr:Debut du sentier rando
 
-overlander-activityfishing|@activityfishing
+overlander-fishing|@fishing
 en:Fishing
 fr:Peche
 
-overlander-activitybeachfishing|@activitybeachfishing
+overlander-beachfishing|@beachfishing
 en:Beach Fishing
 fr:Peche du Plage
 
-overlander-activitykayak|@activitykayak
+overlander-kayak|@kayak
 en:Kayak
 fr:Kayak
 
-overlander-activityclimbing|@activityclimbing
+overlander-climbing|@climbing
 en:Climbing
 fr:Escalade
 
-overlander-activityswimming|@activityswimming
+overlander-swimming|@swimming
 en:Swimming
 fr:Nager
 
@@ -2852,7 +2852,7 @@ sk:Pomník|pamiatka|atrakcia|zaujímavosť
 sw:Makumbusho|kumbukumbu ya kihistoria|kivutio|utalii
 fa:یادبود تاریخی
 
-historic-monument|overlander-monument|@tourism|monuments
+historic-monument|overlander-monument|@tourism|@monuments
 en:Monument|U+1F5FD|U+1F5FF
 ru:Монумент
 bg:монумент|паметник
@@ -5642,7 +5642,7 @@ sk:Športovisko|šport
 sw:Uwanja|michezo
 fa:زمین ورزشی
 
-leisure-swimming_pool|overlander-swimmingpool|@swimmingpool
+leisure-swimming_pool|overlander-swimmingpool|@swimmingpool|@swimming
 en:4Swimming Pool|sport|U+1F3CA
 ru:4Бассейн|спорт
 bg:басейн|спорт|плуване
@@ -8765,7 +8765,7 @@ zh-Hant:書架|書本交換
 el:Ανταλλαγή βιβλίων|Βιβλιοθήκη|Εναλλαγή βιβλίων
 sk:Knižnica|možnosť výmeny kníh
 
-leisure-sports_centre-climbing
+leisure-sports_centre-climbing|@climbing
 en:Climbing Centre
 ru:Скалодром
 bg:Стена|катерене|спорт|център
@@ -8831,7 +8831,7 @@ el:Σκοπευτήριο|βεληνεκές
 sk:Strelnica
 fa:محل تیراندازی
 
-leisure-sports_centre-swimming
+leisure-sports_centre-swimming|@swimmingpool|@swimming
 en:Swimming Centre|swimming pool
 ru:Плавательный бассейн
 bg:Басейн|плуване|Плувен басейн

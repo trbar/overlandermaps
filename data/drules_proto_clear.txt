@@ -42695,7 +42695,7 @@ cont {
   }
 }
 cont {
-  name: "overlander-activitybeachfishing"
+  name: "overlander-beachfishing"
   element {
     scale: 16
     symbol {
@@ -42722,252 +42722,6 @@ cont {
     symbol {
       name: "dot-m"
       priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activityclimbing"
-  element {
-    scale: 17
-    symbol {
-      name: "climbing-m"
-      apply_for_type: 1
-      priority: 16000
-      min_distance: 10
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "climbing-m"
-      apply_for_type: 1
-      priority: 16000
-      min_distance: 10
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "climbing-m"
-      apply_for_type: 1
-      priority: 16000
-      min_distance: 10
-    }
-  }
-}
-cont {
-  name: "overlander-activityfishing"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activityhiking"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activitykayak"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activitymotorcycle"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activitymountainbike"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activitysurfing"
-  element {
-    scale: 16
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 17
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "dot-m"
-      priority: 16000
-    }
-  }
-}
-cont {
-  name: "overlander-activityswimming"
-  element {
-    scale: 17
-    symbol {
-      name: "swimming-m"
-      apply_for_type: 1
-      priority: 16000
-      min_distance: 10
-    }
-  }
-  element {
-    scale: 18
-    symbol {
-      name: "swimming-m"
-      apply_for_type: 1
-      priority: 16653
-      min_distance: 10
-    }
-  }
-  element {
-    scale: 19
-    symbol {
-      name: "swimming-m"
-      apply_for_type: 1
-      priority: 16653
-      min_distance: 10
     }
   }
 }
@@ -43007,6 +42761,67 @@ cont {
         is_optional: true
       }
       priority: 15000
+    }
+  }
+}
+cont {
+  name: "overlander-climbing"
+  element {
+    scale: 17
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+}
+cont {
+  name: "overlander-fishing"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
     }
   }
 }
@@ -43240,6 +43055,37 @@ cont {
   }
 }
 cont {
+  name: "overlander-hiking"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
   name: "overlander-homestaycamping"
   element {
     scale: 16
@@ -43293,6 +43139,37 @@ cont {
         offset_y: 1
       }
       priority: 15632
+    }
+  }
+}
+cont {
+  name: "overlander-kayak"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
     }
   }
 }
@@ -43632,6 +43509,68 @@ cont {
   }
 }
 cont {
+  name: "overlander-motorcycle"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-mountainbike"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
   name: "overlander-paidcamping"
   element {
     scale: 15
@@ -43854,6 +43793,56 @@ cont {
         is_optional: true
       }
       priority: 15693
+    }
+  }
+}
+cont {
+  name: "overlander-parking"
+  element {
+    scale: 16
+    symbol {
+      name: "parking-s"
+      priority: 16000
+      min_distance: 25
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "parking-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "parking-m"
+      priority: 16000
+    }
+    caption {
+      primary {
+        height: 11
+        color: 4473924
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "parking-m"
+      priority: 16000
+    }
+    caption {
+      primary {
+        height: 11
+        color: 4473924
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15000
     }
   }
 }
@@ -44287,6 +44276,67 @@ cont {
         offset_y: 1
       }
       priority: 15622
+    }
+  }
+}
+cont {
+  name: "overlander-surfing"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-swimming"
+  element {
+    scale: 17
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16653
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16653
+      min_distance: 10
     }
   }
 }

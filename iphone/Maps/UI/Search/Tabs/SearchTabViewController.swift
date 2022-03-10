@@ -8,6 +8,7 @@ final class SearchTabViewController: TabViewController {
   private enum SearchActiveTab: Int {
     case history = 0
     case categories
+    case activities
   }
   
   private static let selectedIndexKey = "SearchTabViewController_selectedIndexKey"
@@ -34,7 +35,11 @@ final class SearchTabViewController: TabViewController {
     let categories = SearchCategoriesViewController(frameworkHelper: frameworkHelper,
                                                     delegate: self)
     categories.title = L("categories")
-    viewControllers = [history, categories]
+    
+    let activities = SearchActivitiesCategoriesViewController(frameworkHelper: frameworkHelper,
+                                                    delegate: self)
+    activities.title = L("activities")
+    viewControllers = [history, categories, activities]
     
     if frameworkHelper.isSearchHistoryEmpty() {
       tabView.selectedIndex = SearchActiveTab.categories.rawValue
@@ -60,6 +65,14 @@ extension SearchTabViewController: SearchCategoriesViewControllerDelegate {
 extension SearchTabViewController: SearchHistoryViewControllerDelegate {
   func searchHistoryViewController(_ viewController: SearchHistoryViewController,
                              didSelect query: String) {
+    delegate?.searchTabController(self, didSearch: query)
+  }
+}
+
+extension SearchTabViewController: SearchActivitiesCategoriesViewControllerDelegate {
+  func activitiesCategoriesViewController(_ viewController: SearchActivitiesCategoriesViewController,
+                                didSelect category: String) {
+    let query = L(category) + " "
     delegate?.searchTabController(self, didSearch: query)
   }
 }

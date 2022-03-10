@@ -14883,28 +14883,28 @@
     zh-Hans = 洗车
     zh-Hant = 洗車
 
-  [type.overlander.activitymotorcycle]
+  [type.overlander.motorcycle]
     en = Motorcycle riding
 
-  [type.overlander.activitysurfing]
+  [type.overlander.surfing]
     en = Surfing
 
-  [type.overlander.activitymountainbike]
+  [type.overlander.mountainbike]
     en = Mountain Bike
 
-  [type.overlander.activityhiking]
+  [type.overlander.hiking]
     en = Hiking
 
-  [type.overlander.activityfishing]
+  [type.overlander.fishing]
     en = Fishing
 
-  [type.overlander.activitykayak]
+  [type.overlander.kayak]
     en = Kayaking/Canoing
 
-  [type.overlander.activityclimbing]
+  [type.overlander.climbing]
     en = Climbing
 
-  [type.overlander.activityswimming]
+  [type.overlander.swimming]
     en = Swimming
     de = Schwimmen
     fi = Uinti
