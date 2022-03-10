@@ -641,21 +641,42 @@ world  +
         telecommunication  -
         {}
     overlander  +
+        4g  -
+        activitybeachfishing  -
+        activityclimbing  -
+        activityfishing  -
+        activityhiking  -
+        activitykayak  -
+        activitymotorcycle  -
+        activitymountainbike  -
+        activitysurfing  -
+        activityswimming  -
+        carwash  -
         freedomcamping  -
         fuel  -
+        garbage  -
+        homestaycamping  -
         laundry  -
+        lpg  -
         mechanic  -
+        monument  -
         paidcamping  -
+        park  -
+        pets  -
         picnic  -
         police  -
         propane  -
         restarea  -
         sanidump  -
         showers  -
+        swimmingpool  -
         tourism  -
+        viewpoint  -
         warning  -
         water  -
         wifi  -
+        wildfreedomcamping  -
+        wintercamping  -
         {}
     piste:lift  +
         j-bar  -

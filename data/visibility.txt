@@ -641,21 +641,42 @@ world  00000000000000000000  +
         telecommunication  00000000000000000000  -
         {}
     overlander  00000000000000000000  +
+        4g  00000000000000000000  -
+        activitybeachfishing  00000000000000000000  -
+        activityclimbing  00000000000000000000  -
+        activityfishing  00000000000000000000  -
+        activityhiking  00000000000000000000  -
+        activitykayak  00000000000000000000  -
+        activitymotorcycle  00000000000000000000  -
+        activitymountainbike  00000000000000000000  -
+        activitysurfing  00000000000000000000  -
+        activityswimming  00000000000000000000  -
+        carwash  00000000000000000000  -
         freedomcamping  00000000000000000000  -
         fuel  00000000000000000000  -
+        garbage  00000000000000000000  -
+        homestaycamping  00000000000000000000  -
         laundry  00000000000000000000  -
+        lpg  00000000000000000000  -
         mechanic  00000000000000000000  -
+        monument  00000000000000000000  -
         paidcamping  00000000000000000000  -
+        park  00000000000000000000  -
+        pets  00000000000000000000  -
         picnic  00000000000000000000  -
         police  00000000000000000000  -
         propane  00000000000000000000  -
         restarea  00000000000000000000  -
         sanidump  00000000000000000000  -
         showers  00000000000000000000  -
+        swimmingpool  00000000000000000000  -
         tourism  00000000000000000000  -
+        viewpoint  00000000000000000000  -
         warning  00000000000000000000  -
         water  00000000000000000000  -
         wifi  00000000000000000000  -
+        wildfreedomcamping  00000000000000000000  -
+        wintercamping  00000000000000000000  -
         {}
     piste:lift  00000000000000000000  +
         j-bar  00000000000000000000  -

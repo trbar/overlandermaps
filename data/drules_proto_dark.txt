@@ -42758,6 +42758,356 @@ cont {
   }
 }
 cont {
+  name: "overlander-4g"
+  element {
+    scale: 16
+    symbol {
+      name: "computer-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "computer-m"
+      priority: 16000
+      min_distance: 24
+    }
+  }
+}
+cont {
+  name: "overlander-activitybeachfishing"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activityclimbing"
+  element {
+    scale: 17
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "climbing-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+}
+cont {
+  name: "overlander-activityfishing"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activityhiking"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activitykayak"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activitymotorcycle"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activitymountainbike"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activitysurfing"
+  element {
+    scale: 16
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dot-m"
+      priority: 16000
+    }
+  }
+}
+cont {
+  name: "overlander-activityswimming"
+  element {
+    scale: 17
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16000
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16653
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "swimming-m"
+      apply_for_type: 1
+      priority: 16653
+      min_distance: 10
+    }
+  }
+}
+cont {
+  name: "overlander-carwash"
+  element {
+    scale: 17
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15000
+    }
+  }
+  element {
+    scale: 18
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15000
+    }
+  }
+  element {
+    scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15000
+    }
+  }
+}
+cont {
   name: "overlander-freedomcamping"
   element {
     scale: 16
@@ -42909,6 +43259,141 @@ cont {
   }
 }
 cont {
+  name: "overlander-garbage"
+  element {
+    scale: 15
+    symbol {
+      name: "recycling-m"
+      priority: 16663
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "recycling-m"
+      priority: 16663
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "recycling-m"
+      priority: 16663
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "recycling-m"
+      priority: 16663
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "recycling-m"
+      priority: 16663
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15663
+    }
+  }
+}
+cont {
+  name: "overlander-homestaycamping"
+  element {
+    scale: 16
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 30
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 18
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+}
+cont {
   name: "overlander-laundry"
   element {
     scale: 16
@@ -42939,6 +43424,100 @@ cont {
       name: "laundry-m"
       priority: 16000
       min_distance: 24
+    }
+  }
+}
+cont {
+  name: "overlander-lpg"
+  element {
+    scale: 14
+    symbol {
+      name: "fuel-s"
+      priority: 16673
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 15
+    symbol {
+      name: "fuel-m"
+      priority: 16673
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "fuel-m"
+      priority: 16673
+      min_distance: 10
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15500
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "fuel-m"
+      priority: 16673
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15673
+    }
+  }
+  element {
+    scale: 18
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15673
+    }
+  }
+  element {
+    scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15673
     }
   }
 }
@@ -43028,6 +43607,128 @@ cont {
   }
 }
 cont {
+  name: "overlander-monument"
+  element {
+    scale: 13
+    symbol {
+      name: "monument-s"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 14
+    symbol {
+      name: "monument-s"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 15
+    symbol {
+      name: "monument-m"
+      priority: 16765
+      min_distance: 24
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "monument-m"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "monument-m"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "monument-m"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "monument-m"
+      priority: 16765
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15765
+    }
+  }
+}
+cont {
   name: "overlander-paidcamping"
   element {
     scale: 15
@@ -43107,6 +43808,219 @@ cont {
         offset_y: 1
       }
       priority: 15663
+    }
+  }
+}
+cont {
+  name: "overlander-park"
+  element {
+    scale: 11
+    symbol {
+      name: "nparkf-s"
+      priority: 16693
+      min_distance: 20
+    }
+  }
+  element {
+    scale: 12
+    symbol {
+      name: "nparkf-s"
+      priority: 16693
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 2836760
+        stroke_color: 856756480
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 13
+    symbol {
+      name: "nparkf-s"
+      priority: 16693
+      min_distance: 12
+    }
+    caption {
+      primary {
+        height: 10
+        color: 2836760
+        stroke_color: 856756480
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 14
+    symbol {
+      name: "nparkf-s"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 11
+        color: 2836760
+        stroke_color: 856756480
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 15
+    symbol {
+      name: "nparkf-m"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 12
+        color: 2836760
+        stroke_color: 437326080
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "nparkf-m"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 12
+        color: 2836760
+        stroke_color: 437326080
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "nparkf-m"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 12
+        color: 2836760
+        stroke_color: 437326080
+        offset_y: 1
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "nparkf-m"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 12
+        color: 2836760
+        stroke_color: 437326080
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15693
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "nparkf-m"
+      priority: 16693
+    }
+    caption {
+      primary {
+        height: 12
+        color: 2836760
+        stroke_color: 437326080
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15693
+    }
+  }
+}
+cont {
+  name: "overlander-pets"
+  element {
+    scale: 16
+    symbol {
+      name: "dog_park-m"
+      priority: 16632
+      min_distance: 30
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "dog_park-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "dog_park-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "dog_park-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15632
     }
   }
 }
@@ -43474,6 +44388,33 @@ cont {
   }
 }
 cont {
+  name: "overlander-swimmingpool"
+  element {
+    scale: 17
+    symbol {
+      name: "swimming-m"
+      priority: 16683
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "swimming-m"
+      priority: 16683
+      min_distance: 10
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "swimming-m"
+      priority: 16683
+      min_distance: 10
+    }
+  }
+}
+cont {
   name: "overlander-tourism"
   element {
     scale: 16
@@ -43504,6 +44445,117 @@ cont {
       name: "photo-shop-m"
       priority: 16000
       min_distance: 24
+    }
+  }
+}
+cont {
+  name: "overlander-viewpoint"
+  element {
+    scale: 14
+    symbol {
+      name: "viewpoint-s"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
+    }
+  }
+  element {
+    scale: 15
+    symbol {
+      name: "viewpoint-m"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
+    }
+  }
+  element {
+    scale: 16
+    symbol {
+      name: "viewpoint-m"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "viewpoint-m"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
+    }
+  }
+  element {
+    scale: 18
+    symbol {
+      name: "viewpoint-m"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
+    }
+  }
+  element {
+    scale: 19
+    symbol {
+      name: "viewpoint-m"
+      apply_for_type: 1
+      priority: 16887
+      min_distance: 8
+    }
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+        is_optional: true
+      }
+      priority: 15887
     }
   }
 }
@@ -43664,6 +44716,120 @@ cont {
       name: "computer-m"
       priority: 16000
       min_distance: 24
+    }
+  }
+}
+cont {
+  name: "overlander-wildfreedomcamping"
+  element {
+    scale: 16
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 30
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 18
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+}
+cont {
+  name: "overlander-wintercamping"
+  element {
+    scale: 16
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 30
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 17
+    symbol {
+      name: "caravan_site-m"
+      priority: 16632
+      min_distance: 20
+    }
+    caption {
+      primary {
+        height: 11
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 18
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
+    }
+  }
+  element {
+    scale: 19
+    caption {
+      primary {
+        height: 10
+        color: 5592405
+        offset_y: 1
+      }
+      priority: 15632
     }
   }
 }

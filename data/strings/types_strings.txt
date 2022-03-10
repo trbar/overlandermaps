@@ -14677,6 +14677,244 @@
     vi = Khu Vực Thụt Vào Để Đỗ Xe
     zh-Hans = 休息区
     zh-Hant = 休息區
+  
+  [type.overlander.wildfreedomcamping]
+    en = Wild Freedom Camping
+
+  [type.overlander.homestaycamping]
+    en = Homestay Camping
+
+  [type.overlander.wintercamping]
+    en = Winter Camping
+
+  [type.overlander.lpg]
+    en = LPG
+
+  [type.overlander.pets]
+    en = Pets
+
+  [type.overlander.4g]
+    en = 4G
+
+  [type.overlander.viewpoint]
+    en = Viewpoint
+    ar = أماكن مشاهدة سياحية
+    cs = Vyhlídka
+    da = Udsigtspunkt
+    de = Aussichtspunkt
+    el = Θέα
+    es = Vista panorámica
+    fa = گردشگری
+    fi = Näköalatasanne
+    fr = Belvédère
+    hu = Kilátó
+    id = Titik pandang
+    it = Panorama
+    ja = 観光スポット
+    ko = 관점
+    nb = Utsiktspunkt
+    nl = Uitzicht
+    pl = Punkt widokowy
+    pt = Miradouro
+    pt-BR = Mirante
+    ro = Punct de vedere
+    ru = Обзорная площадка
+    sk = Vyhliadka
+    sv = Utsiktsplats
+    th = จุดชมวิว
+    tr = Bakış
+    uk = Оглядний майданчик
+    vi = Điểm nhìn
+    zh-Hans = 观点
+    zh-Hant = 視野
+
+  [type.overlander.monument]
+    en = Monument
+    ar = صرح
+    cs = Zajímavost
+    el = Μνημείο
+    es = Monumento
+    fa = گردشگری
+    fi = Monumentti
+    fr = Monument
+    hu = Műemlék
+    id = Monumen
+    it = Monumento
+    ja = 記念碑
+    ko = 기념탑
+    pt = Monumento
+    pt-BR = Monumento
+    ru = Памятник
+    sk = Zaujímavosť
+    th = อนุสาวรีย์
+    tr = Abide
+    uk = Пам'ятник
+    vi = Tượng đài
+    zh-Hans = 纪念堂
+    zh-Hant = 紀念碑
+
+  [type.overlander.garbage]
+    en = Trash Bin
+    ar = صندوق قمامة
+    cs = Odpadkový koš
+    da = Skraldespand
+    de = Abfalleimer
+    el = Κάδος απορριμμάτων
+    es = Papelera
+    fa = سطل زباله
+    fi = Roska-astia
+    fr = Poubelle
+    hu = Szemétkosár
+    id = Kotak sampah
+    it = Contenitore per rifiuti
+    ja = ゴミ箱
+    ko = 쓰레기통
+    nb = Søppelkasse
+    nl = Vuilnisbak
+    pl = Kosz na śmieci
+    pt = Caixote do lixo
+    pt-BR = Cesto de lixo
+    ro = Pubelă
+    ru = Урна
+    sk = Odpadkový kôš
+    sv = Papperskorg
+    th = ถังขยะ
+    tr = Poubelle
+    uk = Бак для сміття
+    vi = Thùng rác
+    zh-Hans = 垃圾篓
+    zh-Hant = 垃圾箱
+
+  [type.overlander.park]
+    en = Park
+    ar = موقف سيارات
+    cs = Park
+    da = Park
+    de = Park
+    el = Πάρκο
+    es = Parque
+    es-MX = Parque
+    fa = پارک
+    fi = Puisto
+    fr = Parc
+    hu = Park
+    id = Taman
+    it = Parco
+    ja = 公園
+    ko = 공원
+    nb = Park
+    nl = Park
+    pl = Park
+    pt = Parque urbano
+    pt-BR = Parque
+    ro = Parc
+    ru = Парк
+    sk = Park
+    sv = Parken
+    sw = Hifadhi
+    th = สวนสาธารณะ
+    tr = Park
+    uk = Парк
+    vi = Công viên
+    zh-Hans = 公园
+    zh-Hant = 公園
+
+  [type.overlander.swimmingpool]
+    en = Swimming Pool
+    ar = حوض سباحة
+    cs = Koupaliště
+    da = Svømmebassin
+    de = Schwimmbecken
+    el = Πισίνα
+    es = Piscina
+    fa = استخرشنا
+    fi = Uima-allas
+    fr = Piscine
+    hu = Úszómedence
+    id = Kolam renang
+    it = Piscina
+    ja = プール
+    ko = 수영장
+    nb = Svømmebasseng
+    nl = Zwembad
+    pl = Basen
+    pt = Piscina
+    pt-BR = Piscina
+    ro = Piscină
+    ru = Плавательный бассейн
+    sk = Kúpalisko
+    sv = Simbassäng
+    th = สระว่ายน้ำ
+    tr = Yüzme havuzu
+    uk = Басейн для плавання
+    vi = Bể bơi
+    zh-Hans = 游泳池
+    zh-Hant = 游泳池
+
+  [type.overlander.carwash]
+    en = Car Wash
+    ar = مغسلة سيارات
+    cs = Myčka aut
+    da = Bilvask
+    de = Autowäsche
+    el = Καθαρισμός αυτοκινήτων
+    es = Lavado de coches
+    fa = کارواش
+    fi = Autopesula
+    fr = Station de lavage
+    hu = Autómosó
+    id = Cuci Mobil
+    it = Lavaggio auto
+    ja = 洗車場
+    ko = 세차
+    nb = Bilvask
+    nl = Car wash
+    pl = Myjnia samochodowa
+    pt = Lavagem de veículos
+    pt-BR = Lava-jato
+    ro = Spălătorie auto
+    ru = Автомойка
+    sk = Autoumývareň
+    sv = Biltvätt
+    th = ล้างรถ
+    tr = Araba Yıkama
+    uk = Автомийка
+    vi = Rửa Xe
+    zh-Hans = 洗车
+    zh-Hant = 洗車
+
+  [type.overlander.activitymotorcycle]
+    en = Motorcycle riding
+
+  [type.overlander.activitysurfing]
+    en = Surfing
+
+  [type.overlander.activitymountainbike]
+    en = Mountain Bike
+
+  [type.overlander.activityhiking]
+    en = Hiking
+
+  [type.overlander.activityfishing]
+    en = Fishing
+
+  [type.overlander.activitykayak]
+    en = Kayaking/Canoing
+
+  [type.overlander.activityclimbing]
+    en = Climbing
+
+  [type.overlander.activityswimming]
+    en = Swimming
+    de = Schwimmen
+    fi = Uinti
+    fr = Natation
+    ja = 水泳
+    pl = Pływanie
+    pt = Natação desportiva
+    pt-BR = Natação esportiva
+    ru = Плавание
+    zh-Hans = 游泳
 
   [type.place]
     en = place
