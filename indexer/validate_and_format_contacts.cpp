@@ -332,4 +332,12 @@ bool ValidateLinePage(string const & page)
   return (domain == "line.me" || strings::EndsWith(domain, ".line.me"));
 }
 
+string ValidateAndFormat_overlander(string const & v)
+{
+  if (v.empty())
+    return {};
+  else
+    return v;
+}
+
 } // namespace osm

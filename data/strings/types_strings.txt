@@ -14360,6 +14360,324 @@
     zh-Hans = 电信办公室
     zh-Hant = 行動電話業者
 
+  [type.overlander.freedomcamping]
+    en = Free Camping
+  
+  [type.overlander.paidcamping]
+    en = Camping
+    ar = تخييم
+    cs = Kempování
+    de = Zeltplatz
+    el = Κάμπινγκ
+    es = Campamento
+    fa = محل چادر زنی
+    fi = Retkeily
+    hu = Kemping
+    id = Perkemahan
+    it = Campeggio
+    ja = キャンプ場
+    ko = 캠핑
+    nb = Overnatting i bobiler
+    pl = Kamping
+    pt = Parque de campismo
+    pt-BR = Parque de campismo
+    ru = Кемпинг
+    th = การตั้งแคมป์
+    tr = Kamp alanı
+    uk = Кемпінг
+    vi = Cắm trại
+    zh-Hans = 宿营场地
+    zh-Hant = 露營
+  
+  [type.overlander.fuel]
+    en = Gas Station
+    ar = محطة وقود
+    cs = Čerpací stanice
+    da = Tankstation
+    de = Tankstelle
+    el = Βενζινάδικο
+    es = Gasolinera
+    fa = سوخت
+    fi = Huoltoasema
+    fr = Station-service
+    hu = Benzinkút
+    id = Pompa bensin
+    it = Stazione di rifornimento
+    ja = ガソリンスタンド
+    ko = 주유소
+    nb = Bensinstasjon
+    nl = Tankstation
+    pl = Stacja benzynowa
+    pt = Posto de combustível
+    pt-BR = Posto de combustível
+    ro = Benzinărie
+    ru = Заправка
+    sk = Benzínová pumpa
+    sv = Bensinstation
+    th = ปั๊มน้ำมัน
+    tr = Benzin istasyonu
+    uk = Заправка
+    vi = Trạm xăng
+    zh-Hans = 加油站
+    zh-Hant = 加氣站
+  
+  [type.overlander.propane]
+    en = Propane
+
+  [type.overlander.mechanic]
+    en = Car Repair Shop
+    ar = محل صيانة السيارات
+    cs = Auto opravna
+    da = Garage
+    de = Autowerkstatt
+    el = Συνεργείο αυτοκινήτων
+    es = Taller
+    fa = تعمیرگاه ماشین
+    fi = Autokorjaamo
+    fr = Réparation d'automobiles
+    hu = Gépkocsi szervíz
+    id = Bengkel mobil
+    it = Riparazione auto
+    ja = 自動車修理
+    ko = 자동차 수리
+    nb = Bilverksted
+    nl = Auto reparatie
+    pl = Naprawa samochodu
+    pt = Oficina de automóveis
+    pt-BR = Oficina de automóveis
+    ro = Atelier de reparații auto
+    ru = СТО
+    sk = Autoservis
+    sv = Bilreparatör
+    th = ร้านซ่อมรถยนต์
+    tr = Oto tamir dükkanı
+    uk = СТО
+    vi = Cửa hàng sửa chữa ô tô
+    zh-Hans = 汽车修理店
+    zh-Hant = 汽車維修
+
+  [type.overlander.water]
+    en = Water Tap
+    ar = حنفية مياه
+    cs = Vodovodní kohoutek
+    da = Vandhane
+    de = Wasserhahn
+    el = Βρύση νερού
+    es = Toma de agua
+    fa = شیراب
+    fi = Vesihana
+    fr = Robinet d'eau
+    hu = Vízcsap
+    id = Keran Air
+    it = Rubinetto dell'acqua
+    ja = 給水栓
+    ko = 수도꼭지
+    nb = Vannkran
+    nl = Waterkraan
+    pl = Woda pitna
+    pt = Torneira de água
+    pt-BR = Torneira de água
+    ro = Robinet cu apă
+    ru = Водопроводный кран
+    sk = Vodovodný kohútik
+    sv = Vattenkran
+    th = ก๊อกน้ำ
+    tr = Çeşme Suyu
+    uk = Водопровідний кран
+    vi = Vòi nước
+    zh-Hans = 水龙头
+    zh-Hant = 水龍頭
+  
+  [type.overlander.sanidump]
+    en = Sanitation Dump
+
+  [type.overlander.tourism]
+    en = Tourism
+    de = Tourismus
+    fi = Turismi
+    ja = 観光
+    pl = Turystyka
+    pt = Turismo
+    pt-BR = Turismo
+    ru = Туризм
+    zh-Hans = 旅游要素
+  
+  [type.overlander.wifi]
+    en = Internet
+    ar = واي فاي
+    el = Ίντερνετ
+    fa = وای فای
+    ja = インターネット
+    ko = 인터넷
+    pt = Internet
+    pt-BR = Internet
+    ru = Интернет
+    th = อินเทอร์เน็ต
+    uk = Інтернет
+    zh-Hans = 互联网
+    zh-Hant = 互聯網
+
+  [type.overlander.laundry]
+    een = Laundry
+    ar = مغسلة ملابس
+    cs = Prádelna
+    da = Vaskeri
+    de = Wäscherei
+    el = Άπλυτα
+    es = Lavandería
+    fa = لباس شویی
+    fi = Pesula
+    fr = Laverie
+    hu = Mosoda
+    id = Londri
+    it = Lavanderia
+    ja = ランドリー
+    ko = 세탁소
+    nb = Vaskeri
+    nl = Wasserette
+    pl = Pralnia samoobsługowa
+    pt = Lavandaria
+    pt-BR = Lavanderia
+    ro = Spălătorie
+    ru = Прачечная
+    sk = Práčovňa
+    sv = Tvättstuga
+    th = ร้านซักรีด
+    tr = Çamaşırhane
+    uk = Пральня
+    vi = Giặt là
+    zh-Hans = 洗衣店
+    zh-Hant = 洗衣店
+
+  [type.overlander.showers]
+    en = Shower
+    ar = حمام
+    cs = Sprcha
+    da = Bruser
+    de = Dusche
+    el = Ντους
+    es = Ducha
+    fa = حمام
+    fi = Suihku
+    fr = Douche
+    hu = Tusoló
+    id = Pancuran
+    it = Doccia
+    ja = シャワー
+    ko = 샤워시설
+    nb = Dusj
+    nl = Douche
+    pl = Prysznic
+    pt = Chuveiro
+    pt-BR = Chuveiro
+    ro = Duș
+    ru = Душ
+    sk = Sprcha
+    sv = Dusch
+    th = ฝักบัวอาบน้ำ
+    tr = Duş
+    uk = Душ
+    vi = Nhà tắm
+    zh-Hans = 淋浴间
+    zh-Hant = 淋浴間
+
+  [type.overlander.police]
+    en = Police
+    ar = شرطة
+    cs = Policie
+    da = Politi
+    de = Polizeistation
+    el = Αστυνομία
+    es = Policía
+    fa = کلانتری
+    fi = Poliisi
+    hu = Rendőrség
+    id = Polisi
+    it = Polizia
+    ja = 警察
+    ko = 경찰
+    nb = Politi
+    nl = Politie
+    pl = Policja
+    pt = Polícia
+    pt-BR = Polícia
+    ro = Poliție
+    ru = Полиция
+    sk = Polícia
+    sv = Polis
+    th = ตำรวจ
+    tr = Polis
+    uk = Міліція
+    vi = Cảnh sát
+    zh-Hans = 警察局
+    zh-Hant = 警察局
+  
+  [type.overlander.warning]
+    en = Warning
+  
+  [type.overlander.picnic]
+    en = Picnic Site
+    ar = مكان نزهة
+    cs = Piknik
+    da = Picnic
+    de = Picknickplatz
+    el = Χώρος εκδρομής
+    es = Picnic
+    fa = مکان پیک نیک
+    fi = Piknikpaikat
+    fr = Terrain de pique-nique
+    hu = Piknikező hely
+    id = Lokasi piknik
+    it = Picnic
+    ja = ピクニック場
+    ko = 피크닉 장소
+    nb = Rasteplasser
+    nl = Picnicplaats
+    pl = Pole piknikowe
+    pt = Local de piqueniques
+    pt-BR = Local de piqueniques
+    ro = Locații picnic
+    ru = Место для пикника
+    sk = Piknik
+    sv = Picknickplatser
+    th = เว็บไซต์ปิกนิก
+    tr = Piknik alanı
+    uk = Пікнік
+    vi = Điểm cắm trại
+    zh-Hans = 野餐地点
+    zh-Hant = 野餐
+
+  [type.overlander.restarea]
+    en = Highway Rest Area
+    ar = استراحة
+    cs = Odpočívadlo
+    da = Rasteplads
+    de = Rastplatz
+    el = Χώρος ανάπαυσης αυτοκινητιστών
+    es = Área de descanso
+    fi = Levähdyspaikka
+    fr = Aire de repos
+    hu = Pihenőzóna
+    id = Tempat istirahat
+    it = Area di sosta
+    ja = 休憩所
+    ko = 휴게소
+    nb = Rasteplass
+    nl = Parkeerplaats
+    pl = Miejsce wypoczynku
+    pt = Área de descanso
+    pt-BR = Área de descanso
+    ro = Zonă de odihnă
+    ru = Зона отдыха на трассе
+    sk = Odpočívadlo
+    sv = Viloplats
+    th = บริเวณพักผ่อน
+    tr = Aire de repos
+    uk = Зона відпочинку
+    vi = Khu Vực Thụt Vào Để Đỗ Xe
+    zh-Hans = 休息区
+    zh-Hant = 休息區
+
   [type.place]
     en = place
     de = Ort

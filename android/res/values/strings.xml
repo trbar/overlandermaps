@@ -135,6 +135,26 @@
 	<string name="post">Post</string>
 	<!-- Search category -->
 	<string name="police">Police</string>
+	<!-- Search category -->
+	<string name="freedomcamping">Freedom camping</string>
+	<!-- Search category -->
+	<string name="paidcamping">Paid camping</string>
+	<!-- Search category -->
+	<string name="laundry">Laundry</string>
+	<!-- Search category -->
+	<string name="showers">Showers</string>
+	<!-- Search category -->
+	<string name="sanidump">Sanitation Dump</string>
+	<!-- Search category -->
+	<string name="propane">Propane</string>
+	<!-- Search category -->
+	<string name="mechanic">Car Repair</string>
+	<!-- Search category -->
+	<string name="warning">Warning</string>
+	<!-- Search category -->
+	<string name="picnic">Picnic</string>
+	<!-- Search category -->
+	<string name="restarea">Rest Area</string>
 	<!-- Notes field in Bookmarks view -->
 	<string name="description">Notes</string>
 	<!-- Email Subject when sharing bookmark list -->
@@ -481,6 +501,14 @@
 	<string name="postal_code">Postal Code</string>
 	<string name="cuisine">Cuisine</string>
 	<string name="select_cuisine">Select cuisine</string>
+	<string name="open">Open</string>
+	<string name="electricity">Electricity</string>
+	<string name="kitchen">Kitchen</string>
+	<string name="restaurant">Restaurant</string>
+	<string name="toilets">Toilets</string>
+	<string name="big_rig_friendly">Big Rig Friendly</string>
+	<string name="tent_friendly">Tent Friendly</string>
+	<string name="pet_friendly">Pet Friendly</string>
 	<!-- login text field -->
 	<string name="email_or_username">Email or username</string>
 	<string name="phone">Phone</string>
@@ -557,6 +585,9 @@
 	<string name="hour">h</string>
 	<string name="minute">min</string>
 	<string name="placepage_place_description">Description</string>
+	<string name="placepage_place_details">Details</string>
+	<string name="placepage_place_checkins">Checkins</string>
+	<string name="placepage_place_overlander_by">by</string>
 	<string name="placepage_more_button">More</string>
 	<string name="placepage_more_reviews_button">More Reviews</string>
 	<string name="book_button">Book</string>
@@ -1422,6 +1453,21 @@
 	<string name="type.office.lawyer">Lawyer</string>
 	<string name="type.office.ngo">NGO Office</string>
 	<string name="type.office.telecommunication">Mobile Operator</string>
+	<string name="type.overlander.freedomcamping">Freedom Camping - iOverlander</string>
+	<string name="type.overlander.paidcamping">Camping - iOverlander"</string>
+	<string name="type.overlander.fuel">Gas Station - iOverlander</string>
+	<string name="type.overlander.propane">Propane - iOverlander</string>
+	<string name="type.overlander.mechanic">Car Repair - iOverlander</string>
+	<string name="type.overlander.water">Water - iOverlander</string>
+	<string name="type.overlander.sanidump">Sanitation Dump - iOverlander</string>
+	<string name="type.overlander.tourism">Tourism - iOverlander</string>
+	<string name="type.overlander.wifi">Wifi - iOverlander</string>
+	<string name="type.overlander.laundry">Laundry - iOverlander</string>
+	<string name="type.overlander.showers">Showers - iOverlander</string>
+	<string name="type.overlander.police">Police - iOverlander</string>
+	<string name="type.overlander.warning">Warning - iOverlander</string>
+	<string name="type.overlander.picnic">Picnic - iOverlander</string>
+	<string name="type.overlander.restarea">Rest Area - iOverlander</string>
 	<string name="type.place">place</string>
 	<string name="type.place.city">City</string>
 	<string name="type.place.city.capital">Capital</string>

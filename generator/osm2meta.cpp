@@ -166,6 +166,14 @@ string MetadataTagProcessorImpl::ValidateAndFormat_email(string const & v) const
   return v;
 }
 
+string MetadataTagProcessorImpl::ValidateAndFormat_overlander(string const & v) const
+{
+  if (v.empty())
+    return {};
+  else
+    return v;
+}
+
 string MetadataTagProcessorImpl::ValidateAndFormat_postcode(string const & v) const { return v; }
 
 string MetadataTagProcessorImpl::ValidateAndFormat_flats(string const & v) const

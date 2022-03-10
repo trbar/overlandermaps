@@ -35,6 +35,12 @@
       android:layout_marginBottom="@dimen/margin_half"
       tools:visibility="visible"/>
 
+    <include
+      layout="@layout/place_page_details_header"
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:layout_height="wrap_content"/>
+
     <include layout="@layout/place_page_placename"/>
 
     <include layout="@layout/place_page_opening_hours"/>
@@ -71,6 +77,75 @@
     <include layout="@layout/place_page_cuisine"/>
 
     <include layout="@layout/place_page_latlon"/>
+
+    <include layout="@layout/place_page_overlander_location"/>
+
+    <include layout="@layout/place_page_overlander_open"/>
+
+    <include layout="@layout/place_page_overlander_electricity"/>
+
+    <include layout="@layout/place_page_overlander_wifi"/>
+
+    <include layout="@layout/place_page_overlander_kitchen"/>
+
+    <include layout="@layout/place_page_overlander_parking"/>
+
+    <include layout="@layout/place_page_overlander_restaurant"/>
+
+    <include layout="@layout/place_page_overlander_showers"/>
+
+    <include layout="@layout/place_page_overlander_water"/>
+
+    <include layout="@layout/place_page_overlander_toilets"/>
+
+    <include layout="@layout/place_page_overlander_bigrigfriendly"/>
+
+    <include layout="@layout/place_page_overlander_tentfriendly"/>
+
+    <include layout="@layout/place_page_overlander_petfriendly"/>
+
+    <include layout="@layout/place_page_overlander_sanidump"/>
+
+    <include
+      layout="@layout/place_page_checkins_header"
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:layout_height="wrap_content"/>
+
+    <include
+      layout="@layout/place_page_checkin1_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_half"
+      tools:visibility="visible"/>
+    
+    <include
+      layout="@layout/place_page_checkin2_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_half"
+      tools:visibility="visible"/>
+    
+    <include
+      layout="@layout/place_page_checkin3_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_half"
+      tools:visibility="visible"/>
+    
+    <include
+      layout="@layout/place_page_checkin4_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_half"
+      tools:visibility="visible"/>
+    
+    <include
+      layout="@layout/place_page_checkin5_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_half"
+      tools:visibility="visible"/>
   </LinearLayout>
 
   <include

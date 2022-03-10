@@ -42,7 +42,7 @@ extension PlacePageInteractor: PlacePageInfoViewControllerDelegate {
 
 extension PlacePageInteractor: WikiDescriptionViewControllerDelegate {
   func didPressMore() {
-    MWMPlacePageManagerHelper.showPlaceDescription(placePageData.wikiDescriptionHtml)
+    MWMPlacePageManagerHelper.showPlaceDescription(placePageData.infoData?.overlanderDescription)
   }
 }
 

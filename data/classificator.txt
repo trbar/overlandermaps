@@ -640,6 +640,23 @@ world  +
         ngo  -
         telecommunication  -
         {}
+    overlander  +
+        freedomcamping  -
+        fuel  -
+        laundry  -
+        mechanic  -
+        paidcamping  -
+        picnic  -
+        police  -
+        propane  -
+        restarea  -
+        sanidump  -
+        showers  -
+        tourism  -
+        warning  -
+        water  -
+        wifi  -
+        {}
     piste:lift  +
         j-bar  -
         magic_carpet  -

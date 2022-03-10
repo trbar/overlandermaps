@@ -48,6 +48,50 @@ using namespace osm;
         case Props::Internet:
           _wifiAvailable = YES;
           break;
+        case Props::OverlanderDescription:
+          _overlanderDescription = @(rawData.GetOverlanderDescription().c_str());
+        case Props::OverlanderOpen:
+          _overlanderOpen = @(rawData.GetOverlanderOpen().c_str());
+        case Props::OverlanderElectricity:
+          _overlanderElectricity = @(rawData.GetOverlanderElectricity().c_str());
+        case Props::OverlanderWifi:
+          _overlanderWifi = @(rawData.GetOverlanderWifi().c_str());
+        case Props::OverlanderKitchen:
+          _overlanderKitchen = @(rawData.GetOverlanderKitchen().c_str());
+        case Props::OverlanderParking:
+          _overlanderParking = @(rawData.GetOverlanderParking().c_str());
+        case Props::OverlanderRestaurant:
+          _overlanderRestaurant = @(rawData.GetOverlanderRestaurant().c_str());
+        case Props::OverlanderShowers:
+          _overlanderShowers = @(rawData.GetOverlanderShowers().c_str());
+        case Props::OverlanderWater:
+          _overlanderWater = @(rawData.GetOverlanderWater().c_str());
+        case Props::OverlanderToilets:
+          _overlanderToilets = @(rawData.GetOverlanderToilets().c_str());
+        case Props::OverlanderBigRigFriendly:
+          _overlanderBigrigfriendly = @(rawData.GetOverlanderBigrigfriendly().c_str());
+        case Props::OverlanderTentFriendly:
+          _overlanderTentfriendly = @(rawData.GetOverlanderTentfriendly().c_str());
+        case Props::OverlanderPetFriendly:
+          _overlanderPetfriendly = @(rawData.GetOverlanderPetfriendly().c_str());
+        case Props::OverlanderSaniDump:
+          _overlanderSanidump = @(rawData.GetOverlanderSanidump().c_str());
+        case Props::OverlanderCheckin1Author:
+          _overlanderCheckin1author = @(rawData.GetOverlanderCheckin1author().c_str());
+        case Props::OverlanderCheckin1Time:
+          _overlanderCheckin1time = @(rawData.GetOverlanderCheckin1time().c_str());
+        case Props::OverlanderCheckin2Comment:
+          _overlanderCheckin2comment = @(rawData.GetOverlanderCheckin2comment().c_str());
+        case Props::OverlanderCheckin2Author:
+          _overlanderCheckin2author = @(rawData.GetOverlanderCheckin2author().c_str());
+        case Props::OverlanderCheckin2Time:
+          _overlanderCheckin2time = @(rawData.GetOverlanderCheckin2time().c_str());
+        case Props::OverlanderCheckin3Comment:
+          _overlanderCheckin3comment = @(rawData.GetOverlanderCheckin3comment().c_str());
+        case Props::OverlanderCheckin3Author:
+          _overlanderCheckin3author = @(rawData.GetOverlanderCheckin3author().c_str());
+        case Props::OverlanderCheckin3Time:
+          _overlanderCheckin3time = @(rawData.GetOverlanderCheckin3time().c_str());
         default:
           break;
       }
