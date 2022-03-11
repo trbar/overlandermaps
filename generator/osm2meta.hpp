@@ -100,47 +100,19 @@ public:
     case Metadata::FMD_BRAND:
     case Metadata::FMD_TEST_ID:
     case Metadata::FMD_COUNT: CHECK(false, (mdType, "should not be parsed from OSM."));
-    case Metadata::FMD_OVERLANDER_LOCATION: valid = ValidateAndFormat_overlander(v); break;
+
+    case Metadata::FMD_OVERLANDER_ID: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_CATEGORY: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_SOURCE: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_DESCRIPTION: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_OPEN: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_ELECTRICITY: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_WIFI: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_KITCHEN: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_PARKING: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_RESTAURANT: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_SHOWERS: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_WATER: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_TOILETS: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_TENTFRIENDLY: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_PETFRIENDLY: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_SANIDUMP: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_BIOFUEL: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSVEHICLES: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSBICYCLES: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_SELLSPARTS: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_RECYCLESBATTERIES: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_RECYCLESOIL: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5TIME: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5COMMENT: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4TIME: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4COMMENT: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3TIME: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3COMMENT: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2TIME: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2COMMENT: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1TIME: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_SERVICES: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_ACTIVITIES: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_LINK: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_RATING: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_TAGS: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN3: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN2: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN1: valid = ValidateAndFormat_overlander(v); break;
     }
     md.Set(mdType, valid);
   }

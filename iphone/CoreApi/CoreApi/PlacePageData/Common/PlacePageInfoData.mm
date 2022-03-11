@@ -48,50 +48,30 @@ using namespace osm;
         case Props::Internet:
           _wifiAvailable = YES;
           break;
+        case Props::OverlanderId:
+          _overlanderId = @(rawData.GetOverlanderId().c_str());
+        case Props::OverlanderCategory:
+          _overlanderCategory = @(rawData.GetOverlanderCategory().c_str());
+        case Props::OverlanderSource:
+          _overlanderSource = @(rawData.GetOverlanderSource().c_str());
         case Props::OverlanderDescription:
           _overlanderDescription = @(rawData.GetOverlanderDescription().c_str());
-        case Props::OverlanderOpen:
-          _overlanderOpen = @(rawData.GetOverlanderOpen().c_str());
-        case Props::OverlanderElectricity:
-          _overlanderElectricity = @(rawData.GetOverlanderElectricity().c_str());
-        case Props::OverlanderWifi:
-          _overlanderWifi = @(rawData.GetOverlanderWifi().c_str());
-        case Props::OverlanderKitchen:
-          _overlanderKitchen = @(rawData.GetOverlanderKitchen().c_str());
-        case Props::OverlanderParking:
-          _overlanderParking = @(rawData.GetOverlanderParking().c_str());
-        case Props::OverlanderRestaurant:
-          _overlanderRestaurant = @(rawData.GetOverlanderRestaurant().c_str());
-        case Props::OverlanderShowers:
-          _overlanderShowers = @(rawData.GetOverlanderShowers().c_str());
-        case Props::OverlanderWater:
-          _overlanderWater = @(rawData.GetOverlanderWater().c_str());
-        case Props::OverlanderToilets:
-          _overlanderToilets = @(rawData.GetOverlanderToilets().c_str());
-        case Props::OverlanderBigRigFriendly:
-          _overlanderBigrigfriendly = @(rawData.GetOverlanderBigrigfriendly().c_str());
-        case Props::OverlanderTentFriendly:
-          _overlanderTentfriendly = @(rawData.GetOverlanderTentfriendly().c_str());
-        case Props::OverlanderPetFriendly:
-          _overlanderPetfriendly = @(rawData.GetOverlanderPetfriendly().c_str());
-        case Props::OverlanderSaniDump:
-          _overlanderSanidump = @(rawData.GetOverlanderSanidump().c_str());
-        case Props::OverlanderCheckin1Author:
-          _overlanderCheckin1author = @(rawData.GetOverlanderCheckin1author().c_str());
-        case Props::OverlanderCheckin1Time:
-          _overlanderCheckin1time = @(rawData.GetOverlanderCheckin1time().c_str());
-        case Props::OverlanderCheckin2Comment:
-          _overlanderCheckin2comment = @(rawData.GetOverlanderCheckin2comment().c_str());
-        case Props::OverlanderCheckin2Author:
-          _overlanderCheckin2author = @(rawData.GetOverlanderCheckin2author().c_str());
-        case Props::OverlanderCheckin2Time:
-          _overlanderCheckin2time = @(rawData.GetOverlanderCheckin2time().c_str());
-        case Props::OverlanderCheckin3Comment:
-          _overlanderCheckin3comment = @(rawData.GetOverlanderCheckin3comment().c_str());
-        case Props::OverlanderCheckin3Author:
-          _overlanderCheckin3author = @(rawData.GetOverlanderCheckin3author().c_str());
-        case Props::OverlanderCheckin3Time:
-          _overlanderCheckin3time = @(rawData.GetOverlanderCheckin3time().c_str());
+        case Props::OverlanderServices:
+          _overlanderServices = @(rawData.GetOverlanderServices().c_str());
+        case Props::OverlanderActivities:
+          _overlanderActivities = @(rawData.GetOverlanderActivities().c_str());
+        case Props::OverlanderLink:
+          _overlanderLink = @(rawData.GetOverlanderLink().c_str());
+        case Props::OverlanderRating:
+          _overlanderRating = @(rawData.GetOverlanderRating().c_str());
+        case Props::OverlanderTags:
+          _overlanderTags = @(rawData.GetOverlanderTags().c_str());
+        case Props::OverlanderCheckin3:
+          _overlanderCheckin3 = @(rawData.GetOverlanderCheckin3().c_str());
+        case Props::OverlanderCheckin2:
+          _overlanderCheckin2 = @(rawData.GetOverlanderCheckin2().c_str());
+        case Props::OverlanderCheckin1:
+          _overlanderCheckin1 = @(rawData.GetOverlanderCheckin1().c_str());
         default:
           break;
       }

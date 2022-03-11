@@ -274,58 +274,25 @@ public:
     string const & fee = strings::EndsWith(category, "-fee") ? "yes" : "";
     string const & atm = HasAtm(f) ? "yes" : "";
 
-    string const & overlander_location = meta.Get(feature::Metadata::FMD_OVERLANDER_LOCATION);
+    string const & overlander_id = meta.Get(feature::Metadata::FMD_OVERLANDER_ID);
+    string const & overlander_category = meta.Get(feature::Metadata::FMD_OVERLANDER_CATEGORY);
+    string const & overlander_source = meta.Get(feature::Metadata::FMD_OVERLANDER_SOURCE);
     string const & overlander_description = meta.Get(feature::Metadata::FMD_OVERLANDER_DESCRIPTION);
-    string const & overlander_open = meta.Get(feature::Metadata::FMD_OVERLANDER_OPEN);
-    string const & overlander_electricity = meta.Get(feature::Metadata::FMD_OVERLANDER_ELECTRICITY);
-    string const & overlander_wifi = meta.Get(feature::Metadata::FMD_OVERLANDER_WIFI);
-    string const & overlander_kitchen = meta.Get(feature::Metadata::FMD_OVERLANDER_KITCHEN);
-    string const & overlander_parking = meta.Get(feature::Metadata::FMD_OVERLANDER_PARKING);
-    string const & overlander_restaurant = meta.Get(feature::Metadata::FMD_OVERLANDER_RESTAURANT);
-    string const & overlander_showers = meta.Get(feature::Metadata::FMD_OVERLANDER_SHOWERS);
-    string const & overlander_water = meta.Get(feature::Metadata::FMD_OVERLANDER_WATER);
-    string const & overlander_toilets = meta.Get(feature::Metadata::FMD_OVERLANDER_TOILETS);
-    string const & overlander_bigrigfriendly = meta.Get(feature::Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY);
-    string const & overlander_tentfriendly = meta.Get(feature::Metadata::FMD_OVERLANDER_TENTFRIENDLY);
-    string const & overlander_petfriendly = meta.Get(feature::Metadata::FMD_OVERLANDER_PETFRIENDLY);
-    string const & overlander_sanidump = meta.Get(feature::Metadata::FMD_OVERLANDER_SANIDUMP);
-    string const & overlander_biofuel = meta.Get(feature::Metadata::FMD_OVERLANDER_BIOFUEL);
-    string const & overlander_repairsvehicles = meta.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSVEHICLES);
-    string const & overlander_repairsmotorcycles = meta.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES);
-    string const & overlander_repairsbicycles = meta.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSBICYCLES);
-    string const & overlander_sellsparts = meta.Get(feature::Metadata::FMD_OVERLANDER_SELLSPARTS);
-    string const & overlander_recyclesbatteries = meta.Get(feature::Metadata::FMD_OVERLANDER_RECYCLESBATTERIES);
-    string const & overlander_recyclesoil = meta.Get(feature::Metadata::FMD_OVERLANDER_RECYCLESOIL);
-    string const & overlander_checkin5id = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5ID);
-    string const & overlander_checkin5time = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5TIME);
-    string const & overlander_checkin5author = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR);
-    string const & overlander_checkin5comment = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5COMMENT);
-    string const & overlander_checkin4id = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4ID);
-    string const & overlander_checkin4time = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4TIME);
-    string const & overlander_checkin4author = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR);
-    string const & overlander_checkin4comment = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4COMMENT);
-    string const & overlander_checkin3id = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3ID);
-    string const & overlander_checkin3time = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3TIME);
-    string const & overlander_checkin3author = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR);
-    string const & overlander_checkin3comment = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3COMMENT);
-    string const & overlander_checkin2id = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2ID);
-    string const & overlander_checkin2time = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2TIME);
-    string const & overlander_checkin2author = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR);
-    string const & overlander_checkin2comment = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2COMMENT);
-    string const & overlander_checkin1id = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1ID);
-    string const & overlander_checkin1time = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1TIME);
-    string const & overlander_checkin1author = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR);
+    string const & overlander_services = meta.Get(feature::Metadata::FMD_OVERLANDER_SERVICES);
+    string const & overlander_activities = meta.Get(feature::Metadata::FMD_OVERLANDER_ACTIVITIES);
+    string const & overlander_link = meta.Get(feature::Metadata::FMD_OVERLANDER_LINK);
+    string const & overlander_rating = meta.Get(feature::Metadata::FMD_OVERLANDER_RATING);
+    string const & overlander_tags = meta.Get(feature::Metadata::FMD_OVERLANDER_TAGS);
+    string const & overlander_checkin3 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3);
+    string const & overlander_checkin2 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2);
+    string const & overlander_checkin1 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1);
 
     vector<string> columns = {
         osmId,                        uid,                        lat,                      lon,                     mwmName,                    category,                       name,                         city,
         addrStreet,                   addrHouse,                  phone,                    website,                 cuisine,                    stars,                          operatr,                      internet,
         denomination,                 wheelchair,                 opening_hours,            wikipedia,               floor,                      fee,                            atm,                          contact_facebook,
-        contact_instagram,            contact_twitter,            contact_vk,               contact_line,            overlander_location,        overlander_description,         overlander_open,              overlander_electricity,
-        overlander_wifi,              overlander_kitchen,         overlander_parking,       overlander_restaurant,   overlander_showers,         overlander_water,               overlander_toilets,           overlander_bigrigfriendly,
-        overlander_tentfriendly,      overlander_petfriendly,     overlander_sanidump,      overlander_biofuel,      overlander_repairsvehicles, overlander_repairsmotorcycles,  overlander_repairsbicycles,   overlander_sellsparts,
-        overlander_recyclesbatteries, overlander_recyclesoil,     overlander_checkin5id,    overlander_checkin5time, overlander_checkin5author,  overlander_checkin5comment,     overlander_checkin4id,        overlander_checkin4time,
-        overlander_checkin4author,    overlander_checkin4comment, overlander_checkin3id,    overlander_checkin3time, overlander_checkin3author,  overlander_checkin3comment,     overlander_checkin2id,        overlander_checkin2time,
-        overlander_checkin2author,    overlander_checkin2comment, overlander_checkin1id,    overlander_checkin1time, overlander_checkin1author};
+        contact_instagram,            contact_twitter,            contact_vk,               contact_line,            overlander_id,              overlander_category,            overlander_source,            overlander_description,
+        overlander_services,          overlander_activities,      overlander_link,          overlander_rating,       overlander_tags,            overlander_checkin3,            overlander_checkin2,          overlander_checkin1};
     AppendNames(f, columns);
     PrintAsCSV(columns, ';', cout);
   }
@@ -338,15 +305,9 @@ void PrintHeader()
                             "phone",                         "website",                    "cuisines",                   "stars",                         "operator",
                             "internet",                      "denomination",               "wheelchair",                 "opening_hours",                 "wikipedia",
                             "floor",                         "fee",                        "atm",                        "contact_facebook",              "contact_instagram",
-                            "contact_twitter",               "contact_vk",                 "contact_line",               "overlander_location",           "overlander_description",
-                            "overlander_open",               "overlander_electricity",     "overlander_wifi",            "overlander_kitchen",            "overlander_parking",       
-                            "overlander_restaurant",         "overlander_showers",         "overlander_water",           "overlander_toilets",            "overlander_bigrigfriendly",
-                            "overlander_tentfriendly",       "overlander_petfriendly",     "overlander_sanidump",        "overlander_biofuel",            "overlander_repairsvehicles",
-                            "overlander_repairsmotorcycles", "overlander_repairsbicycles", "overlander_sellsparts",      "overlander_recyclesbatteries",  "overlander_recyclesoil",     
-                            "overlander_checkin5id",         "overlander_checkin5time",    "overlander_checkin5author",  "overlander_checkin5comment",    "overlander_checkin4id",     
-                            "overlander_checkin4time",       "overlander_checkin4author",  "overlander_checkin4comment", "overlander_checkin3id",         "overlander_checkin3time",  
-                            "overlander_checkin3author",     "overlander_checkin3comment", "overlander_checkin2id",      "overlander_checkin2time",       "overlander_checkin2author",    
-                            "overlander_checkin2comment",    "overlander_checkin1id",      "overlander_checkin1time",    "overlander_checkin1author"};
+                            "contact_twitter",               "contact_vk",                 "contact_line",               "overlander_id",                 "overlander_category",
+                            "overlander_source",             "overlander_description",     "overlander_services",        "overlander_activities",         "overlander_link",       
+                            "overlander_rating",             "overlander_tags",            "overlander_checkin3",        "overlander_checkin2",           "overlander_checkin1"};
   // Append all supported name languages in order.
   for (uint8_t idx = 1; idx < kLangCount; idx++)
     columns.push_back("name_" + string(StringUtf8Multilang::GetLangByCode(idx)));

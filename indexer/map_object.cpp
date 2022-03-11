@@ -70,47 +70,18 @@ string DebugPrint(Props props)
   case osm::Props::Flats: k = "addr:flats"; break;
   case osm::Props::BuildingLevels: k = "building:levels"; break;
   case osm::Props::Level: k = "level"; break;
-  case osm::Props::OverlanderLocation: k = "overlander:location"; break;
+  case osm::Props::OverlanderId: k = "overlander:id"; break;
+  case osm::Props::OverlanderCategory: k = "overlander:category"; break;
+  case osm::Props::OverlanderSource: k = "overlander:source"; break;
   case osm::Props::OverlanderDescription: k = "overlander:description"; break;
-  case osm::Props::OverlanderOpen: k = "overlander:open"; break;
-  case osm::Props::OverlanderElectricity: k = "overlander:electricity"; break;
-  case osm::Props::OverlanderWifi: k = "overlander:wifi"; break;
-  case osm::Props::OverlanderKitchen: k = "overlander:kitchen"; break;
-  case osm::Props::OverlanderParking: k = "overlander:parking"; break;
-  case osm::Props::OverlanderRestaurant: k = "overlander:restaurant"; break;
-  case osm::Props::OverlanderShowers: k = "overlander:showers"; break;
-  case osm::Props::OverlanderWater: k = "overlander:water"; break;
-  case osm::Props::OverlanderToilets: k = "overlander:toilets"; break;
-  case osm::Props::OverlanderBigRigFriendly: k = "overlander:bigrigfriendly"; break;
-  case osm::Props::OverlanderTentFriendly: k = "overlander:tentfriendly"; break;
-  case osm::Props::OverlanderPetFriendly: k = "overlander:petfriendly"; break;
-  case osm::Props::OverlanderSaniDump: k = "overlander:sanidump"; break;
-  case osm::Props::OverlanderBioFuel: k = "overlander:biofuel"; break;
-  case osm::Props::OverlanderRepairsVehicles: k = "overlander:repairsvehicles"; break;
-  case osm::Props::OverlanderRepairsMotorcycles: k = "overlander:repairsmotorcycles"; break;
-  case osm::Props::OverlanderRepairsBicycles: k = "overlander:repairsbicycles"; break;
-  case osm::Props::OverlanderSellsParts: k = "overlander:sellsparts"; break;
-  case osm::Props::OverlanderRecyclesBatteries: k = "overlander:recyclesbatteries"; break;
-  case osm::Props::OverlanderRecyclesOil: k = "overlander:recyclesoil"; break;
-  case osm::Props::OverlanderCheckin5Id: k = "overlander:checkin5id"; break;
-  case osm::Props::OverlanderCheckin5Time: k = "overlander:checkin5time"; break;
-  case osm::Props::OverlanderCheckin5Author: k = "overlander:checkin5author"; break;
-  case osm::Props::OverlanderCheckin5Comment: k = "overlander:checkin5comment"; break;
-  case osm::Props::OverlanderCheckin4Id: k = "overlander:checkin4id"; break;
-  case osm::Props::OverlanderCheckin4Time: k = "overlander:checkin4time"; break;
-  case osm::Props::OverlanderCheckin4Author: k = "overlander:checkin4author"; break;
-  case osm::Props::OverlanderCheckin4Comment: k = "overlander:checkin4comment"; break;
-  case osm::Props::OverlanderCheckin3Id: k = "overlander:checkin3id"; break;
-  case osm::Props::OverlanderCheckin3Time: k = "overlander:checkin3time"; break;
-  case osm::Props::OverlanderCheckin3Author: k = "overlander:checkin3author"; break;
-  case osm::Props::OverlanderCheckin3Comment: k = "overlander:checkin3comment"; break;
-  case osm::Props::OverlanderCheckin2Id: k = "overlander:checkin2id"; break;
-  case osm::Props::OverlanderCheckin2Time: k = "overlander:checkin2time"; break;
-  case osm::Props::OverlanderCheckin2Author: k = "overlander:checkin2author"; break;
-  case osm::Props::OverlanderCheckin2Comment: k = "overlander:checkin2comment"; break;
-  case osm::Props::OverlanderCheckin1Id: k = "overlander:checkin1id"; break;
-  case osm::Props::OverlanderCheckin1Time: k = "overlander:checkin1time"; break;
-  case osm::Props::OverlanderCheckin1Author: k = "overlander:checkin1author"; break;
+  case osm::Props::OverlanderServices: k = "overlander:services"; break;
+  case osm::Props::OverlanderActivities: k = "overlander:activities"; break;
+  case osm::Props::OverlanderLink: k = "overlander:link"; break;
+  case osm::Props::OverlanderRating: k = "overlander:rating"; break;
+  case osm::Props::OverlanderTags: k = "overlander:tags"; break;
+  case osm::Props::OverlanderCheckin3: k = "overlander:checkin3"; break;
+  case osm::Props::OverlanderCheckin2: k = "overlander:checkin2"; break;
+  case osm::Props::OverlanderCheckin1: k = "overlander:checkin1"; break;
   }
   return k;
 }
@@ -343,9 +314,19 @@ feature::Metadata const & MapObject::GetMetadata() const { return m_metadata; }
 bool MapObject::IsPointType() const { return m_geomType == feature::GeomType::Point; }
 bool MapObject::IsBuilding() const { return ftypes::IsBuildingChecker::Instance()(m_types); }
 
-string MapObject::GetOverlanderLocation() const
+string MapObject::GetOverlanderId() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_LOCATION);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_ID);
+}
+
+string MapObject::GetOverlanderCategory() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CATEGORY);
+}
+
+string MapObject::GetOverlanderSource() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SOURCE);
 }
 
 string MapObject::GetOverlanderDescription() const
@@ -353,198 +334,44 @@ string MapObject::GetOverlanderDescription() const
   return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_DESCRIPTION);
 }
 
-string MapObject::GetOverlanderOpen() const
+string MapObject::GetOverlanderServices() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_OPEN);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SERVICES);
 }
 
-string MapObject::GetOverlanderElectricity() const
+string MapObject::GetOverlanderActivities() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_ELECTRICITY);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_ACTIVITIES);
 }
 
-string MapObject::GetOverlanderWifi() const
+string MapObject::GetOverlanderLink() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_WIFI);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_LINK);
 }
 
-string MapObject::GetOverlanderKitchen() const
+string MapObject::GetOverlanderRating() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_KITCHEN);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_RATING);
 }
 
-string MapObject::GetOverlanderParking() const
+string MapObject::GetOverlanderTags() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_PARKING);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_TAGS);
 }
 
-string MapObject::GetOverlanderRestaurant() const
+string MapObject::GetOverlanderCheckin3() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_RESTAURANT);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3);
 }
 
-string MapObject::GetOverlanderShowers() const
+string MapObject::GetOverlanderCheckin2() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SHOWERS);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2);
 }
 
-string MapObject::GetOverlanderWater() const
+string MapObject::GetOverlanderCheckin1() const
 {
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_WATER);
-}
-
-string MapObject::GetOverlanderToilets() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_TOILETS);
-}
-
-string MapObject::GetOverlanderBigrigfriendly() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY);
-}
-
-string MapObject::GetOverlanderTentfriendly() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_TENTFRIENDLY);
-}
-
-string MapObject::GetOverlanderPetfriendly() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_PETFRIENDLY);
-}
-
-string MapObject::GetOverlanderSanidump() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SANIDUMP);
-}
-
-string MapObject::GetOverlanderBiofuel() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_BIOFUEL);
-} 
-string MapObject::GetOverlanderRepairsvehicles() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSVEHICLES);
-}
-
-string MapObject::GetOverlanderRepairsmotorcycles() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES);
-}
-
-string MapObject::GetOverlanderRepairsbicycles() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_REPAIRSBICYCLES);
-}
-
-string MapObject::GetOverlanderSellsparts() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SELLSPARTS);
-}
-
-string MapObject::GetOverlanderRecyclesbatteries() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_RECYCLESBATTERIES);
-}
-
-string MapObject::GetOverlanderRecyclesoil() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_RECYCLESOIL);
-}
-
-string MapObject::GetOverlanderCheckin5id() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5ID);
-}
-
-string MapObject::GetOverlanderCheckin5time() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5TIME);
-}
-
-string MapObject::GetOverlanderCheckin5author() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR);
-}
-
-string MapObject::GetOverlanderCheckin5comment() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN5COMMENT);
-}
-
-string MapObject::GetOverlanderCheckin4id() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4ID);
-}
-
-string MapObject::GetOverlanderCheckin4time() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4TIME);
-}
-
-string MapObject::GetOverlanderCheckin4author() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR);
-}
-
-string MapObject::GetOverlanderCheckin4comment() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN4COMMENT);
-}
-
-string MapObject::GetOverlanderCheckin3id() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3ID);
-}
-
-string MapObject::GetOverlanderCheckin3time() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3TIME);
-}
-
-string MapObject::GetOverlanderCheckin3author() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR);
-}
-
-string MapObject::GetOverlanderCheckin3comment() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3COMMENT);
-}
-
-string MapObject::GetOverlanderCheckin2id() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2ID);
-}
-
-string MapObject::GetOverlanderCheckin2time() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2TIME);
-}
-
-string MapObject::GetOverlanderCheckin2author() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR);
-}
-
-string MapObject::GetOverlanderCheckin2comment() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2COMMENT);
-}
-
-string MapObject::GetOverlanderCheckin1id() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1ID);
-}
-
-string MapObject::GetOverlanderCheckin1time() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1TIME);
-}
-
-string MapObject::GetOverlanderCheckin1author() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR);
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1);
 }
 
 }  // namespace osm

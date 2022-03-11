@@ -18,28 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly, nullable) NSString *rawCoordinates;
 @property(nonatomic, readonly, nullable) NSString *formattedCoordinates;
 @property(nonatomic, readonly) BOOL wifiAvailable;
+@property(nonatomic, readonly, nullable) NSString *overlanderId;
+@property(nonatomic, readonly, nullable) NSString *overlanderCategory;
+@property(nonatomic, readonly, nullable) NSString *overlanderSource;
 @property(nonatomic, readonly, nullable) NSString *overlanderDescription;
-@property(nonatomic, readonly, nullable) NSString *overlanderOpen;
-@property(nonatomic, readonly, nullable) NSString *overlanderElectricity;
-@property(nonatomic, readonly, nullable) NSString *overlanderWifi;
-@property(nonatomic, readonly, nullable) NSString *overlanderKitchen;
-@property(nonatomic, readonly, nullable) NSString *overlanderParking;
-@property(nonatomic, readonly, nullable) NSString *overlanderRestaurant;
-@property(nonatomic, readonly, nullable) NSString *overlanderShowers;
-@property(nonatomic, readonly, nullable) NSString *overlanderWater;
-@property(nonatomic, readonly, nullable) NSString *overlanderToilets;
-@property(nonatomic, readonly, nullable) NSString *overlanderBigrigfriendly;
-@property(nonatomic, readonly, nullable) NSString *overlanderTentfriendly;
-@property(nonatomic, readonly, nullable) NSString *overlanderPetfriendly;
-@property(nonatomic, readonly, nullable) NSString *overlanderSanidump;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin1author;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin1time;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2comment;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2author;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2time;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3comment;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3author;
-@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3time;
+@property(nonatomic, readonly, nullable) NSString *overlanderServices;
+@property(nonatomic, readonly, nullable) NSString *overlanderActivities;
+@property(nonatomic, readonly, nullable) NSString *overlanderLink;
+@property(nonatomic, readonly, nullable) NSString *overlanderRating;
+@property(nonatomic, readonly, nullable) NSString *overlanderTags;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin3;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin2;
+@property(nonatomic, readonly, nullable) NSString *overlanderCheckin1;
 
 
 @end

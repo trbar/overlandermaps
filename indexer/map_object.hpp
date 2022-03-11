@@ -54,47 +54,18 @@ enum class Props : uint8_t
   ContactTwitter = 16,
   ContactVk = 17,
   ContactLine = 18,
-  OverlanderLocation = 19,
-  OverlanderDescription = 20,
-  OverlanderOpen = 21,
-  OverlanderElectricity = 22,
-  OverlanderWifi = 23,
-  OverlanderKitchen = 24,
-  OverlanderParking = 25,
-  OverlanderRestaurant = 26,
-  OverlanderShowers = 27,
-  OverlanderWater = 28,
-  OverlanderToilets = 29,
-  OverlanderBigRigFriendly = 30,
-  OverlanderTentFriendly = 31,
-  OverlanderPetFriendly = 32,
-  OverlanderSaniDump = 33,
-  OverlanderBioFuel = 34,
-  OverlanderRepairsVehicles = 35,
-  OverlanderRepairsMotorcycles = 36,
-  OverlanderRepairsBicycles = 37,
-  OverlanderSellsParts = 38,
-  OverlanderRecyclesBatteries = 39,
-  OverlanderRecyclesOil = 40,
-  OverlanderCheckin5Id = 41,
-  OverlanderCheckin5Time = 42,
-  OverlanderCheckin5Author = 43,
-  OverlanderCheckin5Comment = 44,
-  OverlanderCheckin4Id = 45,
-  OverlanderCheckin4Time = 46,
-  OverlanderCheckin4Author = 47,
-  OverlanderCheckin4Comment = 48,
-  OverlanderCheckin3Id = 49,
-  OverlanderCheckin3Time = 50,
-  OverlanderCheckin3Author = 51,
-  OverlanderCheckin3Comment = 52,
-  OverlanderCheckin2Id = 53,
-  OverlanderCheckin2Time = 54,
-  OverlanderCheckin2Author = 55,
-  OverlanderCheckin2Comment = 56,
-  OverlanderCheckin1Id = 57,
-  OverlanderCheckin1Time = 58,
-  OverlanderCheckin1Author = 59,
+  OverlanderId = 19,
+  OverlanderCategory = 20,
+  OverlanderSource = 21,
+  OverlanderDescription = 22,
+  OverlanderServices = 23,
+  OverlanderActivities = 24,
+  OverlanderLink = 25,
+  OverlanderRating = 26,
+  OverlanderTags = 27,
+  OverlanderCheckin3 = 28,
+  OverlanderCheckin2 = 29,
+  OverlanderCheckin1 = 30,
 };
 std::string DebugPrint(Props props);
 
@@ -154,47 +125,18 @@ public:
   std::string GetLevel() const;
   ftraits::WheelchairAvailability GetWheelchairType() const;
   std::string GetAirportIata() const;
-  std::string GetOverlanderLocation() const;
+  std::string GetOverlanderId() const;
+  std::string GetOverlanderCategory() const;
+  std::string GetOverlanderSource() const;
   std::string GetOverlanderDescription() const;
-  std::string GetOverlanderOpen() const;
-  std::string GetOverlanderElectricity() const;
-  std::string GetOverlanderWifi() const;
-  std::string GetOverlanderKitchen() const;
-  std::string GetOverlanderParking() const;
-  std::string GetOverlanderRestaurant() const;
-  std::string GetOverlanderShowers() const;
-  std::string GetOverlanderWater() const;
-  std::string GetOverlanderToilets() const;
-  std::string GetOverlanderBigrigfriendly() const;
-  std::string GetOverlanderTentfriendly() const;
-  std::string GetOverlanderPetfriendly() const;
-  std::string GetOverlanderSanidump() const;
-  std::string GetOverlanderBiofuel() const;
-  std::string GetOverlanderRepairsvehicles() const;
-  std::string GetOverlanderRepairsmotorcycles() const;
-  std::string GetOverlanderRepairsbicycles() const;
-  std::string GetOverlanderSellsparts() const;
-  std::string GetOverlanderRecyclesbatteries() const;
-  std::string GetOverlanderRecyclesoil() const;
-  std::string GetOverlanderCheckin5id() const;
-  std::string GetOverlanderCheckin5time() const;
-  std::string GetOverlanderCheckin5author() const;
-  std::string GetOverlanderCheckin5comment() const;
-  std::string GetOverlanderCheckin4id() const;
-  std::string GetOverlanderCheckin4time() const;
-  std::string GetOverlanderCheckin4author() const;
-  std::string GetOverlanderCheckin4comment() const;
-  std::string GetOverlanderCheckin3id() const;
-  std::string GetOverlanderCheckin3time() const;
-  std::string GetOverlanderCheckin3author() const;
-  std::string GetOverlanderCheckin3comment() const;
-  std::string GetOverlanderCheckin2id() const;
-  std::string GetOverlanderCheckin2time() const;
-  std::string GetOverlanderCheckin2author() const;
-  std::string GetOverlanderCheckin2comment() const;
-  std::string GetOverlanderCheckin1id() const;
-  std::string GetOverlanderCheckin1time() const;
-  std::string GetOverlanderCheckin1author() const;
+  std::string GetOverlanderServices() const;
+  std::string GetOverlanderActivities() const;
+  std::string GetOverlanderLink() const;
+  std::string GetOverlanderRating() const;
+  std::string GetOverlanderTags() const;
+  std::string GetOverlanderCheckin3() const;
+  std::string GetOverlanderCheckin2() const;
+  std::string GetOverlanderCheckin1() const;
 
   // TODO(Vlad, yunikkk): Use Props enum + getters instead of direct metadata access.
   // TODO: Remove this method.
@@ -253,47 +195,18 @@ std::vector<Props> MetadataToProps(std::vector<T> const & metadata)
     case Metadata::FMD_ELE: res.push_back(Props::Elevation); break;
     case Metadata::FMD_EMAIL: res.push_back(Props::Email); break;
     case Metadata::FMD_WIKIPEDIA: res.push_back(Props::Wikipedia); break;
-    case Metadata::FMD_OVERLANDER_LOCATION: res.push_back(Props::OverlanderLocation); break;
+    case Metadata::FMD_OVERLANDER_ID: res.push_back(Props::OverlanderId); break;
+    case Metadata::FMD_OVERLANDER_CATEGORY: res.push_back(Props::OverlanderCategory); break;
+    case Metadata::FMD_OVERLANDER_SOURCE: res.push_back(Props::OverlanderSource); break;
     case Metadata::FMD_OVERLANDER_DESCRIPTION: res.push_back(Props::OverlanderDescription); break;
-    case Metadata::FMD_OVERLANDER_OPEN: res.push_back(Props::OverlanderOpen); break;
-    case Metadata::FMD_OVERLANDER_ELECTRICITY: res.push_back(Props::OverlanderElectricity); break; 
-    case Metadata::FMD_OVERLANDER_WIFI: res.push_back(Props::OverlanderWifi); break; 
-    case Metadata::FMD_OVERLANDER_KITCHEN: res.push_back(Props::OverlanderKitchen); break;
-    case Metadata::FMD_OVERLANDER_PARKING: res.push_back(Props::OverlanderParking); break;
-    case Metadata::FMD_OVERLANDER_RESTAURANT: res.push_back(Props::OverlanderRestaurant); break;
-    case Metadata::FMD_OVERLANDER_SHOWERS: res.push_back(Props::OverlanderShowers); break;
-    case Metadata::FMD_OVERLANDER_WATER: res.push_back(Props::OverlanderWater); break;
-    case Metadata::FMD_OVERLANDER_TOILETS: res.push_back(Props::OverlanderToilets); break;
-    case Metadata::FMD_OVERLANDER_BIGRIGFRIENDLY: res.push_back(Props::OverlanderBigRigFriendly); break;
-    case Metadata::FMD_OVERLANDER_TENTFRIENDLY: res.push_back(Props::OverlanderTentFriendly); break;
-    case Metadata::FMD_OVERLANDER_PETFRIENDLY: res.push_back(Props::OverlanderPetFriendly); break; 
-    case Metadata::FMD_OVERLANDER_SANIDUMP: res.push_back(Props::OverlanderSaniDump); break;
-    case Metadata::FMD_OVERLANDER_BIOFUEL: res.push_back(Props::OverlanderBioFuel); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSVEHICLES: res.push_back(Props::OverlanderRepairsVehicles); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSMOTORCYCLES: res.push_back(Props::OverlanderRepairsMotorcycles); break;
-    case Metadata::FMD_OVERLANDER_REPAIRSBICYCLES: res.push_back(Props::OverlanderRepairsBicycles); break;
-    case Metadata::FMD_OVERLANDER_SELLSPARTS: res.push_back(Props::OverlanderSellsParts); break;
-    case Metadata::FMD_OVERLANDER_RECYCLESBATTERIES: res.push_back(Props::OverlanderRecyclesBatteries); break;
-    case Metadata::FMD_OVERLANDER_RECYCLESOIL: res.push_back(Props::OverlanderRecyclesOil); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5ID: res.push_back(Props::OverlanderCheckin5Id); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5TIME: res.push_back(Props::OverlanderCheckin5Time); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5AUTHOR: res.push_back(Props::OverlanderCheckin5Author); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN5COMMENT: res.push_back(Props::OverlanderCheckin5Comment); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4ID: res.push_back(Props::OverlanderCheckin4Id); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4TIME: res.push_back(Props::OverlanderCheckin4Time); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4AUTHOR: res.push_back(Props::OverlanderCheckin4Author); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN4COMMENT: res.push_back(Props::OverlanderCheckin4Comment); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3ID: res.push_back(Props::OverlanderCheckin3Id); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3TIME: res.push_back(Props::OverlanderCheckin3Time); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3AUTHOR: res.push_back(Props::OverlanderCheckin3Author); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN3COMMENT: res.push_back(Props::OverlanderCheckin3Comment); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2ID: res.push_back(Props::OverlanderCheckin2Id); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2TIME: res.push_back(Props::OverlanderCheckin2Time); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN2AUTHOR: res.push_back(Props::OverlanderCheckin2Author); break; 
-    case Metadata::FMD_OVERLANDER_CHECKIN2COMMENT: res.push_back(Props::OverlanderCheckin2Comment); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1ID: res.push_back(Props::OverlanderCheckin1Id); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1TIME: res.push_back(Props::OverlanderCheckin1Time); break;
-    case Metadata::FMD_OVERLANDER_CHECKIN1AUTHOR: res.push_back(Props::OverlanderCheckin1Author); break;
+    case Metadata::FMD_OVERLANDER_SERVICES: res.push_back(Props::OverlanderServices); break;
+    case Metadata::FMD_OVERLANDER_ACTIVITIES: res.push_back(Props::OverlanderActivities); break; 
+    case Metadata::FMD_OVERLANDER_LINK: res.push_back(Props::OverlanderLink); break; 
+    case Metadata::FMD_OVERLANDER_RATING: res.push_back(Props::OverlanderRating); break;
+    case Metadata::FMD_OVERLANDER_TAGS: res.push_back(Props::OverlanderTags); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN3: res.push_back(Props::OverlanderCheckin3); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN2: res.push_back(Props::OverlanderCheckin2); break;
+    case Metadata::FMD_OVERLANDER_CHECKIN1: res.push_back(Props::OverlanderCheckin1); break;
     case Metadata::FMD_FLATS: res.push_back(Props::Flats); break;
     case Metadata::FMD_BUILDING_LEVELS: res.push_back(Props::BuildingLevels); break;
     case Metadata::FMD_LEVEL: res.push_back(Props::Level); break;
