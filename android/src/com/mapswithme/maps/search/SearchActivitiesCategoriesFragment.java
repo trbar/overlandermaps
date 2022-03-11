@@ -10,7 +10,7 @@ import com.mapswithme.maps.R;
 import com.mapswithme.maps.base.BaseMwmRecyclerFragment;
 
 public class SearchActivitiesCategoriesFragment extends BaseMwmRecyclerFragment<ActivitiesCategoriesAdapter>
-    implements CategoriesAdapter.CategoriesUiListener
+    implements ActivitiesCategoriesAdapter.CategoriesUiListener
 {
   @Override
   public void onViewCreated(View view, Bundle savedInstanceState)

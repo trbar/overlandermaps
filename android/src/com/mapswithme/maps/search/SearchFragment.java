@@ -48,7 +48,9 @@ public class SearchFragment extends BaseMwmFragment
                          implements OnBackPressListener,
                                     NativeSearchListener,
                                     SearchToolbarController.Container,
-                                    CategoriesAdapter.CategoriesUiListener
+                                    CategoriesAdapter.CategoriesUiListener,
+                                    ActivitiesCategoriesAdapter.CategoriesUiListener,
+                                    PlacesCategoriesAdapter.CategoriesUiListener
 {
   private long mLastQueryTimestamp;
   @NonNull
