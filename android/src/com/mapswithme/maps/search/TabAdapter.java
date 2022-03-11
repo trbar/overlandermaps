@@ -20,18 +20,18 @@ class TabAdapter extends FragmentPagerAdapter
 {
   enum Tab
   {
-    HISTORY
+    PLACES
     {
       @Override
       public int getTitleRes()
       {
-        return R.string.history;
+        return R.string.places;
       }
 
       @Override
       public Class<? extends Fragment> getFragmentClass()
       {
-        return SearchHistoryFragment.class;
+        return SearchPlacesCategoriesFragment.class;
       }
     },
 
@@ -47,6 +47,21 @@ class TabAdapter extends FragmentPagerAdapter
       public Class<? extends Fragment> getFragmentClass()
       {
         return SearchCategoriesFragment.class;
+      }
+    },
+    
+    ACTIVITIES
+    {
+      @Override
+      public int getTitleRes()
+      {
+        return R.string.activities;
+      }
+
+      @Override
+      public Class<? extends Fragment> getFragmentClass()
+      {
+        return SearchActivitiesCategoriesFragment.class;
       }
     };
 

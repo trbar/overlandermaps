@@ -140,6 +140,12 @@
 	<!-- Search category -->
 	<string name="paidcamping">Paid camping</string>
 	<!-- Search category -->
+	<string name="wildfreedomcamping">Wild freedom camping</string>
+	<!-- Search category -->
+	<string name="homestaycamping">Homestay camping</string>
+	<!-- Search category -->
+	<string name="wintercamping">Winter camping</string>
+	<!-- Search category -->
 	<string name="laundry">Laundry</string>
 	<!-- Search category -->
 	<string name="showers">Showers</string>
@@ -155,6 +161,40 @@
 	<string name="picnic">Picnic</string>
 	<!-- Search category -->
 	<string name="restarea">Rest Area</string>
+	<!-- Search category -->
+	<string name="lpg">LPG</string>
+	<!-- Search category -->
+	<string name="pets">Pets</string>
+	<!-- Search category -->
+	<string name="viewpoint">View point</string>
+	<!-- Search category -->
+	<string name="monument">Monument</string>
+	<!-- Search category -->
+	<string name="garbage">Garbage</string>
+	<!-- Search category -->
+	<string name="park">Park</string>
+	<!-- Search category -->
+	<string name="swimmingpool">Swimming pool</string>
+	<!-- Search category -->
+	<string name="carwash">Car wash</string>
+	<!-- Search category -->
+	<string name="motorcycle">Motorcycling</string>
+	<!-- Search category -->
+	<string name="surfing">Surfing</string>
+	<!-- Search category -->
+	<string name="mountainbike">Mountain biking</string>
+	<!-- Search category -->
+	<string name="hiking">Hiking</string>
+	<!-- Search category -->
+	<string name="fishing">Fishing</string>
+	<!-- Search category -->
+	<string name="beachfishing">Beach fishing</string>
+	<!-- Search category -->
+	<string name="kayak">Kayaking</string>
+	<!-- Search category -->
+	<string name="swimming">Swimming</string>
+	<!-- Search category -->
+	<string name="climbing">Climbing</string>
 	<!-- Notes field in Bookmarks view -->
 	<string name="description">Notes</string>
 	<!-- Email Subject when sharing bookmark list -->
@@ -421,8 +461,10 @@
 	<string name="rate_alert_five_star_message">Hooray! We love you, too!</string>
 	<string name="rate_alert_four_star_message">Thank you, we will do our best!</string>
 	<string name="rate_alert_less_than_four_star_message">Any idea how we can make it better?</string>
-	<string name="categories">Categories</string>
+	<string name="categories">Services</string>
 	<string name="history">History</string>
+	<string name="places">Places</string>
+	<string name="activities">Activities</string>
 	<string name="closed">Closed</string>
 	<string name="search_not_found">Oops, no results found.</string>
 	<string name="search_not_found_query">Try changing your search criteria.</string>

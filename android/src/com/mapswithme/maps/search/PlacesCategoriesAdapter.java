@@ -22,7 +22,7 @@ import com.mapswithme.util.ThemeUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolder>
+class PlacesCategoriesAdapter extends RecyclerView.Adapter<PlacesCategoriesAdapter.ViewHolder>
 {
   @Retention(RetentionPolicy.SOURCE)
   @IntDef({ TYPE_CATEGORY })
@@ -30,13 +30,9 @@ class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolde
   private static final int TYPE_CATEGORY = 0;
 
   @StringRes
-  private int[] mCategoryResIds;
   private int[] mPlacesCategoryResIds;
-  private int[] mActivitiesCategoryResIds;
   @DrawableRes
-  private int[] mIconResIds;
   private int[] mPlacesIconResIds;
-  private int[] mActivitiesIconResIds;
 
 
   private final LayoutInflater mInflater;
@@ -49,7 +45,7 @@ class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolde
 
   private CategoriesUiListener mListener;
 
-  CategoriesAdapter(@NonNull Fragment fragment)
+  PlacesCategoriesAdapter(@NonNull Fragment fragment)
   {
     if (fragment instanceof CategoriesUiListener)
       mListener = (CategoriesUiListener) fragment;
@@ -57,48 +53,49 @@ class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolde
     mInflater = LayoutInflater.from(fragment.getActivity());
   }
 
-  void updateCategories(@NonNull Fragment fragment)
+  void updatePlacesCategories(@NonNull Fragment fragment)
   {
     final Activity activity = fragment.getActivity();
     final String packageName = activity.getPackageName();
 
-    final String[] keys = getAllCategories();
+    final String[] keys = getAllPlacesCategories();
     final int numKeys = keys.length;
 
-    mCategoryResIds = new int[numKeys];
-    mIconResIds = new int[numKeys];
+    mPlacesCategoryResIds = new int[numKeys];
+    mPlacesIconResIds = new int[numKeys];
     for (int i = 0; i < numKeys; i++)
     {
       String key = keys[i];
-      mCategoryResIds[i] = getStringResIdByKey(activity.getResources(), packageName, key);
+      mPlacesCategoryResIds[i] = getStringResIdByKey(activity.getResources(), packageName, key);
 
-      if (mCategoryResIds[i] == 0)
+      if (mPlacesCategoryResIds[i] == 0)
         throw new IllegalStateException("Can't get string resource id for category:" + key);
 
-      mIconResIds[i] = getDrawableResIdByKey(activity.getApplicationContext(), packageName, key);
-      if (mIconResIds[i] == 0)
+      mPlacesIconResIds[i] = getDrawableResIdByKey(activity.getApplicationContext(), packageName, key);
+      if (mPlacesIconResIds[i] == 0)
         throw new IllegalStateException("Can't get icon resource id for category:" + key);
     }
   }
 
   @NonNull
-  private static String[] getAllCategories()
+  private static String[] getAllPlacesCategories()
   {
-    String[] searchCategories = DisplayedCategories.getKeys();
-    int amountSize = searchCategories.length;
-    String[] allCategories = new String[amountSize];
+    String[] searchPlacesCategories = DisplayedPlacesCategories.getKeys();
+    int amountSize = searchPlacesCategories.length;
+    String[] allPlacesCategories = new String[amountSize];
 
     for (int i = 0, j = 0; i < amountSize; i++)
     {
-      if (allCategories[i] == null)
+      if (allPlacesCategories[i] == null)
       {
-        allCategories[i] = searchCategories[j];
+        allPlacesCategories[i] = searchPlacesCategories[j];
         j++;
       }
     }
 
-    return allCategories;
+    return allPlacesCategories;
   }
+
 
   @StringRes
   private static int getStringResIdByKey(@NonNull Resources resources, @NonNull String packageName,
@@ -148,13 +145,13 @@ class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolde
   @Override
   public void onBindViewHolder(ViewHolder holder, int position)
   {
-    holder.setTextAndIcon(mCategoryResIds[position], mIconResIds[position]);
+    holder.setTextAndIcon(mPlacesCategoryResIds[position], mPlacesIconResIds[position]);
   }
 
   @Override
   public int getItemCount()
   {
-    return mCategoryResIds.length;
+    return mPlacesCategoryResIds.length;
   }
 
   class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
@@ -185,11 +182,11 @@ class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolde
 
     void onItemClicked(int position)
     {
-      String categoryEntryName = mResources.getResourceEntryName(mCategoryResIds[position]);
+      String categoryEntryName = mResources.getResourceEntryName(mPlacesCategoryResIds[position]);
       if (mListener != null)
       {
         @StringRes
-        int categoryId = mCategoryResIds[position];
+        int categoryId = mPlacesCategoryResIds[position];
         mListener.onSearchCategorySelected(mResources.getString(categoryId) + " ");
       }
     }
