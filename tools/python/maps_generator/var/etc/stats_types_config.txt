@@ -74,3 +74,5 @@ landuse-cemetery.*;area;Cemeteries
 leisure-park.*;area;Parks
 natural-beach;area;Beaches
 sponsored-booking;cnt;Booking hotels
+overlander-(wildfreedomcamping|freedomcamping|homestaycamping);cnt;Free Camping
+overlander-(paidcamping|wintercamping|restarea|parking|hotel);cnt;Paid Camping

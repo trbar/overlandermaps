@@ -102,7 +102,6 @@ public:
     case Metadata::FMD_COUNT: CHECK(false, (mdType, "should not be parsed from OSM."));
 
     case Metadata::FMD_OVERLANDER_ID: valid = ValidateAndFormat_overlander(v); break;
-    case Metadata::FMD_OVERLANDER_CATEGORY: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_SOURCE: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_DESCRIPTION: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_SERVICES: valid = ValidateAndFormat_overlander(v); break;

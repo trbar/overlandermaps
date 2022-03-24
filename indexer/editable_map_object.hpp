@@ -144,7 +144,6 @@ public:
   void SetWikipedia(std::string const & wikipedia);
 
   void SetOverlanderId(std::string const & id);
-  void SetOverlanderCategory(std::string const & category);
   void SetOverlanderSource(std::string const & source);
   void SetOverlanderDescription(std::string const & description);
   void SetOverlanderServices(std::string const & services);

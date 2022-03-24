@@ -156,11 +156,17 @@
 /* Detailed description of Measurement Units settings button */
 "measurement_units_summary" = "Choose between miles and kilometers";
 
-/* Search category for freedom camping, informal campsites, free campsites */
+/* Search category for wild freedom camping */
+"wildfreedomcamping" = "Wild Freedom Camping";
+
+/* Search category for freedom camping */
 "freedomcamping" = "Freedom Camping";
 
 /* Search category for paid camping */
 "paidcamping" = "Camping";
+
+/* Search category for homestay camping */
+"homestaycamping" = "Homestay Camping";
 
 /* Search category for cafes, bars, restaurants */
 "eat" = "Where to eat";
@@ -1729,35 +1735,77 @@
 
 "type.office.diplomatic" = "Embassy";
 
-"type.overlander.freedomcamping" = "Freedom Camping - iOverlander";
+"type.overlander.wildfreedomcamping" = "Wild Freedom Camping";
 
-"type.overlander.paidcamping" = "Camping - iOverlander";
+"type.overlander.freedomcamping" = "Freedom Camping";
 
-"type.overlander.fuel" = "Gas Station - iOverlander";
+"type.overlander.paidcamping" = "Paid Camping";
 
-"type.overlander.propane" = "Propane - iOverlander";
+"type.overlander.homestaycamping" = "Homestay Camping";
 
-"type.overlander.mechanic" = "Car Repair - iOverlander";
+"type.overlander.wintercamping" = "Winter Camping";
 
-"type.overlander.water" = "Water - iOverlander";
+"type.overlander.parking" = "Parking";
 
-"type.overlander.sanidump" = "Sanitation Dump - iOverlander";
+"type.overlander.hotel" = "Hotel";
 
-"type.overlander.tourism" = "Tourism - iOverlander";
+"type.overlander.fuel" = "Gas Station";
 
-"type.overlander.wifi" = "Wifi - iOverlander";
+"type.overlander.propane" = "Propane";
 
-"type.overlander.laundry" = "Laundry - iOverlander";
+"type.overlander.mechanic" = "Car Repair";
 
-"type.overlander.showers" = "Showers - iOverlander";
+"type.overlander.water" = "Water";
 
-"type.overlander.police" = "Police - iOverlander";
+"type.overlander.sanidump" = "Sanitation Dump";
 
-"type.overlander.warning" = "Warning - iOverlander";
+"type.overlander.tourism" = "Tourism";
 
-"type.overlander.picnic" = "Picnic - iOverlander";
+"type.overlander.wifi" = "Wifi";
 
-"type.overlander.restarea" = "Rest Area - iOverlander";
+"type.overlander.laundry" = "Laundry";
+
+"type.overlander.showers" = "Showers";
+
+"type.overlander.police" = "Police";
+
+"type.overlander.warning" = "Warning";
+
+"type.overlander.picnic" = "Picnic";
+
+"type.overlander.restarea" = "Rest Area";
+
+"type.overlander.picnic" = "Picnic";
+
+"type.overlander.4g" = "4G Data";
+
+"type.overlander.pets" = "Pets";
+
+"type.overlander.swimmingpool" = "Swimming Pool";
+
+"type.overlander.garbage" = "Garbage";
+
+"type.overlander.carwash" = "Car Wash";
+
+"type.overlander.park" = "Park";
+
+"type.overlander.motorcycle" = "Motorcycling";
+
+"type.overlander.surfing" = "Surfing";
+
+"type.overlander.mountainbike" = "Mountain Biking";
+
+"type.overlander.hiking" = "Hiking";
+
+"type.overlander.fishing" = "Fishing";
+
+"type.overlander.beachfishing" = "Beach Fishing";
+
+"type.overlander.kayak" = "Kayaking";
+
+"type.overlander.climbing" = "Climbing";
+
+"type.overlander.swimming" = "Swimming";
 
 "type.amenity.fast_food" = "Fast Food";
 

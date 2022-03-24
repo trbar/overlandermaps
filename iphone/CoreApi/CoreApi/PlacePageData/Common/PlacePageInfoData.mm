@@ -50,8 +50,6 @@ using namespace osm;
           break;
         case Props::OverlanderId:
           _overlanderId = @(rawData.GetOverlanderId().c_str());
-        case Props::OverlanderCategory:
-          _overlanderCategory = @(rawData.GetOverlanderCategory().c_str());
         case Props::OverlanderSource:
           _overlanderSource = @(rawData.GetOverlanderSource().c_str());
         case Props::OverlanderDescription:

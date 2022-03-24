@@ -71,7 +71,6 @@ string DebugPrint(Props props)
   case osm::Props::BuildingLevels: k = "building:levels"; break;
   case osm::Props::Level: k = "level"; break;
   case osm::Props::OverlanderId: k = "overlander:id"; break;
-  case osm::Props::OverlanderCategory: k = "overlander:category"; break;
   case osm::Props::OverlanderSource: k = "overlander:source"; break;
   case osm::Props::OverlanderDescription: k = "overlander:description"; break;
   case osm::Props::OverlanderServices: k = "overlander:services"; break;
@@ -317,11 +316,6 @@ bool MapObject::IsBuilding() const { return ftypes::IsBuildingChecker::Instance(
 string MapObject::GetOverlanderId() const
 {
   return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_ID);
-}
-
-string MapObject::GetOverlanderCategory() const
-{
-  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CATEGORY);
 }
 
 string MapObject::GetOverlanderSource() const

@@ -275,7 +275,6 @@ public:
     string const & atm = HasAtm(f) ? "yes" : "";
 
     string const & overlander_id = meta.Get(feature::Metadata::FMD_OVERLANDER_ID);
-    string const & overlander_category = meta.Get(feature::Metadata::FMD_OVERLANDER_CATEGORY);
     string const & overlander_source = meta.Get(feature::Metadata::FMD_OVERLANDER_SOURCE);
     string const & overlander_description = meta.Get(feature::Metadata::FMD_OVERLANDER_DESCRIPTION);
     string const & overlander_services = meta.Get(feature::Metadata::FMD_OVERLANDER_SERVICES);
@@ -291,8 +290,8 @@ public:
         osmId,                        uid,                        lat,                      lon,                     mwmName,                    category,                       name,                         city,
         addrStreet,                   addrHouse,                  phone,                    website,                 cuisine,                    stars,                          operatr,                      internet,
         denomination,                 wheelchair,                 opening_hours,            wikipedia,               floor,                      fee,                            atm,                          contact_facebook,
-        contact_instagram,            contact_twitter,            contact_vk,               contact_line,            overlander_id,              overlander_category,            overlander_source,            overlander_description,
-        overlander_services,          overlander_activities,      overlander_link,          overlander_rating,       overlander_tags,            overlander_checkin3,            overlander_checkin2,          overlander_checkin1};
+        contact_instagram,            contact_twitter,            contact_vk,               contact_line,            overlander_id,              overlander_source,              overlander_description,       overlander_services,
+        overlander_activities,        overlander_link,            overlander_rating,        overlander_tags,         overlander_checkin3,        overlander_checkin2,            overlander_checkin1};
     AppendNames(f, columns);
     PrintAsCSV(columns, ';', cout);
   }
@@ -305,9 +304,9 @@ void PrintHeader()
                             "phone",                         "website",                    "cuisines",                   "stars",                         "operator",
                             "internet",                      "denomination",               "wheelchair",                 "opening_hours",                 "wikipedia",
                             "floor",                         "fee",                        "atm",                        "contact_facebook",              "contact_instagram",
-                            "contact_twitter",               "contact_vk",                 "contact_line",               "overlander_id",                 "overlander_category",
-                            "overlander_source",             "overlander_description",     "overlander_services",        "overlander_activities",         "overlander_link",       
-                            "overlander_rating",             "overlander_tags",            "overlander_checkin3",        "overlander_checkin2",           "overlander_checkin1"};
+                            "contact_twitter",               "contact_vk",                 "contact_line",               "overlander_id",                 "overlander_source",
+                            "overlander_description",        "overlander_services",        "overlander_activities",      "overlander_link",               "overlander_rating",
+                            "overlander_tags",               "overlander_checkin3",        "overlander_checkin2",        "overlander_checkin1"};
   // Append all supported name languages in order.
   for (uint8_t idx = 1; idx < kLangCount; idx++)
     columns.push_back("name_" + string(StringUtf8Multilang::GetLangByCode(idx)));

@@ -35,7 +35,6 @@ static unordered_map<string, EType> const kNamesToFMD = {
     {"postcode", feature::Metadata::FMD_POSTCODE},
     {"wikipedia", feature::Metadata::FMD_WIKIPEDIA},
     {"overlander_id", feature::Metadata::FMD_OVERLANDER_ID},
-    {"overlander_category", feature::Metadata::FMD_OVERLANDER_CATEGORY},
     {"overlander_source", feature::Metadata::FMD_OVERLANDER_SOURCE},
     {"overlander_description", feature::Metadata::FMD_OVERLANDER_DESCRIPTION},
     {"overlander_services", feature::Metadata::FMD_OVERLANDER_SERVICES},

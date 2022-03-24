@@ -564,11 +564,6 @@ void EditableMapObject::SetOverlanderId(std::string const & id)
   m_metadata.Set(feature::Metadata::FMD_OVERLANDER_ID, ValidateAndFormat_overlander(id));
 }
 
-void EditableMapObject::SetOverlanderCategory(std::string const & category)
-{
-  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CATEGORY, ValidateAndFormat_overlander(category));
-}
-
 void EditableMapObject::SetOverlanderSource(std::string const & source)
 {
   m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SOURCE, ValidateAndFormat_overlander(source));

@@ -24,21 +24,23 @@ class PlacePageOverlanderCheckinViewController: UIViewController {
   override func viewDidLoad() {
     _ = placePageInfoData
     
-    if (placePageInfoData.overlanderDescription != "") {
-      let dateAndAuthor = (placePageInfoData.overlanderCheckin1time)! + " by " + (placePageInfoData.overlanderCheckin1author)!
-      checkin1View = createCheckinItem(dateAndAuthor: dateAndAuthor, comment: placePageInfoData.overlanderDescription!)
+    if (placePageInfoData.overlanderCheckin1 != nil && placePageInfoData.overlanderCheckin1 != "") {
+      let checkin1ArrayElements = placePageInfoData.overlanderCheckin1!.components(separatedBy: "|")
+      let checkin1DateAndAuthor = checkin1ArrayElements[0] + " by " + checkin1ArrayElements[1]
+      checkin1View = createCheckinItem(dateAndAuthor: checkin1DateAndAuthor, comment: checkin1ArrayElements[3])
     }
     
-    if (placePageInfoData.overlanderCheckin2comment != "") {
-      let dateAndAuthor = (placePageInfoData.overlanderCheckin2time)! + " by " + (placePageInfoData.overlanderCheckin2author)!
-      checkin2View = createCheckinItem(dateAndAuthor: dateAndAuthor, comment: placePageInfoData.overlanderCheckin2comment!)
+    if (placePageInfoData.overlanderCheckin2 != nil && placePageInfoData.overlanderCheckin2 != "") {
+      let checkin2ArrayElements = placePageInfoData.overlanderCheckin2!.components(separatedBy: "|")
+      let checkin2DateAndAuthor = checkin2ArrayElements[0] + " by " + checkin2ArrayElements[1]
+      checkin1View = createCheckinItem(dateAndAuthor: checkin2DateAndAuthor, comment: checkin2ArrayElements[3])
     }
     
-    if (placePageInfoData.overlanderCheckin3comment != "") {
-      let dateAndAuthor = (placePageInfoData.overlanderCheckin3time)! + " by " + (placePageInfoData.overlanderCheckin3author)!
-      checkin3View = createCheckinItem(dateAndAuthor: dateAndAuthor, comment: placePageInfoData.overlanderCheckin3comment!)
+    if (placePageInfoData.overlanderCheckin3 != nil && placePageInfoData.overlanderCheckin3 != "") {
+      let checkin3ArrayElements = placePageInfoData.overlanderCheckin3!.components(separatedBy: "|")
+      let checkin3DateAndAuthor = checkin3ArrayElements[0] + " by " + checkin3ArrayElements[1]
+      checkin3View = createCheckinItem(dateAndAuthor: checkin3DateAndAuthor, comment: checkin3ArrayElements[3])
     }
-
   }
   // MARK: private
 

@@ -55,7 +55,6 @@ enum class Props : uint8_t
   ContactVk = 17,
   ContactLine = 18,
   OverlanderId = 19,
-  OverlanderCategory = 20,
   OverlanderSource = 21,
   OverlanderDescription = 22,
   OverlanderServices = 23,
@@ -126,7 +125,6 @@ public:
   ftraits::WheelchairAvailability GetWheelchairType() const;
   std::string GetAirportIata() const;
   std::string GetOverlanderId() const;
-  std::string GetOverlanderCategory() const;
   std::string GetOverlanderSource() const;
   std::string GetOverlanderDescription() const;
   std::string GetOverlanderServices() const;
@@ -196,7 +194,6 @@ std::vector<Props> MetadataToProps(std::vector<T> const & metadata)
     case Metadata::FMD_EMAIL: res.push_back(Props::Email); break;
     case Metadata::FMD_WIKIPEDIA: res.push_back(Props::Wikipedia); break;
     case Metadata::FMD_OVERLANDER_ID: res.push_back(Props::OverlanderId); break;
-    case Metadata::FMD_OVERLANDER_CATEGORY: res.push_back(Props::OverlanderCategory); break;
     case Metadata::FMD_OVERLANDER_SOURCE: res.push_back(Props::OverlanderSource); break;
     case Metadata::FMD_OVERLANDER_DESCRIPTION: res.push_back(Props::OverlanderDescription); break;
     case Metadata::FMD_OVERLANDER_SERVICES: res.push_back(Props::OverlanderServices); break;

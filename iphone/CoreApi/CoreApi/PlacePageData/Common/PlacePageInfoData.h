@@ -19,7 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly, nullable) NSString *formattedCoordinates;
 @property(nonatomic, readonly) BOOL wifiAvailable;
 @property(nonatomic, readonly, nullable) NSString *overlanderId;
-@property(nonatomic, readonly, nullable) NSString *overlanderCategory;
 @property(nonatomic, readonly, nullable) NSString *overlanderSource;
 @property(nonatomic, readonly, nullable) NSString *overlanderDescription;
 @property(nonatomic, readonly, nullable) NSString *overlanderServices;

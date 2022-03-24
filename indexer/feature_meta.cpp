@@ -113,29 +113,27 @@ bool Metadata::TypeFromString(string const & k, Metadata::EType & outType)
     outType = Metadata::FMD_AIRPORT_IATA;
   else if (k == "duration")
     outType = Metadata::FMD_DURATION;
-  else if (k == "overlander:location")
-    outType = Metadata::FMD_OVERLANDER_ID;
   else if (k == "overlander:id")
-    outType = Metadata::FMD_OVERLANDER_CATEGORY;
-  else if (k == "overlander:category")
-    outType = Metadata::FMD_OVERLANDER_SOURCE;
+    outType = Metadata::FMD_OVERLANDER_ID;
   else if (k == "overlander:source")
-    outType = Metadata::FMD_OVERLANDER_DESCRIPTION;
+    outType = Metadata::FMD_OVERLANDER_SOURCE;
   else if (k == "overlander:description")
-    outType = Metadata::FMD_OVERLANDER_SERVICES;
+    outType = Metadata::FMD_OVERLANDER_DESCRIPTION;
   else if (k == "overlander:services")
-    outType = Metadata::FMD_OVERLANDER_ACTIVITIES;
+    outType = Metadata::FMD_OVERLANDER_SERVICES;
   else if (k == "overlander:activities")
-    outType = Metadata::FMD_OVERLANDER_LINK;
+    outType = Metadata::FMD_OVERLANDER_ACTIVITIES;
   else if (k == "overlander:link")
-    outType = Metadata::FMD_OVERLANDER_RATING;
+    outType = Metadata::FMD_OVERLANDER_LINK;
   else if (k == "overlander:rating")
-    outType = Metadata::FMD_OVERLANDER_TAGS;
+    outType = Metadata::FMD_OVERLANDER_RATING;
   else if (k == "overlander:tags")
-    outType = Metadata::FMD_OVERLANDER_CHECKIN3;
+    outType = Metadata::FMD_OVERLANDER_TAGS;
   else if (k == "overlander:checkin3")
-    outType = Metadata::FMD_OVERLANDER_CHECKIN2;
+    outType = Metadata::FMD_OVERLANDER_CHECKIN3;
   else if (k == "overlander:checkin2")
+    outType = Metadata::FMD_OVERLANDER_CHECKIN2;
+  else if (k == "overlander:checkin1")
     outType = Metadata::FMD_OVERLANDER_CHECKIN1;
   else
     return false;
@@ -225,7 +223,6 @@ string ToString(Metadata::EType type)
   case Metadata::FMD_DURATION: return "duration";
   case Metadata::FMD_COUNT: CHECK(false, ("FMD_COUNT can not be used as a type."));
   case Metadata::FMD_OVERLANDER_ID: return "overlander:id";
-  case Metadata::FMD_OVERLANDER_CATEGORY: return "overlander:category";
   case Metadata::FMD_OVERLANDER_SOURCE: return "overlander:source";
   case Metadata::FMD_OVERLANDER_DESCRIPTION: return "overlander:description";
   case Metadata::FMD_OVERLANDER_SERVICES: return "overlander:services";

@@ -17,7 +17,13 @@ DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_ho
             "mechanic",
             "parking",
             "wifi",
+            "4g",
             "fuel",
+            "lpg",
+            "pets",
+            "park",
+            "garbage",
+            "carwash",
             "picnic",
             "warning",
             "police",
@@ -32,7 +38,8 @@ DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_ho
             "entertainment",
             "hospital",
             "pharmacy",
-            "post"};
+            "post",
+            "swimmingpool"};
 }
 
 void DisplayedCategories::Modify(CategoriesModifier & modifier)

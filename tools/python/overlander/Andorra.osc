@@ -1,154 +1,102 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <osmChange version="0.6" generator="overlander">
   <node id="9381290681" version="1" timestamp="2020-11-13T00:00:00Z" lat="42.45431" lon="1.48611">
-    <tag k="overlander" v="sanidump"/>
+    <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander:id" v="69221-centre-commercial-river"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/69221-centre-commercial-river"/>
+    <tag k="overlander:rating" v="3.5"/>
     <tag k="name" v="Centre commercial River"/>
     <tag k="overlander:description" v="Centre commercial offrant eau et vidange sur le parking du bas. Accès par la rampe au niveau du rond-point de la station service Riveroil. Possibilité de dormir sur le parking. Magasin d'un bon rapport qualité/prix et à deux pas. Faire les courses au magasin avant de faire l'essence pour obtenir un rabais.&#13;&#10;&#13;&#10;Shopping center offering water and dumping on the parking of the bottom. Access via the ramp at the roundabout of the Riveroil gas station. Possibility of sleeping in the parking. Store a good value for money and close. Shop at the store before refueling for a discount."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:checkin1comment" v="Its ok. Stopped here for one night. On a bit of a slope but flatter next to the river. Wifi from shop reached ok. Dont forget Andorra not in most Data plans so switch off data roaming."/>
-    <tag k="overlander:checkin2comment" v="Centre commercial offrant eau et vidange sur le parking du bas. AccÃ¨s par la rampe au niveau du rond-point de la station service Riveroil. PossibilitÃ© de dormir sur le parking. Magasin d'un bon rapport qualitÃ©/prix et Ã  deux pas. Faire les courses au magasin avant de faire l'essence pour obtenir un rabais."/>
-    <tag k="overlander:checkin1date" v="November 13th, 2020"/>
-    <tag k="overlander:checkin2date" v="February 27th, 2017"/>
-    <tag k="overlander:checkin1author" v="bobandjune.com"/>
-    <tag k="overlander:checkin2author" v="parenthesenomade.com"/>
+    <tag k="overlander:services" v=""/>
+    <tag k="overlander:activities" v=""/>
+    <tag k="overlander:checkin1" v="November 13th, 2020|bobandjune.com|4|Its ok. Stopped here for one night. On a bit of a slope but flatter next to the river. Wifi from shop reached ok. Dont forget Andorra not in most Data plans so switch off data roaming."/>
+    <tag k="overlander:checkin2" v="February 27th, 2017|parenthesenomade.com|3|Centre commercial offrant eau et vidange sur le parking du bas. AccÃ¨s par la rampe au niveau du rond-point de la station service Riveroil. PossibilitÃ© de dormir sur le parking. Magasin d'un bon rapport qualitÃ©/prix et Ã  deux pas. Faire les courses au magasin avant de faire l'essence pour obtenir un rabais."/>
   </node>
   <node id="9381290682" version="1" timestamp="2017-02-27T00:00:00Z" lat="42.53382" lon="1.70161">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander:id" v="69226-parking-station-granvalira-grau-roig"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/69226-parking-station-granvalira-grau-roig"/>
+    <tag k="overlander:rating" v="4"/>
     <tag k="name" v="Parking station Granvalira Grau Roig"/>
     <tag k="overlander:description" v="Immense parking donnant accès aux pistes de l'immense domaine skiable de Granvalira. Autorisé hiver comme été par la station. Pas de services. Toilettes ouvertes en journée en saison hivernale.&#13;&#10;&#13;&#10;Huge parking with access to the slopes of the huge ski resort of Granvalira. Allowed winter as summer by the station. No services. Toilets open during the day in the winter season."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="Yes - Slow"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="Yes"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="Yes"/>
-    <tag k="overlander:bigrigfriendly" v="Yes"/>
-    <tag k="overlander:tentfriendly" v="No"/>
-    <tag k="overlander:petfriendly" v="No"/>
-    <tag k="overlander:checkin1comment" v="Immense parking donnant accÃ¨s aux pistes de l'immense domaine skiable de Granvalira. AutorisÃ© hiver comme Ã©tÃ© par la station. Pas de services. Toilettes ouvertes en journÃ©e en saison hivernale."/>
-    <tag k="overlander:checkin1date" v="February 27th, 2017"/>
-    <tag k="overlander:checkin1author" v="parenthesenomade.com"/>
+    <tag k="overlander:services" v="Wifi:Yes-Slow|Restaurant|Toilets|BigRigFriendly|CampervanFriendly"/>
+    <tag k="overlander:activities" v="Fishing|Kayaking"/>
+    <tag k="overlander:checkin1" v="February 27th, 2017|parenthesenomade.com|4|Immense parking donnant accÃ¨s aux pistes de l'immense domaine skiable de Granvalira. AutorisÃ© hiver comme Ã©tÃ© par la station. Pas de services. Toilettes ouvertes en journÃ©e en saison hivernale."/>
   </node>
   <node id="9381290683" version="1" timestamp="2017-02-27T00:00:00Z" lat="42.57833" lon="1.64747">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander:id" v="69227-parking-station-granvalira-el-tarter"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/69227-parking-station-granvalira-el-tarter"/>
+    <tag k="overlander:rating" v="4.5"/>
     <tag k="name" v="Parking station Granvalira El Tarter"/>
     <tag k="overlander:description" v="Immense parking donnant accès aux pistes de l'immense domaine skiable de Granvalira. Autorisé hiver comme été par la station (limité à 48h en hiver). Pas de services. Toilettes ouvertes en journée en saison hivernale.&#13;&#10;&#13;&#10;Huge parking with access to the slopes of the huge ski resort of Granvalira. Allowed winter and summer by the resort (limited to 48h in winter). No services. Toilets open during the day in the winter season."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="Yes - Slow"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="Yes"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="Yes"/>
-    <tag k="overlander:bigrigfriendly" v="Yes"/>
-    <tag k="overlander:tentfriendly" v="No"/>
-    <tag k="overlander:petfriendly" v="No"/>
-    <tag k="overlander:checkin1comment" v="Immense parking donnant accÃ¨s aux pistes de l'immense domaine skiable de Granvalira. AutorisÃ© hiver comme Ã©tÃ© par la station (limitÃ© Ã  48h en hiver). Pas de services. Toilettes ouvertes en journÃ©e en saison hivernale."/>
-    <tag k="overlander:checkin1date" v="February 27th, 2017"/>
-    <tag k="overlander:checkin1author" v="parenthesenomade.com"/>
+    <tag k="overlander:services" v="Wifi:Yes-Slow|Restaurant|Toilets|BigRigFriendly|CampervanFriendly"/>
+    <tag k="overlander:activities" v="Fishing|Kayaking"/>
+    <tag k="overlander:checkin1" v="February 27th, 2017|parenthesenomade.com|4.5|Immense parking donnant accÃ¨s aux pistes de l'immense domaine skiable de Granvalira. AutorisÃ© hiver comme Ã©tÃ© par la station (limitÃ© Ã  48h en hiver). Pas de services. Toilettes ouvertes en journÃ©e en saison hivernale."/>
   </node>
   <node id="9381290684" version="1" timestamp="2019-08-11T00:00:00Z" lat="42.54246779" lon="1.70369368">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander:id" v="104191-coex-picnic-spot-besides-cg2"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/104191-coex-picnic-spot-besides-cg2"/>
+    <tag k="overlander:rating" v="5"/>
     <tag k="name" v="COEX picnic spot (besides CG2)"/>
     <tag k="overlander:description" v="5 spaces and 3 picnic benches plus (bizarrely) free WiFi (useful as Andorra is outside of the EU roaming area).&#13;&#10;&#13;&#10;Lovely views, some bins and picnic benches but no services. Next to the large snow plough garage."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="Yes - Slow"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="No"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="No"/>
-    <tag k="overlander:bigrigfriendly" v="No"/>
-    <tag k="overlander:tentfriendly" v="No"/>
-    <tag k="overlander:petfriendly" v="Unknown"/>
-    <tag k="overlander:checkin1comment" v="5 spaces and 3 picnic benches plus (bizarrely) free WiFi (useful as Andorra is outside of the EU roaming area)."/>
-    <tag k="overlander:checkin1date" v="August 11th, 2019"/>
-    <tag k="overlander:checkin1author" v="geoffreythisis"/>
+    <tag k="overlander:services" v="Wifi:Yes-Fast|Picnic|CampervanFriendly"/>
+    <tag k="overlander:activities" v="Hiking"/>
+    <tag k="overlander:checkin1" v="August 11th, 2019|geoffreythisis|5|5 spaces and 3 picnic benches plus (bizarrely) free WiFi (useful as Andorra is outside of the EU roaming area)."/>
   </node>
   <node id="9381290685" version="1" timestamp="2020-08-14T00:00:00Z" lat="42.5461846" lon="1.41960546">
-    <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="overlander:id" v="104325-andorra-and-spain-border"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/104325-andorra-and-spain-border"/>
+    <tag k="overlander:rating" v="4.67"/>
     <tag k="name" v="Andorra and Spain border"/>
     <tag k="overlander:description" v="Beautiful spot on the border of Andorra and Spain. Incredible views there is space for few big rig vans. Its about half an hour drive to Andorra City Centre and 10 mins drive away there is cable car lift with fresh water access. It's little busy during the day but quiet at night. "/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="No"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="No"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="No"/>
-    <tag k="overlander:bigrigfriendly" v="Yes"/>
-    <tag k="overlander:tentfriendly" v="Unknown"/>
-    <tag k="overlander:petfriendly" v="Yes"/>
-    <tag k="overlander:checkin1comment" v="it's worth noting that the road from the Andorra side is perfect tarmac, but on the Spanish side is definitely 4x4 only (but is a beautiful route so highly recommended if you have the means)"/>
-    <tag k="overlander:checkin2comment" v="Top Lage direkt auf der Grenze mit toller Aussicht auf beide Seiten."/>
-    <tag k="overlander:checkin3comment" v="Beautiful spot on the border of Andorra and Spain. Incredible views there is space for few big rig vans. Its about half an hour drive to Andorra City Centre and 10 mins drive away there is cable car lift with fresh water access. It's little busy during the day but quiet at night. "/>
-    <tag k="overlander:checkin1date" v="August 14th, 2020"/>
-    <tag k="overlander:checkin2date" v="July 24th, 2020"/>
-    <tag k="overlander:checkin3date" v="August 12th, 2019"/>
-    <tag k="overlander:checkin1author" v="Improbably Adventuring"/>
-    <tag k="overlander:checkin2author" v="thomas"/>
-    <tag k="overlander:checkin3author" v="bwstencel"/>
+    <tag k="overlander:services" v="CampervanFriendly|TentFriendly|PetFriendly"/>
+    <tag k="overlander:activities" v="Hiking|Swimming"/>
+    <tag k="overlander:checkin1" v="August 14th, 2020|Improbably Adventuring|5|it's worth noting that the road from the Andorra side is perfect tarmac, but on the Spanish side is definitely 4x4 only (but is a beautiful route so highly recommended if you have the means)"/>
+    <tag k="overlander:checkin2" v="July 24th, 2020|thomas|5|Top Lage direkt auf der Grenze mit toller Aussicht auf beide Seiten."/>
+    <tag k="overlander:checkin3" v="August 12th, 2019|bwstencel|4|Beautiful spot on the border of Andorra and Spain. Incredible views there is space for few big rig vans. Its about half an hour drive to Andorra City Centre and 10 mins drive away there is cable car lift with fresh water access. It's little busy during the day but quiet at night. "/>
   </node>
   <node id="9381290686" version="1" timestamp="2020-07-23T00:00:00Z" lat="42.546124999999996" lon="1.7185166666666665">
-    <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="overlander:id" v="133491-pas-de-la-casa"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/133491-pas-de-la-casa"/>
+    <tag k="overlander:rating" v="5"/>
     <tag k="name" v="Pas de la Casa"/>
     <tag k="overlander:description" v="Absolute calm from the street. Ground clearance required. Strong incline. Then the best views.&#13;&#10;&#13;&#10;Absolute Ruhe da ab von der Strasse. Bodenfreiheit erforderlich. Starke Steigung. Dann beste Aussichten."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="No"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="No"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="No"/>
-    <tag k="overlander:bigrigfriendly" v="Yes"/>
-    <tag k="overlander:tentfriendly" v="Yes"/>
-    <tag k="overlander:petfriendly" v="Yes"/>
-    <tag k="overlander:checkin1comment" v="Absolute Ruhe da ab von der Strasse. Bodenfreiheit erforderlich. Starke Steigung. Dann beste Aussichten."/>
-    <tag k="overlander:checkin1date" v="July 23rd, 2020"/>
-    <tag k="overlander:checkin1author" v="thomas"/>
+    <tag k="overlander:services" v="CampervanFriendly|TentFriendly|PetFriendly"/>
+    <tag k="overlander:activities" v="Hiking"/>
+    <tag k="overlander:checkin1" v="July 23rd, 2020|thomas|5|Absolute Ruhe da ab von der Strasse. Bodenfreiheit erforderlich. Starke Steigung. Dann beste Aussichten."/>
   </node>
   <node id="9381290687" version="1" timestamp="2020-07-24T00:00:00Z" lat="42.62582666666667" lon="1.4792583333333336">
-    <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="overlander:id" v="133586-road-gc3"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/133586-road-gc3"/>
+    <tag k="overlander:rating" v="5"/>
     <tag k="name" v="Road GC3"/>
     <tag k="overlander:description" v="Nice little grassy spot with nice view. Access through non-paved road. 300m further from 'La Coma 2.200m'. Furthher up the road is unfortunately forbidden.&#13;&#10;&#13;&#10;&#13;&#10;Nette kleine Wiese mit Ausblick. Zufahrt über Piste. Ab Bahnstation nur ab 16:30. Weiterfahrt 300 Meter weiter, dann leider verboten."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="No"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="No"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="No"/>
-    <tag k="overlander:bigrigfriendly" v="Yes"/>
-    <tag k="overlander:tentfriendly" v="Yes"/>
-    <tag k="overlander:petfriendly" v="Yes"/>
-    <tag k="overlander:checkin1comment" v="Nette kleine Wiese mit Ausblick. Zufahrt Ã¼ber Piste. Ab Bahnstation nur ab 16:30. Weiterfahrt 300 Meter weiter, dann leider verboten."/>
-    <tag k="overlander:checkin1date" v="July 24th, 2020"/>
-    <tag k="overlander:checkin1author" v="thomas"/>
+    <tag k="overlander:services" v="CampervanFriendly|TentFriendly|PetFriendly"/>
+    <tag k="overlander:activities" v="Hiking"/>
+    <tag k="overlander:checkin1" v="July 24th, 2020|thomas|5|Nette kleine Wiese mit Ausblick. Zufahrt Ã¼ber Piste. Ab Bahnstation nur ab 16:30. Weiterfahrt 300 Meter weiter, dann leider verboten."/>
   </node>
   <node id="9381290688" version="1" timestamp="2020-07-26T00:00:00Z" lat="42.47187166666666" lon="1.5441633333333333">
-    <tag k="overlander" v="freedomcamping"/>
+    <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="overlander:id" v="133798-2527-meter"/>
+    <tag k="overlander:source" v="iOverlander"/>
+    <tag k="overlander:link" v="https://www.ioverlander.com//places/133798-2527-meter"/>
+    <tag k="overlander:rating" v="4.5"/>
     <tag k="name" v="2527 Meter"/>
     <tag k="overlander:description" v="Camp auf über 2500 Meter über Meer. Hammer Panorama. Nur mit 4x4 und guter Bodenfreiheit erreichbar."/>
-    <tag k="overlander:open" v="Yes"/>
-    <tag k="overlander:electricity" v="No"/>
-    <tag k="overlander:wifi" v="No"/>
-    <tag k="overlander:kitchen" v="No"/>
-    <tag k="overlander:restaurant" v="No"/>
-    <tag k="overlander:showers" v="No"/>
-    <tag k="overlander:water" v="No"/>
-    <tag k="overlander:toilets" v="No"/>
-    <tag k="overlander:bigrigfriendly" v="No"/>
-    <tag k="overlander:tentfriendly" v="No"/>
-    <tag k="overlander:petfriendly" v="Yes"/>
-    <tag k="overlander:checkin1comment" v="Camp auf Ã¼ber 2500 Meter Ã¼ber Meer. Hammer Panorama. Nur mit 4x4 und guter Bodenfreiheit erreichbar."/>
-    <tag k="overlander:checkin1date" v="July 26th, 2020"/>
-    <tag k="overlander:checkin1author" v="thomas"/>
+    <tag k="overlander:services" v="TentFriendly|PetFriendly"/>
+    <tag k="overlander:activities" v="Hiking"/>
+    <tag k="overlander:checkin1" v="July 26th, 2020|thomas|4.5|Camp auf Ã¼ber 2500 Meter Ã¼ber Meer. Hammer Panorama. Nur mit 4x4 und guter Bodenfreiheit erreichbar."/>
   </node>
 </osmChange>
