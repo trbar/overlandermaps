@@ -115,12 +115,6 @@ class PlacePageInfoViewController: UIViewController {
       }
     }
 
-    if let website = placePageInfoData.website {
-      websiteView = createInfoItem(website, icon: UIImage(named: "ic_placepage_website"), style: .link) { [weak self] in
-        self?.delegate?.didPressWebsite()
-      }
-    }
-
     if let email = placePageInfoData.email {
       emailView = createInfoItem(email, icon: UIImage(named: "ic_placepage_email"), style: .link) { [weak self] in
         self?.delegate?.didPressEmail()
@@ -150,8 +144,14 @@ class PlacePageInfoViewController: UIViewController {
       for (_, activity) in overlanderActivities.enumerated() {
         let lowercaseActivityString = String(activity).lowercased()
         let overlanderInfoString = L(String(activity)) + " - " + L("Yes")
-        let overlanderInfoIcon = "ic_placepage_overlander_" + L(lowercaseActivityString)
+        let overlanderInfoIcon = "ic_placepage_overlander_" + lowercaseActivityString
         overlanderActivitiesView = createInfoItem(overlanderInfoString, icon: UIImage(named: overlanderInfoIcon))
+      }
+    }
+    
+    if let website = placePageInfoData.overlanderLink {
+      websiteView = createInfoItem(website, icon: UIImage(named: "ic_placepage_website"), style: .link) { [weak self] in
+        self?.delegate?.didPressWebsite()
       }
     }
 

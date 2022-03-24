@@ -2,6 +2,7 @@
 <osmChange version="0.6" generator="overlander">
   <node id="9381290681" version="1" timestamp="2020-11-13T00:00:00Z" lat="42.45431" lon="1.48611">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="stars" v="4"/>
     <tag k="overlander:id" v="69221-centre-commercial-river"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/69221-centre-commercial-river"/>
@@ -15,6 +16,7 @@
   </node>
   <node id="9381290682" version="1" timestamp="2017-02-27T00:00:00Z" lat="42.53382" lon="1.70161">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="stars" v="4"/>
     <tag k="overlander:id" v="69226-parking-station-granvalira-grau-roig"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/69226-parking-station-granvalira-grau-roig"/>
@@ -27,10 +29,11 @@
   </node>
   <node id="9381290683" version="1" timestamp="2017-02-27T00:00:00Z" lat="42.57833" lon="1.64747">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="stars" v="3"/>
     <tag k="overlander:id" v="69227-parking-station-granvalira-el-tarter"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/69227-parking-station-granvalira-el-tarter"/>
-    <tag k="overlander:rating" v="4.5"/>
+    <tag k="overlander:rating" v="3.5"/>
     <tag k="name" v="Parking station Granvalira El Tarter"/>
     <tag k="overlander:description" v="Immense parking donnant accès aux pistes de l'immense domaine skiable de Granvalira. Autorisé hiver comme été par la station (limité à 48h en hiver). Pas de services. Toilettes ouvertes en journée en saison hivernale.&#13;&#10;&#13;&#10;Huge parking with access to the slopes of the huge ski resort of Granvalira. Allowed winter and summer by the resort (limited to 48h in winter). No services. Toilets open during the day in the winter season."/>
     <tag k="overlander:services" v="Wifi:Yes-Slow|Restaurant|Toilets|BigRigFriendly|CampervanFriendly"/>
@@ -39,6 +42,7 @@
   </node>
   <node id="9381290684" version="1" timestamp="2019-08-11T00:00:00Z" lat="42.54246779" lon="1.70369368">
     <tag k="overlander" v="freedomcamping"/>
+    <tag k="stars" v="5"/>
     <tag k="overlander:id" v="104191-coex-picnic-spot-besides-cg2"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/104191-coex-picnic-spot-besides-cg2"/>
@@ -51,10 +55,11 @@
   </node>
   <node id="9381290685" version="1" timestamp="2020-08-14T00:00:00Z" lat="42.5461846" lon="1.41960546">
     <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="stars" v="2"/>
     <tag k="overlander:id" v="104325-andorra-and-spain-border"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/104325-andorra-and-spain-border"/>
-    <tag k="overlander:rating" v="4.67"/>
+    <tag k="overlander:rating" v="2.75"/>
     <tag k="name" v="Andorra and Spain border"/>
     <tag k="overlander:description" v="Beautiful spot on the border of Andorra and Spain. Incredible views there is space for few big rig vans. Its about half an hour drive to Andorra City Centre and 10 mins drive away there is cable car lift with fresh water access. It's little busy during the day but quiet at night. "/>
     <tag k="overlander:services" v="CampervanFriendly|TentFriendly|PetFriendly"/>
@@ -65,6 +70,7 @@
   </node>
   <node id="9381290686" version="1" timestamp="2020-07-23T00:00:00Z" lat="42.546124999999996" lon="1.7185166666666665">
     <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="stars" v="5"/>
     <tag k="overlander:id" v="133491-pas-de-la-casa"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/133491-pas-de-la-casa"/>
@@ -77,10 +83,11 @@
   </node>
   <node id="9381290687" version="1" timestamp="2020-07-24T00:00:00Z" lat="42.62582666666667" lon="1.4792583333333336">
     <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="stars" v="4"/>
     <tag k="overlander:id" v="133586-road-gc3"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/133586-road-gc3"/>
-    <tag k="overlander:rating" v="5"/>
+    <tag k="overlander:rating" v="4.25"/>
     <tag k="name" v="Road GC3"/>
     <tag k="overlander:description" v="Nice little grassy spot with nice view. Access through non-paved road. 300m further from 'La Coma 2.200m'. Furthher up the road is unfortunately forbidden.&#13;&#10;&#13;&#10;&#13;&#10;Nette kleine Wiese mit Ausblick. Zufahrt über Piste. Ab Bahnstation nur ab 16:30. Weiterfahrt 300 Meter weiter, dann leider verboten."/>
     <tag k="overlander:services" v="CampervanFriendly|TentFriendly|PetFriendly"/>
@@ -89,6 +96,7 @@
   </node>
   <node id="9381290688" version="1" timestamp="2020-07-26T00:00:00Z" lat="42.47187166666666" lon="1.5441633333333333">
     <tag k="overlander" v="wildfreedomcamping"/>
+    <tag k="stars" v="5"/>
     <tag k="overlander:id" v="133798-2527-meter"/>
     <tag k="overlander:source" v="iOverlander"/>
     <tag k="overlander:link" v="https://www.ioverlander.com//places/133798-2527-meter"/>

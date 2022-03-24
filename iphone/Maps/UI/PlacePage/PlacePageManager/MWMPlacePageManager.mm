@@ -230,8 +230,11 @@ using namespace storage;
 
 - (void)openWebsite:(PlacePageData *)data {
   NSURL *url = [NSURL URLWithString:data.infoData.website];
+  NSURL *overlanderUrl = [NSURL URLWithString:data.infoData.overlanderLink];
   if (url) {
     [self.ownerViewController openUrl:url];
+  } else if (overlanderUrl) {
+    [self.ownerViewController openUrl:overlanderUrl];
   }
 }
 

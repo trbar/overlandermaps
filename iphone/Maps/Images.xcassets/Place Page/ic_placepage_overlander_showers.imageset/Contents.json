@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "filename" : "ic_placepage_overlander_showers.png",
       "idiom" : "universal",
+      "filename" : "ic_placepage_overlander_showers.png",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_placepage_overlander_showers@2x.png",
       "idiom" : "universal",
+      "filename" : "ic_placepage_overlander_showers@2x.png",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_placepage_overlander_showers@3x.png",
       "idiom" : "universal",
+      "filename" : "ic_placepage_overlander_showers@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }
