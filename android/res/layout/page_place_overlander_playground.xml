@@ -2,21 +2,20 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/ll__place_overlander_location"
+  android:id="@+id/ll__place_overlander_playground"
   style="@style/PlacePageItemFrame"
-  android:tag="website"
+  android:tag="playground"
   tools:background="#20FF0000"
   tools:visibility="visible">
 
   <ImageView
-    android:id="@+id/iv__place_website"
+    android:id="@+id/iv__place_overlander_playground"
     style="@style/PlacePageMetadataIcon"
-    android:src="@drawable/ic_website"
-    android:tint="?colorAccent"/>
+    android:src="@drawable/ic_category_image_playground_alt"/>
 
   <TextView
-    android:id="@+id/tv__place_overlander_location"
+    android:id="@+id/tv__place_overlander_playground"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="@style/MwmTextAppearance.PlacePage.Accent"/>
+    style="@style/PlacePageMetadataText"/>
 </LinearLayout>

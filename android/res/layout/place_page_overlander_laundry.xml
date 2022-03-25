@@ -2,21 +2,20 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  android:id="@+id/ll__place_overlander_open"
+  android:id="@+id/ll__place_overlander_laundry"
   style="@style/PlacePageItemFrame"
-  android:tag="website"
+  android:tag="laundry"
   tools:background="#20FF0000"
   tools:visibility="visible">
 
   <ImageView
-    android:id="@+id/iv__place_website"
+    android:id="@+id/iv__place_overlander_laundry"
     style="@style/PlacePageMetadataIcon"
-    android:src="@drawable/ic_website"
-    android:tint="?colorAccent"/>
+    android:src="@drawable/ic_category_image_laundry_alt"/>
 
   <TextView
-    android:id="@+id/tv__place_overlander_open"
+    android:id="@+id/tv__place_overlander_laundry"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="@style/MwmTextAppearance.PlacePage.Accent"/>
+    style="@style/PlacePageMetadataText"/>
 </LinearLayout>

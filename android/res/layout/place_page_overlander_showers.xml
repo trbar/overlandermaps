@@ -4,19 +4,18 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/ll__place_overlander_showers"
   style="@style/PlacePageItemFrame"
-  android:tag="website"
+  android:tag="showers"
   tools:background="#20FF0000"
   tools:visibility="visible">
 
   <ImageView
-    android:id="@+id/iv__place_website"
+    android:id="@+id/iv__place_overlander_showers"
     style="@style/PlacePageMetadataIcon"
-    android:src="@drawable/ic_website"
-    android:tint="?colorAccent"/>
+    android:src="@drawable/ic_category_image_showers_alt"/>
 
   <TextView
     android:id="@+id/tv__place_overlander_showers"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textAppearance="@style/MwmTextAppearance.PlacePage.Accent"/>
+    style="@style/PlacePageMetadataText"/>
 </LinearLayout>

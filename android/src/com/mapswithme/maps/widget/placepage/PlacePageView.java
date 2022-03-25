@@ -149,35 +149,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
   // Place page buttons
   private PlacePageButtons mButtons;
   private ImageView mBookmarkButtonIcon;
-  // Overlander
-  private View mOverlanderLocation;
-  private TextView mTvOverlanderLocation;
-  private View mOverlanderOpen;
-  private TextView mTvOverlanderOpen;
-  private View mOverlanderElectricity;
-  private TextView mTvOverlanderElectricity;
-  private View mOverlanderWifi;
-  private TextView mTvOverlanderWifi;
-  private View mOverlanderKitchen;
-  private TextView mTvOverlanderKitchen;
-  private View mOverlanderParking;
-  private TextView mTvOverlanderParking;
-  private View mOverlanderRestaurant;
-  private TextView mTvOverlanderRestaurant;
-  private View mOverlanderShowers;
-  private TextView mTvOverlanderShowers;
-  private View mOverlanderWater;
-  private TextView mTvOverlanderWater;
-  private View mOverlanderToilets;
-  private TextView mTvOverlanderToilets;
-  private View mOverlanderBigrigfriendly;
-  private TextView mTvOverlanderBigrigfriendly;
-  private View mOverlanderTentfriendly;
-  private TextView mTvOverlanderTentfriendly;
-  private View mOverlanderPetfriendly;
-  private TextView mTvOverlanderPetfriendly;
-  private View mOverlanderSanidump;
-  private TextView mTvOverlanderSanidump;
 
   @Nullable
   private View mBookmarkButtonFrame;
@@ -233,30 +204,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
   private TextView mPlaceOverlanderCheckin3Comment;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private View mPlaceOverlanderCheckin4Container;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private TextView mPlaceOverlanderCheckin4AuthorDate;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private TextView mPlaceOverlanderCheckin4Comment;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private View mPlaceOverlanderCheckin5Container;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private TextView mPlaceOverlanderCheckin5AuthorDate;
-
-  @SuppressWarnings("NotNullFieldNotInitialized")
-  @NonNull
-  private TextView mPlaceOverlanderCheckin5Comment;
 
   @SuppressWarnings("NullableProblems")
   @NonNull
@@ -453,35 +400,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mVkPage.setOnClickListener(this);
     mVkPage.setOnLongClickListener(this);
     mTvVkPage = findViewById(R.id.tv__place_vk_page);
-
-    mOverlanderLocation = findViewById(R.id.ll__place_overlander_location);
-    mTvOverlanderLocation = findViewById(R.id.tv__place_overlander_location);
-    mOverlanderOpen = findViewById(R.id.ll__place_overlander_open);
-    mTvOverlanderOpen = findViewById(R.id.tv__place_overlander_open);
-    mOverlanderElectricity = findViewById(R.id.ll__place_overlander_electricity);
-    mTvOverlanderElectricity = findViewById(R.id.tv__place_overlander_electricity);
-    mOverlanderWifi = findViewById(R.id.ll__place_overlander_wifi);
-    mTvOverlanderWifi = findViewById(R.id.tv__place_overlander_wifi);
-    mOverlanderKitchen = findViewById(R.id.ll__place_overlander_kitchen);
-    mTvOverlanderKitchen = findViewById(R.id.tv__place_overlander_kitchen);
-    mOverlanderParking = findViewById(R.id.ll__place_overlander_parking);
-    mTvOverlanderParking = findViewById(R.id.tv__place_overlander_parking);
-    mOverlanderRestaurant = findViewById(R.id.ll__place_overlander_restaurant);
-    mTvOverlanderRestaurant = findViewById(R.id.tv__place_overlander_restaurant);
-    mOverlanderShowers = findViewById(R.id.ll__place_overlander_showers);
-    mTvOverlanderShowers = findViewById(R.id.tv__place_overlander_showers);
-    mOverlanderWater = findViewById(R.id.ll__place_overlander_water);
-    mTvOverlanderWater = findViewById(R.id.tv__place_overlander_water);
-    mOverlanderToilets = findViewById(R.id.ll__place_overlander_toilets);
-    mTvOverlanderToilets = findViewById(R.id.tv__place_overlander_toilets);
-    mOverlanderBigrigfriendly = findViewById(R.id.ll__place_overlander_bigrigfriendly);
-    mTvOverlanderBigrigfriendly = findViewById(R.id.tv__place_overlander_bigrigfriendly);
-    mOverlanderTentfriendly = findViewById(R.id.ll__place_overlander_tentfriendly);
-    mTvOverlanderTentfriendly = findViewById(R.id.tv__place_overlander_tentfriendly);
-    mOverlanderPetfriendly = findViewById(R.id.ll__place_overlander_petfriendly);
-    mTvOverlanderPetfriendly = findViewById(R.id.tv__place_overlander_petfriendly);
-    mOverlanderSanidump = findViewById(R.id.ll__place_overlander_sanidump);
-    mTvOverlanderSanidump = findViewById(R.id.tv__place_overlander_sanidump);
 
     mLinePage = findViewById(R.id.ll__place_line);
     mLinePage.setOnClickListener(this);
@@ -815,12 +733,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mPlaceOverlanderCheckin3Container = findViewById(R.id.pp_checkins_checkin3_container);
     mPlaceOverlanderCheckin3AuthorDate = findViewById(R.id.pp_checkins_checkin3_author_date);
     mPlaceOverlanderCheckin3Comment = findViewById(R.id.pp_checkins_checkin3_comment);
-    mPlaceOverlanderCheckin4Container = findViewById(R.id.pp_checkins_checkin4_container);
-    mPlaceOverlanderCheckin4AuthorDate = findViewById(R.id.pp_checkins_checkin4_author_date);
-    mPlaceOverlanderCheckin4Comment = findViewById(R.id.pp_checkins_checkin4_comment);
-    mPlaceOverlanderCheckin5Container = findViewById(R.id.pp_checkins_checkin5_container);
-    mPlaceOverlanderCheckin5AuthorDate = findViewById(R.id.pp_checkins_checkin5_author_date);
-    mPlaceOverlanderCheckin5Comment = findViewById(R.id.pp_checkins_checkin5_comment);
   }
 
   private void showDescriptionScreen()
@@ -1000,46 +912,33 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   private void setPlaceOverlanderCheckins(@NonNull MapObject mapObject)
   {
-    UiUtils.showIf(!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION)), mPlaceDetailsHeaderContainer, mPlaceOverlanderCheckinsHeaderContainer);
-    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION))){
-      String checkin1AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1TIME) + getResources().getString(R.string.placepage_place_overlander_by) + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1AUTHOR);
+    UiUtils.showIf(!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1)), mPlaceDetailsHeaderContainer, mPlaceOverlanderCheckinsHeaderContainer);
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1))){
+      final String[] checkin1Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1).split("\\|");
+      final String checkin1AuthorAndDate = checkin1Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin1Array[1];
       mPlaceOverlanderCheckin1AuthorDate.setText(checkin1AuthorAndDate);
-      mPlaceOverlanderCheckin1Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_DESCRIPTION));
+      mPlaceOverlanderCheckin1Comment.setText(checkin1Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin1Container);
     } else {
       UiUtils.hide(mPlaceOverlanderCheckin1Container);
     }
-    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2COMMENT))){
-      String checkin2AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2TIME) + " " + R.string.placepage_place_overlander_by + " " + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2AUTHOR);
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2))){
+      final String[] checkin2Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2).split("\\|");
+      final String checkin2AuthorAndDate = checkin2Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin2Array[1];
       mPlaceOverlanderCheckin2AuthorDate.setText(checkin2AuthorAndDate);
-      mPlaceOverlanderCheckin2Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2COMMENT));
+      mPlaceOverlanderCheckin2Comment.setText(checkin2Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin2Container);
     } else {
       UiUtils.hide(mPlaceOverlanderCheckin2Container);
     }
-    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3COMMENT))){
-      String checkin3AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3AUTHOR);
+    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3))){
+      final String[] checkin3Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3).split("\\|");
+      final String checkin3AuthorAndDate = checkin3Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin3Array[1];
       mPlaceOverlanderCheckin3AuthorDate.setText(checkin3AuthorAndDate);
-      mPlaceOverlanderCheckin3Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3COMMENT));
+      mPlaceOverlanderCheckin3Comment.setText(checkin3Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin3Container);
     } else {
       UiUtils.hide(mPlaceOverlanderCheckin3Container);
-    }
-    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4COMMENT))){
-      String checkin4AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4AUTHOR);
-      mPlaceOverlanderCheckin4AuthorDate.setText(checkin4AuthorAndDate);
-      mPlaceOverlanderCheckin4Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN4COMMENT));
-      UiUtils.show(mPlaceOverlanderCheckin4Container);
-    } else {
-      UiUtils.hide(mPlaceOverlanderCheckin4Container);
-    }
-    if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5COMMENT))){
-      String checkin5AuthorAndDate = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5TIME) + R.string.placepage_place_overlander_by + mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5AUTHOR);
-      mPlaceOverlanderCheckin5AuthorDate.setText(checkin5AuthorAndDate);
-      mPlaceOverlanderCheckin5Comment.setText(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN5COMMENT));
-      UiUtils.show(mPlaceOverlanderCheckin5Container);
-    } else {
-      UiUtils.hide(mPlaceOverlanderCheckin5Container);
     }
   }
 
@@ -1082,7 +981,8 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
     String website = mapObject.getMetadata(Metadata.MetadataType.FMD_WEBSITE);
     String url = mapObject.getMetadata(Metadata.MetadataType.FMD_URL);
-    refreshMetadataOrHide(TextUtils.isEmpty(website) ? url : website, mWebsite, mTvWebsite);
+    String overlanderLink = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LINK);
+    refreshMetadataOrHide(TextUtils.isEmpty(website) ? (TextUtils.isEmpty(url) ? overlanderLink : url) : website, mWebsite, mTvWebsite);
     refreshPhoneNumberList(mapObject.getMetadata(Metadata.MetadataType.FMD_PHONE_NUMBER));
     refreshMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_EMAIL), mEmail, mTvEmail);
     refreshMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_OPERATOR), mOperator, mTvOperator);
@@ -1240,20 +1140,14 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   private void refreshOverlanderDetails(@NonNull MapObject mapObject)
   {
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.details), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LOCATION), mOverlanderLocation, mTvOverlanderLocation);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.open), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_OPEN), mOverlanderOpen, mTvOverlanderOpen);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.electricity), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ELECTRICITY), mOverlanderElectricity, mTvOverlanderElectricity);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.wifi), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WIFI), mOverlanderWifi, mTvOverlanderWifi);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.kitchen), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_KITCHEN), mOverlanderKitchen, mTvOverlanderKitchen);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.parking), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PARKING), mOverlanderParking, mTvOverlanderParking);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.restaurant), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_RESTAURANT), mOverlanderRestaurant, mTvOverlanderRestaurant);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.showers), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SHOWERS), mOverlanderShowers, mTvOverlanderShowers);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.water), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_WATER), mOverlanderWater, mTvOverlanderWater);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.toilets), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TOILETS), mOverlanderToilets, mTvOverlanderToilets);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.big_rig_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_BIGRIGFRIENDLY), mOverlanderBigrigfriendly, mTvOverlanderBigrigfriendly);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.tent_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_TENTFRIENDLY), mOverlanderTentfriendly, mTvOverlanderTentfriendly);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.pet_friendly), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PETFRIENDLY), mOverlanderPetfriendly, mTvOverlanderPetfriendly);
-    refreshOverlanderMetadataOrHide(getResources().getString(R.string.sanidump), mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SANIDUMP), mOverlanderSanidump, mTvOverlanderSanidump);
+    final String[] servicesArray = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SERVICES).split("\\|");
+    for (String service: servicesArray) {
+      refreshOverlanderServices(service);
+    }
+    final String[] activitiesArray = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ACTIVITIES).split("\\|");
+    for (String activity: activitiesArray) {
+      refreshOverlanderActivities(activity);
+    }
   }
 
   // Tag `contact:line` could contain urls from domains: line.me, liff.line.me, page.line.me, etc.
@@ -1477,20 +1371,418 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mTvLatlon.setText(latLon);
   }
 
-  private static void refreshOverlanderMetadataOrHide(String amenity, String metadata, View metaLayout, TextView metaTv)
+  private void refreshOverlanderServices(String service)
   {
-    if (!TextUtils.isEmpty(metadata) | (!TextUtils.equals(metadata, "No") & !TextUtils.equals(metadata, "")))
+    switch (service)
     {
-      if (!TextUtils.equals(metadata, "No")) {
-        metaLayout.setVisibility(View.VISIBLE);
-        if (metaTv != null) {
-          String metadataString = amenity + " " + metadata;
-          metaTv.setText(metadataString);
-        }
-      }
+      case "Electricity":
+        View mOverlanderElectricity;
+        TextView mTvOverlanderElectricity;
+        mOverlanderElectricity = findViewById(R.id.ll__place_overlander_electricity);
+        mTvOverlanderElectricity = findViewById(R.id.tv__place_overlander_electricity);
+        mOverlanderElectricity.setVisibility(View.VISIBLE);
+        mTvOverlanderElectricity.setText(service);
+        break;
+      case "Atm":
+        View mOverlanderAtm;
+        TextView mTvOverlanderAtm;
+        mOverlanderAtm = findViewById(R.id.ll__place_overlander_atm);
+        mTvOverlanderAtm = findViewById(R.id.tv__place_overlander_atm);
+        mOverlanderAtm.setVisibility(View.VISIBLE);
+        mTvOverlanderAtm.setText(service);
+        break;
+      case "CampervanFriendly":
+        View mOverlanderCampervanfriendly;
+        TextView mTvOverlanderCampervanfriendly;
+        mOverlanderCampervanfriendly = findViewById(R.id.ll__place_overlander_campervanfriendly);
+        mTvOverlanderCampervanfriendly = findViewById(R.id.tv__place_overlander_campervanfriendly);
+        mOverlanderCampervanfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderCampervanfriendly.setText(service);
+        break;
+      case "Carwash":
+        View mOverlanderCarwash;
+        TextView mTvOverlanderCarwash;
+        mOverlanderCarwash = findViewById(R.id.ll__place_overlander_carwash);
+        mTvOverlanderCarwash = findViewById(R.id.tv__place_overlander_carwash);
+        mOverlanderCarwash.setVisibility(View.VISIBLE);
+        mTvOverlanderCarwash.setText(service);
+        break;
+      case "Children":
+        View mOverlanderChildren;
+        TextView mTvOverlanderChildren;
+        mOverlanderChildren = findViewById(R.id.ll__place_overlander_children);
+        mTvOverlanderChildren = findViewById(R.id.tv__place_overlander_children);
+        mOverlanderChildren.setVisibility(View.VISIBLE);
+        mTvOverlanderChildren.setText(service);
+        break;
+      case "Eat":
+        View mOverlanderEat;
+        TextView mTvOverlanderEat;
+        mOverlanderEat = findViewById(R.id.ll__place_overlander_eat);
+        mTvOverlanderEat = findViewById(R.id.tv__place_overlander_eat);
+        mOverlanderEat.setVisibility(View.VISIBLE);
+        mTvOverlanderEat.setText(service);
+        break;
+      case "Entertainment":
+        View mOverlanderEntertainment;
+        TextView mTvOverlanderEntertainment;
+        mOverlanderEntertainment = findViewById(R.id.ll__place_overlander_entertainment);
+        mTvOverlanderEntertainment = findViewById(R.id.tv__place_overlander_entertainment);
+        mOverlanderEntertainment.setVisibility(View.VISIBLE);
+        mTvOverlanderEntertainment.setText(service);
+        break;
+      case "Food":
+        View mOverlanderFood;
+        TextView mTvOverlanderFood;
+        mOverlanderFood = findViewById(R.id.ll__place_overlander_food);
+        mTvOverlanderFood = findViewById(R.id.tv__place_overlander_food);
+        mOverlanderFood.setVisibility(View.VISIBLE);
+        mTvOverlanderFood.setText(service);
+        break;
+      case "Fuel":
+        View mOverlanderFuel;
+        TextView mTvOverlanderFuel;
+        mOverlanderFuel = findViewById(R.id.ll__place_overlander_fuel);
+        mTvOverlanderFuel = findViewById(R.id.tv__place_overlander_fuel);
+        mOverlanderFuel.setVisibility(View.VISIBLE);
+        mTvOverlanderFuel.setText(service);
+        break;
+      case "Garbage":
+        View mOverlanderGarbage;
+        TextView mTvOverlanderGarbage;
+        mOverlanderGarbage = findViewById(R.id.ll__place_overlander_garbage);
+        mTvOverlanderGarbage = findViewById(R.id.tv__place_overlander_garbage);
+        mOverlanderGarbage.setVisibility(View.VISIBLE);
+        mTvOverlanderGarbage.setText(service);
+        break;
+      case "Hospital":
+        View mOverlanderHospital;
+        TextView mTvOverlanderHospital;
+        mOverlanderHospital = findViewById(R.id.ll__place_overlander_hospital);
+        mTvOverlanderHospital = findViewById(R.id.tv__place_overlander_hospital);
+        mOverlanderHospital.setVisibility(View.VISIBLE);
+        mTvOverlanderHospital.setText(service);
+        break;
+      case "Laundry":
+        View mOverlanderLaundry;
+        TextView mTvOverlanderLaundry;
+        mOverlanderLaundry = findViewById(R.id.ll__place_overlander_laundry);
+        mTvOverlanderLaundry = findViewById(R.id.tv__place_overlander_laundry);
+        mOverlanderLaundry.setVisibility(View.VISIBLE);
+        mTvOverlanderLaundry.setText(service);
+        break;
+      case "LPG":
+        View mOverlanderLPG;
+        TextView mTvOverlanderLPG;
+        mOverlanderLPG = findViewById(R.id.ll__place_overlander_lpg);
+        mTvOverlanderLPG = findViewById(R.id.tv__place_overlander_lpg);
+        mOverlanderLPG.setVisibility(View.VISIBLE);
+        mTvOverlanderLPG.setText(service);
+        break;
+      case "Mechanic":
+        View mOverlanderMechanic;
+        TextView mTvOverlanderMechanic;
+        mOverlanderMechanic = findViewById(R.id.ll__place_overlander_mechanic);
+        mTvOverlanderMechanic = findViewById(R.id.tv__place_overlander_mechanic);
+        mOverlanderMechanic.setVisibility(View.VISIBLE);
+        mTvOverlanderMechanic.setText(service);
+        break;
+      case "Kitchen":
+        View mOverlanderKitchen;
+        TextView mTvOverlanderKitchen;
+        mOverlanderKitchen = findViewById(R.id.ll__place_overlander_kitchen);
+        mTvOverlanderKitchen = findViewById(R.id.tv__place_overlander_kitchen);
+        mOverlanderKitchen.setVisibility(View.VISIBLE);
+        mTvOverlanderKitchen.setText(service);
+        break;
+      case "Monuments":
+        View mOverlanderMonuments;
+        TextView mTvOverlanderMonuments;
+        mOverlanderMonuments = findViewById(R.id.ll__place_overlander_monuments);
+        mTvOverlanderMonuments = findViewById(R.id.tv__place_overlander_monuments);
+        mOverlanderMonuments.setVisibility(View.VISIBLE);
+        mTvOverlanderMonuments.setText(service);
+        break;
+      case "Nightlife":
+        View mOverlanderNightlife;
+        TextView mTvOverlanderNightlife;
+        mOverlanderNightlife = findViewById(R.id.ll__place_overlander_nightlife);
+        mTvOverlanderNightlife = findViewById(R.id.tv__place_overlander_nightlife);
+        mOverlanderNightlife.setVisibility(View.VISIBLE);
+        mTvOverlanderNightlife.setText(service);
+        break;
+      case "Pharmacy":
+        View mOverlanderPharmacy;
+        TextView mTvOverlanderPharmacy;
+        mOverlanderPharmacy = findViewById(R.id.ll__place_overlander_pharmacy);
+        mTvOverlanderPharmacy = findViewById(R.id.tv__place_overlander_pharmacy);
+        mOverlanderPharmacy.setVisibility(View.VISIBLE);
+        mTvOverlanderPharmacy.setText(service);
+        break;
+      case "Police":
+        View mOverlanderPolice;
+        TextView mTvOverlanderPolice;
+        mOverlanderPolice = findViewById(R.id.ll__place_overlander_police);
+        mTvOverlanderPolice = findViewById(R.id.tv__place_overlander_police);
+        mOverlanderPolice.setVisibility(View.VISIBLE);
+        mTvOverlanderPolice.setText(service);
+        break;
+      case "Post":
+        View mOverlanderPost;
+        TextView mTvOverlanderPost;
+        mOverlanderPost = findViewById(R.id.ll__place_overlander_post);
+        mTvOverlanderPost = findViewById(R.id.tv__place_overlander_post);
+        mOverlanderPost.setVisibility(View.VISIBLE);
+        mTvOverlanderPost.setText(service);
+        break;
+      case "Propane":
+        View mOverlanderPropane;
+        TextView mTvOverlanderPropane;
+        mOverlanderPropane = findViewById(R.id.ll__place_overlander_propane);
+        mTvOverlanderPropane = findViewById(R.id.tv__place_overlander_propane);
+        mOverlanderPropane.setVisibility(View.VISIBLE);
+        mTvOverlanderPropane.setText(service);
+        break;
+      case "Park":
+        View mOverlanderPark;
+        TextView mTvOverlanderPark;
+        mOverlanderPark = findViewById(R.id.ll__place_overlander_park);
+        mTvOverlanderPark = findViewById(R.id.tv__place_overlander_park);
+        mOverlanderPark.setVisibility(View.VISIBLE);
+        mTvOverlanderPark.setText(service);
+        break;
+      case "Parking":
+        View mOverlanderParking;
+        TextView mTvOverlanderParking;
+        mOverlanderParking = findViewById(R.id.ll__place_overlander_parking);
+        mTvOverlanderParking = findViewById(R.id.tv__place_overlander_parking);
+        mOverlanderParking.setVisibility(View.VISIBLE);
+        mTvOverlanderParking.setText(service);
+        break;
+      case "PetFriendly":
+        View mOverlanderPetfriendly;
+        TextView mTvOverlanderPetfriendly;
+        mOverlanderPetfriendly = findViewById(R.id.ll__place_overlander_petfriendly);
+        mTvOverlanderPetfriendly = findViewById(R.id.tv__place_overlander_petfriendly);
+        mOverlanderPetfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderPetfriendly.setText(service);
+        break;
+      case "Picnic":
+        View mOverlanderPicnic;
+        TextView mTvOverlanderPicnic;
+        mOverlanderPicnic = findViewById(R.id.ll__place_overlander_picnic);
+        mTvOverlanderPicnic = findViewById(R.id.tv__place_overlander_picnic);
+        mOverlanderPicnic.setVisibility(View.VISIBLE);
+        mTvOverlanderPicnic.setText(service);
+        break;
+      case "RestArea":
+        View mOverlanderRestarea;
+        TextView mTvOverlanderRestarea;
+        mOverlanderRestarea = findViewById(R.id.ll__place_overlander_restarea);
+        mTvOverlanderRestarea = findViewById(R.id.tv__place_overlander_restarea);
+        mOverlanderRestarea.setVisibility(View.VISIBLE);
+        mTvOverlanderRestarea.setText(service);
+        break;
+      case "Restaurant":
+        View mOverlanderRestaurant;
+        TextView mTvOverlanderRestaurant;
+        mOverlanderRestaurant = findViewById(R.id.ll__place_overlander_restaurant);
+        mTvOverlanderRestaurant = findViewById(R.id.tv__place_overlander_restaurant);
+        mOverlanderRestaurant.setVisibility(View.VISIBLE);
+        mTvOverlanderRestaurant.setText(service);
+        break;
+      case "Sanidump":
+        View mOverlanderSanidump;
+        TextView mTvOverlanderSanidump;
+        mOverlanderSanidump = findViewById(R.id.ll__place_overlander_sanidump);
+        mTvOverlanderSanidump = findViewById(R.id.tv__place_overlander_sanidump);
+        mOverlanderSanidump.setVisibility(View.VISIBLE);
+        mTvOverlanderSanidump.setText(service);
+        break;
+      case "Shopping":
+        View mOverlanderShopping;
+        TextView mTvOverlanderShopping;
+        mOverlanderShopping = findViewById(R.id.ll__place_overlander_shopping);
+        mTvOverlanderShopping = findViewById(R.id.tv__place_overlander_shopping);
+        mOverlanderShopping.setVisibility(View.VISIBLE);
+        mTvOverlanderShopping.setText(service);
+        break;
+      case "Showers":
+        View mOverlanderShowers;
+        TextView mTvOverlanderShowers;
+        mOverlanderShowers = findViewById(R.id.ll__place_overlander_showers);
+        mTvOverlanderShowers = findViewById(R.id.tv__place_overlander_showers);
+        mOverlanderShowers.setVisibility(View.VISIBLE);
+        mTvOverlanderShowers.setText(service);
+        break;
+      case "Swimmingpool":
+        View mOverlanderSwimmingpool;
+        TextView mTvOverlanderSwimmingpool;
+        mOverlanderSwimmingpool = findViewById(R.id.ll__place_overlander_swimmingpool);
+        mTvOverlanderSwimmingpool = findViewById(R.id.tv__place_overlander_swimmingpool);
+        mOverlanderSwimmingpool.setVisibility(View.VISIBLE);
+        mTvOverlanderSwimmingpool.setText(service);
+        break;
+      case "TentFriendly":
+        View mOverlanderTentfriendly;
+        TextView mTvOverlanderTentfriendly;
+        mOverlanderTentfriendly = findViewById(R.id.ll__place_overlander_tentfriendly);
+        mTvOverlanderTentfriendly = findViewById(R.id.tv__place_overlander_tentfriendly);
+        mOverlanderTentfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderTentfriendly.setText(service);
+        break;
+      case "Toilets":
+        View mOverlanderToilets;
+        TextView mTvOverlanderToilets;
+        mOverlanderToilets = findViewById(R.id.ll__place_overlander_toilets);
+        mTvOverlanderToilets = findViewById(R.id.tv__place_overlander_toilets);
+        mOverlanderToilets.setVisibility(View.VISIBLE);
+        mTvOverlanderToilets.setText(service);
+        break;
+      case "Transport":
+        View mOverlanderTransport;
+        TextView mTvOverlanderTransport;
+        mOverlanderTransport = findViewById(R.id.ll__place_overlander_transport);
+        mTvOverlanderTransport = findViewById(R.id.tv__place_overlander_transport);
+        mOverlanderTransport.setVisibility(View.VISIBLE);
+        mTvOverlanderTransport.setText(service);
+        break;
+      case "Viewpoint":
+        View mOverlanderViewpoint;
+        TextView mTvOverlanderViewpoint;
+        mOverlanderViewpoint = findViewById(R.id.ll__place_overlander_viewpoint);
+        mTvOverlanderViewpoint = findViewById(R.id.tv__place_overlander_viewpoint);
+        mOverlanderViewpoint.setVisibility(View.VISIBLE);
+        mTvOverlanderViewpoint.setText(service);
+        break;
+      case "Warning":
+        View mOverlanderWarning;
+        TextView mTvOverlanderWarning;
+        mOverlanderWarning = findViewById(R.id.ll__place_overlander_warning);
+        mTvOverlanderWarning = findViewById(R.id.tv__place_overlander_warning);
+        mOverlanderWarning.setVisibility(View.VISIBLE);
+        mTvOverlanderWarning.setText(service);
+        break;
+      case "Water":
+        View mOverlanderWater;
+        TextView mTvOverlanderWater;
+        mOverlanderWater = findViewById(R.id.ll__place_overlander_water);
+        mTvOverlanderWater = findViewById(R.id.tv__place_overlander_water);
+        mOverlanderWater.setVisibility(View.VISIBLE);
+        mTvOverlanderWater.setText(service);
+        break;
+      case "Wifi":
+        View mOverlanderWifi;
+        TextView mTvOverlanderWifi;
+        mOverlanderWifi = findViewById(R.id.ll__place_overlander_wifi);
+        mTvOverlanderWifi = findViewById(R.id.tv__place_overlander_wifi);
+        mOverlanderWifi.setVisibility(View.VISIBLE);
+        mTvOverlanderWifi.setText(service);
+        break;
+      case "BigRigFriendly":
+        View mOverlanderBigrigfriendly;
+        TextView mTvOverlanderBigrigfriendly;
+        mOverlanderBigrigfriendly = findViewById(R.id.ll__place_overlander_bigrigfriendly);
+        mTvOverlanderBigrigfriendly = findViewById(R.id.tv__place_overlander_bigrigfriendly);
+        mOverlanderBigrigfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderBigrigfriendly.setText(service);
+        break;
     }
-    else
-      metaLayout.setVisibility(View.GONE);
+  }
+
+  private void refreshOverlanderActivities(String activity)
+  {
+    switch (activity)
+    {
+      case "Tourism":
+        View mOverlanderTourism;
+        TextView mTvOverlanderTourism;
+        mOverlanderTourism = findViewById(R.id.ll__place_overlander_tourism);
+        mTvOverlanderTourism = findViewById(R.id.tv__place_overlander_tourism);
+        mOverlanderTourism.setVisibility(View.VISIBLE);
+        mTvOverlanderTourism.setText(activity);
+        break;
+      case "Climbing":
+        View mOverlanderClimbing;
+        TextView mTvOverlanderClimbing;
+        mOverlanderClimbing = findViewById(R.id.ll__place_overlander_climbing);
+        mTvOverlanderClimbing = findViewById(R.id.tv__place_overlander_climbing);
+        mOverlanderClimbing.setVisibility(View.VISIBLE);
+        mTvOverlanderClimbing.setText(activity);
+        break;
+      case "Fishing":
+        View mOverlanderFishing;
+        TextView mTvOverlanderFishing;
+        mOverlanderFishing = findViewById(R.id.ll__place_overlander_fishing);
+        mTvOverlanderFishing = findViewById(R.id.tv__place_overlander_fishing);
+        mOverlanderFishing.setVisibility(View.VISIBLE);
+        mTvOverlanderFishing.setText(activity);
+        break;
+      case "Hiking":
+        View mOverlanderHiking;
+        TextView mTvOverlanderHiking;
+        mOverlanderHiking = findViewById(R.id.ll__place_overlander_hiking);
+        mTvOverlanderHiking = findViewById(R.id.tv__place_overlander_hiking);
+        mOverlanderHiking.setVisibility(View.VISIBLE);
+        mTvOverlanderHiking.setText(activity);
+        break;
+      case "Kayak":
+        View mOverlanderKayak;
+        TextView mTvOverlanderKayak;
+        mOverlanderKayak = findViewById(R.id.ll__place_overlander_kayak);
+        mTvOverlanderKayak = findViewById(R.id.tv__place_overlander_kayak);
+        mOverlanderKayak.setVisibility(View.VISIBLE);
+        mTvOverlanderKayak.setText(activity);
+        break;
+      case "Motorcycle":
+        View mOverlanderMotorcycle;
+        TextView mTvOverlanderMotorcycle;
+        mOverlanderMotorcycle = findViewById(R.id.ll__place_overlander_motorcycle);
+        mTvOverlanderMotorcycle = findViewById(R.id.tv__place_overlander_motorcycle);
+        mOverlanderMotorcycle.setVisibility(View.VISIBLE);
+        mTvOverlanderMotorcycle.setText(activity);
+        break;
+      case "Mountainbike":
+        View mOverlanderMountainbike;
+        TextView mTvOverlanderMountainbike;
+        mOverlanderMountainbike = findViewById(R.id.ll__place_overlander_mountainbike);
+        mTvOverlanderMountainbike = findViewById(R.id.tv__place_overlander_mountainbike);
+        mOverlanderMountainbike.setVisibility(View.VISIBLE);
+        mTvOverlanderMountainbike.setText(activity);
+        break;
+      case "Playground":
+        View mOverlanderPlayground;
+        TextView mTvOverlanderPlayground;
+        mOverlanderPlayground = findViewById(R.id.ll__place_overlander_playground);
+        mTvOverlanderPlayground = findViewById(R.id.tv__place_overlander_playground);
+        mOverlanderPlayground.setVisibility(View.VISIBLE);
+        mTvOverlanderPlayground.setText(activity);
+        break;
+      case "Swimming":
+        View mOverlanderSwimming;
+        TextView mTvOverlanderSwimming;
+        mOverlanderSwimming = findViewById(R.id.ll__place_overlander_swimming);
+        mTvOverlanderSwimming = findViewById(R.id.tv__place_overlander_swimming);
+        mOverlanderSwimming.setVisibility(View.VISIBLE);
+        mTvOverlanderSwimming.setText(activity);
+        break;
+      case "Surfing":
+        View mOverlanderSurfing;
+        TextView mTvOverlanderSurfing;
+        mOverlanderSurfing = findViewById(R.id.ll__place_overlander_surfing);
+        mTvOverlanderSurfing = findViewById(R.id.tv__place_overlander_surfing);
+        mOverlanderSurfing.setVisibility(View.VISIBLE);
+        mTvOverlanderSurfing.setText(activity);
+        break;
+      case "BeachFishing":
+        View mOverlanderBeachfishing;
+        TextView mTvOverlanderBeachfishing;
+        mOverlanderBeachfishing = findViewById(R.id.ll__place_overlander_beachfishing);
+        mTvOverlanderBeachfishing = findViewById(R.id.tv__place_overlander_beachfishing);
+        mOverlanderBeachfishing.setVisibility(View.VISIBLE);
+        mTvOverlanderBeachfishing.setText(activity);
+        break;
+    }
   }
 
   private static void refreshMetadataOrHide(String metadata, View metaLayout, TextView metaTv)

@@ -17,7 +17,6 @@ DisplayedCategories::DisplayedCategories(CategoriesHolder const & holder) : m_ho
             "mechanic",
             "parking",
             "wifi",
-            "4g",
             "fuel",
             "lpg",
             "pets",

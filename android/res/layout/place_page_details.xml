@@ -78,19 +78,77 @@
 
     <include layout="@layout/place_page_latlon"/>
 
-    <include layout="@layout/place_page_overlander_location"/>
+    <include layout="@layout/place_page_overlander_atm"/>
 
-    <include layout="@layout/place_page_overlander_open"/>
+    <include layout="@layout/place_page_overlander_beachfishing"/>
+
+    <include layout="@layout/place_page_overlander_campervanfriendly"/>
+
+    <include layout="@layout/place_page_overlander_carwash"/>
+
+    <include layout="@layout/place_page_overlander_children"/>
+
+    <include layout="@layout/place_page_overlander_eat"/>
+
+    <include layout="@layout/place_page_overlander_climbing"/>
 
     <include layout="@layout/place_page_overlander_electricity"/>
+
+    <include layout="@layout/place_page_overlander_entertainment"/>
+
+    <include layout="@layout/place_page_overlander_fishing"/>
+
+    <include layout="@layout/place_page_overlander_food"/>
+
+    <include layout="@layout/place_page_overlander_fuel"/>
+
+    <include layout="@layout/place_page_overlander_garbage"/>
+
+    <include layout="@layout/place_page_overlander_hiking"/>
+
+    <include layout="@layout/place_page_overlander_hospital"/>
+
+    <include layout="@layout/place_page_overlander_kayak"/>
 
     <include layout="@layout/place_page_overlander_wifi"/>
 
     <include layout="@layout/place_page_overlander_kitchen"/>
 
+    <include layout="@layout/place_page_overlander_laundry"/>
+
+    <include layout="@layout/place_page_overlander_lpg"/>
+
+    <include layout="@layout/place_page_overlander_mechanic"/>
+
+    <include layout="@layout/place_page_overlander_monuments"/>
+
+    <include layout="@layout/place_page_overlander_motorcycle"/>
+
+    <include layout="@layout/place_page_overlander_mountainbike"/>
+
+    <include layout="@layout/place_page_overlander_nightlife"/>
+
+    <include layout="@layout/place_page_overlander_pets"/>
+
+    <include layout="@layout/place_page_overlander_pharmacy"/>
+
+    <include layout="@layout/place_page_overlander_park"/>
+
     <include layout="@layout/place_page_overlander_parking"/>
 
+    <include layout="@layout/place_page_overlander_picnic"/>
+
+    <include layout="@layout/place_page_overlander_playground"/>
+
+    <include layout="@layout/place_page_overlander_police"/>
+
+    <include layout="@layout/place_page_overlander_post"/>
+
+    <include layout="@layout/place_page_overlander_propane"/>
+
     <include layout="@layout/place_page_overlander_restaurant"/>
+
+    <include layout="@layout/place_page_overlander_restarea"/>
 
     <include layout="@layout/place_page_overlander_showers"/>
 
@@ -105,6 +163,20 @@
     <include layout="@layout/place_page_overlander_petfriendly"/>
 
     <include layout="@layout/place_page_overlander_sanidump"/>
+
+    <include layout="@layout/place_page_overlander_shopping"/>
+
+    <include layout="@layout/place_page_overlander_surfing"/>
+
+    <include layout="@layout/place_page_overlander_swimming"/>
+
+    <include layout="@layout/place_page_overlander_swimmingpool"/>
+
+    <include layout="@layout/place_page_overlander_tourism"/>
+
+    <include layout="@layout/place_page_overlander_transport"/>
+
+    <include layout="@layout/place_page_overlander_viewpoint"/>
 
     <include
       layout="@layout/place_page_checkins_header"

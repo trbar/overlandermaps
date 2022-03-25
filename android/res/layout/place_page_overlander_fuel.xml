@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/ll__place_overlander_fuel"
+  style="@style/PlacePageItemFrame"
+  android:tag="fuel"
+  tools:background="#20FF0000"
+  tools:visibility="visible">
+
+  <ImageView
+    android:id="@+id/iv__place_overlander_fuel"
+    style="@style/PlacePageMetadataIcon"
+    android:src="@drawable/ic_category_image_fuel_alt"/>
+
+  <TextView
+    android:id="@+id/tv__place_overlander_fuel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/PlacePageMetadataText"/>
+</LinearLayout>
