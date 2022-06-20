@@ -285,13 +285,18 @@ public:
     string const & overlander_checkin3 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN3);
     string const & overlander_checkin2 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN2);
     string const & overlander_checkin1 = meta.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1);
+    string const & overlander_spots = meta.Get(feature::Metadata::FMD_OVERLANDER_SPOTS);
+    string const & overlander_open = meta.Get(feature::Metadata::FMD_OVERLANDER_OPEN);
+    string const & overlander_serviceprices = meta.Get(feature::Metadata::FMD_OVERLANDER_SERVICEPRICES);
+    string const & overlander_parkingprices = meta.Get(feature::Metadata::FMD_OVERLANDER_PARKINGPRICES);
 
     vector<string> columns = {
         osmId,                        uid,                        lat,                      lon,                     mwmName,                    category,                       name,                         city,
         addrStreet,                   addrHouse,                  phone,                    website,                 cuisine,                    stars,                          operatr,                      internet,
         denomination,                 wheelchair,                 opening_hours,            wikipedia,               floor,                      fee,                            atm,                          contact_facebook,
         contact_instagram,            contact_twitter,            contact_vk,               contact_line,            overlander_id,              overlander_source,              overlander_description,       overlander_services,
-        overlander_activities,        overlander_link,            overlander_rating,        overlander_tags,         overlander_checkin3,        overlander_checkin2,            overlander_checkin1};
+        overlander_activities,        overlander_link,            overlander_rating,        overlander_tags,         overlander_checkin3,        overlander_checkin2,            overlander_checkin1,          overlander_spots,
+        overlander_open,              overlander_serviceprices,   overlander_parkingprices};
     AppendNames(f, columns);
     PrintAsCSV(columns, ';', cout);
   }
@@ -306,7 +311,8 @@ void PrintHeader()
                             "floor",                         "fee",                        "atm",                        "contact_facebook",              "contact_instagram",
                             "contact_twitter",               "contact_vk",                 "contact_line",               "overlander_id",                 "overlander_source",
                             "overlander_description",        "overlander_services",        "overlander_activities",      "overlander_link",               "overlander_rating",
-                            "overlander_tags",               "overlander_checkin3",        "overlander_checkin2",        "overlander_checkin1"};
+                            "overlander_tags",               "overlander_checkin3",        "overlander_checkin2",        "overlander_checkin1",           "overlander_spots",
+                            "overlander_open",               "overlander_serviceprices",   "overlander_parkingprices"};
   // Append all supported name languages in order.
   for (uint8_t idx = 1; idx < kLangCount; idx++)
     columns.push_back("name_" + string(StringUtf8Multilang::GetLangByCode(idx)));

@@ -357,7 +357,11 @@ BOOST_PYTHON_MODULE(pygen)
         .value("overlander_tags", Metadata::EType::FMD_OVERLANDER_TAGS)
         .value("overlander_checkin3", Metadata::EType::FMD_OVERLANDER_CHECKIN3)
         .value("overlander_checkin2", Metadata::EType::FMD_OVERLANDER_CHECKIN2)
-        .value("overlander_checkin1", Metadata::EType::FMD_OVERLANDER_CHECKIN1);
+        .value("overlander_checkin1", Metadata::EType::FMD_OVERLANDER_CHECKIN1)
+        .value("overlander_spots", Metadata::EType::FMD_OVERLANDER_SPOTS)
+        .value("overlander_open", Metadata::EType::FMD_OVERLANDER_OPEN)
+        .value("overlander_serviceprices", Metadata::EType::FMD_OVERLANDER_SERVICEPRICES)
+        .value("overlander_parkingprices", Metadata::EType::FMD_OVERLANDER_PARKINGPRICES);
 
     bp::enum_<GeomType>("GeomType")
         .value("undefined", GeomType::Undefined)

@@ -26,19 +26,19 @@ class PlacePageOverlanderCheckinViewController: UIViewController {
     
     if (placePageInfoData.overlanderCheckin1 != nil && placePageInfoData.overlanderCheckin1 != "") {
       let checkin1ArrayElements = placePageInfoData.overlanderCheckin1!.components(separatedBy: "|")
-      let checkin1DateAndAuthor = checkin1ArrayElements[0] + " by " + checkin1ArrayElements[1]
+      let checkin1DateAndAuthor = "(" + checkin1ArrayElements[2] + "/5) " + checkin1ArrayElements[1] + " on " + checkin1ArrayElements[0]
       checkin1View = createCheckinItem(dateAndAuthor: checkin1DateAndAuthor, comment: checkin1ArrayElements[3])
     }
     
     if (placePageInfoData.overlanderCheckin2 != nil && placePageInfoData.overlanderCheckin2 != "") {
       let checkin2ArrayElements = placePageInfoData.overlanderCheckin2!.components(separatedBy: "|")
-      let checkin2DateAndAuthor = checkin2ArrayElements[0] + " by " + checkin2ArrayElements[1]
+      let checkin2DateAndAuthor = "(" + checkin2ArrayElements[2] + "/5) " + checkin2ArrayElements[1] + " on " + checkin2ArrayElements[0]
       checkin1View = createCheckinItem(dateAndAuthor: checkin2DateAndAuthor, comment: checkin2ArrayElements[3])
     }
     
     if (placePageInfoData.overlanderCheckin3 != nil && placePageInfoData.overlanderCheckin3 != "") {
       let checkin3ArrayElements = placePageInfoData.overlanderCheckin3!.components(separatedBy: "|")
-      let checkin3DateAndAuthor = checkin3ArrayElements[0] + " by " + checkin3ArrayElements[1]
+      let checkin3DateAndAuthor = "(" + checkin3ArrayElements[2] + "/5) " + checkin3ArrayElements[1] + " on " + checkin3ArrayElements[0]
       checkin3View = createCheckinItem(dateAndAuthor: checkin3DateAndAuthor, comment: checkin3ArrayElements[3])
     }
   }

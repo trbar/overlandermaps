@@ -154,6 +154,11 @@ public:
   void SetOverlanderCheckin3(std::string const & checkin3);
   void SetOverlanderCheckin2(std::string const & checkin2);
   void SetOverlanderCheckin1(std::string const & checkin1);
+  void SetOverlanderSpots(std::string const & spots);
+  void SetOverlanderOpen(std::string const & open);
+  void SetOverlanderServiceprices(std::string const & serviceprices);
+  void SetOverlanderParkingprices(std::string const & parkingprices);
+
 
   void SetInternet(Internet internet);
   void SetStars(int stars);

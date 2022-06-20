@@ -175,7 +175,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
-  private TextView mPlaceOverlanderCheckin1AuthorDate;
+  private TextView mPlaceOverlanderCheckin1ReviewAuthorDate;
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
@@ -187,7 +187,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
-  private TextView mPlaceOverlanderCheckin2AuthorDate;
+  private TextView mPlaceOverlanderCheckin2ReviewAuthorDate;
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
@@ -199,7 +199,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
-  private TextView mPlaceOverlanderCheckin3AuthorDate;
+  private TextView mPlaceOverlanderCheckin3ReviewAuthorDate;
 
   @SuppressWarnings("NotNullFieldNotInitialized")
   @NonNull
@@ -725,13 +725,13 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mPlaceDetailsHeaderContainer = findViewById(R.id.pp_details_header_container);
     mPlaceOverlanderCheckinsHeaderContainer = findViewById(R.id.pp_checkins_header_container);
     mPlaceOverlanderCheckin1Container = findViewById(R.id.pp_checkins_checkin1_container);
-    mPlaceOverlanderCheckin1AuthorDate = findViewById(R.id.pp_checkins_checkin1_author_date);
+    mPlaceOverlanderCheckin1ReviewAuthorDate = findViewById(R.id.pp_checkins_checkin1_author_date);
     mPlaceOverlanderCheckin1Comment = findViewById(R.id.pp_checkins_checkin1_comment);
     mPlaceOverlanderCheckin2Container = findViewById(R.id.pp_checkins_checkin2_container);
-    mPlaceOverlanderCheckin2AuthorDate = findViewById(R.id.pp_checkins_checkin2_author_date);
+    mPlaceOverlanderCheckin2ReviewAuthorDate = findViewById(R.id.pp_checkins_checkin2_author_date);
     mPlaceOverlanderCheckin2Comment = findViewById(R.id.pp_checkins_checkin2_comment);
     mPlaceOverlanderCheckin3Container = findViewById(R.id.pp_checkins_checkin3_container);
-    mPlaceOverlanderCheckin3AuthorDate = findViewById(R.id.pp_checkins_checkin3_author_date);
+    mPlaceOverlanderCheckin3ReviewAuthorDate = findViewById(R.id.pp_checkins_checkin3_author_date);
     mPlaceOverlanderCheckin3Comment = findViewById(R.id.pp_checkins_checkin3_comment);
   }
 
@@ -915,8 +915,8 @@ public class PlacePageView extends NestedScrollViewClickFixed
     UiUtils.showIf(!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1)), mPlaceDetailsHeaderContainer, mPlaceOverlanderCheckinsHeaderContainer);
     if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1))){
       final String[] checkin1Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN1).split("\\|");
-      final String checkin1AuthorAndDate = checkin1Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin1Array[1];
-      mPlaceOverlanderCheckin1AuthorDate.setText(checkin1AuthorAndDate);
+      final String checkin1AuthorAndDate = "(" + checkin1Array[2] + "/5) " + checkin1Array[1] + " on " + checkin1Array[0];
+      mPlaceOverlanderCheckin1ReviewAuthorDate.setText(checkin1AuthorAndDate);
       mPlaceOverlanderCheckin1Comment.setText(checkin1Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin1Container);
     } else {
@@ -924,8 +924,8 @@ public class PlacePageView extends NestedScrollViewClickFixed
     }
     if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2))){
       final String[] checkin2Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN2).split("\\|");
-      final String checkin2AuthorAndDate = checkin2Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin2Array[1];
-      mPlaceOverlanderCheckin2AuthorDate.setText(checkin2AuthorAndDate);
+      final String checkin2AuthorAndDate = "(" + checkin2Array[2] + "/5) " + checkin2Array[1] + " on " + checkin2Array[0];
+      mPlaceOverlanderCheckin2ReviewAuthorDate.setText(checkin2AuthorAndDate);
       mPlaceOverlanderCheckin2Comment.setText(checkin2Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin2Container);
     } else {
@@ -933,8 +933,8 @@ public class PlacePageView extends NestedScrollViewClickFixed
     }
     if (!TextUtils.isEmpty(mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3))){
       final String[] checkin3Array = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_CHECKIN3).split("\\|");
-      final String checkin3AuthorAndDate = checkin3Array[0] + " " + getResources().getString(R.string.placepage_place_overlander_by) + " " + checkin3Array[1];
-      mPlaceOverlanderCheckin3AuthorDate.setText(checkin3AuthorAndDate);
+      final String checkin3AuthorAndDate = "(" + checkin3Array[2] + "5/) " + checkin3Array[1] + " on " + checkin3Array[0];
+      mPlaceOverlanderCheckin3ReviewAuthorDate.setText(checkin3AuthorAndDate);
       mPlaceOverlanderCheckin3Comment.setText(checkin3Array[3]);
       UiUtils.show(mPlaceOverlanderCheckin3Container);
     } else {
@@ -978,10 +978,12 @@ public class PlacePageView extends NestedScrollViewClickFixed
   private void refreshDetails(@NonNull MapObject mapObject)
   {
     refreshLatLon(mapObject);
-
     String website = mapObject.getMetadata(Metadata.MetadataType.FMD_WEBSITE);
     String url = mapObject.getMetadata(Metadata.MetadataType.FMD_URL);
     String overlanderLink = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_LINK);
+    if (overlanderLink != null && !overlanderLink.trim().isEmpty()){
+      refreshOverlanderDetails(mapObject);
+    }
     refreshMetadataOrHide(TextUtils.isEmpty(website) ? (TextUtils.isEmpty(url) ? overlanderLink : url) : website, mWebsite, mTvWebsite);
     refreshPhoneNumberList(mapObject.getMetadata(Metadata.MetadataType.FMD_PHONE_NUMBER));
     refreshMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_EMAIL), mEmail, mTvEmail);
@@ -992,8 +994,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
     refreshMetadataOrHide(mapObject.getMetadata(Metadata.MetadataType.FMD_FLATS), mEntrance, mTvEntrance);
     refreshOpeningHours(mapObject);
     refreshSocialLinks(mapObject);
-    refreshOverlanderDetails(mapObject);
-
 //    showTaxiOffer(mapObject);
 
     if (RoutingController.get().isNavigating() || RoutingController.get().isPlanning())
@@ -1140,13 +1140,20 @@ public class PlacePageView extends NestedScrollViewClickFixed
 
   private void refreshOverlanderDetails(@NonNull MapObject mapObject)
   {
+    refreshOverlanderPlaceDetails(mapObject);
     final String[] servicesArray = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SERVICES).split("\\|");
-    for (String service: servicesArray) {
-      refreshOverlanderServices(service);
+    if (servicesArray != null) {
+      for (String service: servicesArray) {
+        String capitalizedService = service.substring(0, 1).toUpperCase() + service.substring(1);
+        refreshOverlanderServices(capitalizedService);
+      }
     }
     final String[] activitiesArray = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_ACTIVITIES).split("\\|");
-    for (String activity: activitiesArray) {
-      refreshOverlanderActivities(activity);
+    if (activitiesArray != null) {
+      for (String activity: activitiesArray) {
+        String capitalizedActivity = activity.substring(0, 1).toUpperCase() + activity.substring(1);
+        refreshOverlanderActivities(capitalizedActivity);
+      }
     }
   }
 
@@ -1371,98 +1378,54 @@ public class PlacePageView extends NestedScrollViewClickFixed
     mTvLatlon.setText(latLon);
   }
 
+  private void refreshOverlanderPlaceDetails(@NonNull MapObject mapObject)
+  {
+    final String spots = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SPOTS);
+    final String open = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_OPEN);
+    final String serviceprices = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_SERVICEPRICES);
+    final String parkingprices = mapObject.getMetadata(Metadata.MetadataType.FMD_OVERLANDER_PARKINGPRICES);
+    if (spots != null && !spots.trim().isEmpty()) {
+      View mOverlanderSpots;
+      TextView mTvOverlanderSpots;
+      mOverlanderSpots = findViewById(R.id.ll__place_overlander_spots);
+      mTvOverlanderSpots = findViewById(R.id.tv__place_overlander_spots);
+      mOverlanderSpots.setVisibility(View.VISIBLE);
+      String spotsString = getResources().getString(R.string.placepage_place_overlander_spots) + " " + spots;
+      mTvOverlanderSpots.setText(spotsString);
+    }
+    if (open != null && !open.trim().isEmpty()) {
+      View mOverlanderOpen;
+      TextView mTvOverlanderOpen;
+      mOverlanderOpen = findViewById(R.id.ll__place_overlander_open);
+      mTvOverlanderOpen = findViewById(R.id.tv__place_overlander_open);
+      mOverlanderOpen.setVisibility(View.VISIBLE);
+      String openString = getResources().getString(R.string.placepage_place_overlander_open) + " " + open;
+      mTvOverlanderOpen.setText(openString);
+    }
+    if (serviceprices != null && !serviceprices.trim().isEmpty()) {
+      View mOverlanderServicePrices;
+      TextView mTvOverlanderServicePrices;
+      mOverlanderServicePrices = findViewById(R.id.ll__place_overlander_serviceprices);
+      mTvOverlanderServicePrices = findViewById(R.id.tv__place_overlander_serviceprices);
+      mOverlanderServicePrices.setVisibility(View.VISIBLE);
+      String servicepricesString = getResources().getString(R.string.placepage_place_overlander_serviceprices) + " " + serviceprices;
+      mTvOverlanderServicePrices.setText(servicepricesString);
+    }
+    if (parkingprices != null && !parkingprices.trim().isEmpty()) {
+      View mOverlanderParkingPrices;
+      TextView mTvOverlanderParkingPrices;
+      mOverlanderParkingPrices = findViewById(R.id.ll__place_overlander_parkingprices);
+      mTvOverlanderParkingPrices = findViewById(R.id.tv__place_overlander_parkingprices);
+      mOverlanderParkingPrices.setVisibility(View.VISIBLE);
+      String parkingpricesString = getResources().getString(R.string.placepage_place_overlander_parkingprices) + " " + parkingprices;
+      mTvOverlanderParkingPrices.setText(parkingpricesString);
+    }
+  }
+
   private void refreshOverlanderServices(String service)
   {
     switch (service)
     {
-      case "Electricity":
-        View mOverlanderElectricity;
-        TextView mTvOverlanderElectricity;
-        mOverlanderElectricity = findViewById(R.id.ll__place_overlander_electricity);
-        mTvOverlanderElectricity = findViewById(R.id.tv__place_overlander_electricity);
-        mOverlanderElectricity.setVisibility(View.VISIBLE);
-        mTvOverlanderElectricity.setText(service);
-        break;
-      case "Atm":
-        View mOverlanderAtm;
-        TextView mTvOverlanderAtm;
-        mOverlanderAtm = findViewById(R.id.ll__place_overlander_atm);
-        mTvOverlanderAtm = findViewById(R.id.tv__place_overlander_atm);
-        mOverlanderAtm.setVisibility(View.VISIBLE);
-        mTvOverlanderAtm.setText(service);
-        break;
-      case "CampervanFriendly":
-        View mOverlanderCampervanfriendly;
-        TextView mTvOverlanderCampervanfriendly;
-        mOverlanderCampervanfriendly = findViewById(R.id.ll__place_overlander_campervanfriendly);
-        mTvOverlanderCampervanfriendly = findViewById(R.id.tv__place_overlander_campervanfriendly);
-        mOverlanderCampervanfriendly.setVisibility(View.VISIBLE);
-        mTvOverlanderCampervanfriendly.setText(service);
-        break;
-      case "Carwash":
-        View mOverlanderCarwash;
-        TextView mTvOverlanderCarwash;
-        mOverlanderCarwash = findViewById(R.id.ll__place_overlander_carwash);
-        mTvOverlanderCarwash = findViewById(R.id.tv__place_overlander_carwash);
-        mOverlanderCarwash.setVisibility(View.VISIBLE);
-        mTvOverlanderCarwash.setText(service);
-        break;
-      case "Children":
-        View mOverlanderChildren;
-        TextView mTvOverlanderChildren;
-        mOverlanderChildren = findViewById(R.id.ll__place_overlander_children);
-        mTvOverlanderChildren = findViewById(R.id.tv__place_overlander_children);
-        mOverlanderChildren.setVisibility(View.VISIBLE);
-        mTvOverlanderChildren.setText(service);
-        break;
-      case "Eat":
-        View mOverlanderEat;
-        TextView mTvOverlanderEat;
-        mOverlanderEat = findViewById(R.id.ll__place_overlander_eat);
-        mTvOverlanderEat = findViewById(R.id.tv__place_overlander_eat);
-        mOverlanderEat.setVisibility(View.VISIBLE);
-        mTvOverlanderEat.setText(service);
-        break;
-      case "Entertainment":
-        View mOverlanderEntertainment;
-        TextView mTvOverlanderEntertainment;
-        mOverlanderEntertainment = findViewById(R.id.ll__place_overlander_entertainment);
-        mTvOverlanderEntertainment = findViewById(R.id.tv__place_overlander_entertainment);
-        mOverlanderEntertainment.setVisibility(View.VISIBLE);
-        mTvOverlanderEntertainment.setText(service);
-        break;
-      case "Food":
-        View mOverlanderFood;
-        TextView mTvOverlanderFood;
-        mOverlanderFood = findViewById(R.id.ll__place_overlander_food);
-        mTvOverlanderFood = findViewById(R.id.tv__place_overlander_food);
-        mOverlanderFood.setVisibility(View.VISIBLE);
-        mTvOverlanderFood.setText(service);
-        break;
-      case "Fuel":
-        View mOverlanderFuel;
-        TextView mTvOverlanderFuel;
-        mOverlanderFuel = findViewById(R.id.ll__place_overlander_fuel);
-        mTvOverlanderFuel = findViewById(R.id.tv__place_overlander_fuel);
-        mOverlanderFuel.setVisibility(View.VISIBLE);
-        mTvOverlanderFuel.setText(service);
-        break;
-      case "Garbage":
-        View mOverlanderGarbage;
-        TextView mTvOverlanderGarbage;
-        mOverlanderGarbage = findViewById(R.id.ll__place_overlander_garbage);
-        mTvOverlanderGarbage = findViewById(R.id.tv__place_overlander_garbage);
-        mOverlanderGarbage.setVisibility(View.VISIBLE);
-        mTvOverlanderGarbage.setText(service);
-        break;
-      case "Hospital":
-        View mOverlanderHospital;
-        TextView mTvOverlanderHospital;
-        mOverlanderHospital = findViewById(R.id.ll__place_overlander_hospital);
-        mTvOverlanderHospital = findViewById(R.id.tv__place_overlander_hospital);
-        mOverlanderHospital.setVisibility(View.VISIBLE);
-        mTvOverlanderHospital.setText(service);
-        break;
       case "Laundry":
         View mOverlanderLaundry;
         TextView mTvOverlanderLaundry;
@@ -1471,69 +1434,37 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderLaundry.setVisibility(View.VISIBLE);
         mTvOverlanderLaundry.setText(service);
         break;
-      case "LPG":
-        View mOverlanderLPG;
-        TextView mTvOverlanderLPG;
-        mOverlanderLPG = findViewById(R.id.ll__place_overlander_lpg);
-        mTvOverlanderLPG = findViewById(R.id.tv__place_overlander_lpg);
-        mOverlanderLPG.setVisibility(View.VISIBLE);
-        mTvOverlanderLPG.setText(service);
+      case "Showers":
+        View mOverlanderShowers;
+        TextView mTvOverlanderShowers;
+        mOverlanderShowers = findViewById(R.id.ll__place_overlander_showers);
+        mTvOverlanderShowers = findViewById(R.id.tv__place_overlander_showers);
+        mOverlanderShowers.setVisibility(View.VISIBLE);
+        mTvOverlanderShowers.setText(service);
         break;
-      case "Mechanic":
-        View mOverlanderMechanic;
-        TextView mTvOverlanderMechanic;
-        mOverlanderMechanic = findViewById(R.id.ll__place_overlander_mechanic);
-        mTvOverlanderMechanic = findViewById(R.id.tv__place_overlander_mechanic);
-        mOverlanderMechanic.setVisibility(View.VISIBLE);
-        mTvOverlanderMechanic.setText(service);
+      case "Water":
+        View mOverlanderWater;
+        TextView mTvOverlanderWater;
+        mOverlanderWater = findViewById(R.id.ll__place_overlander_water);
+        mTvOverlanderWater = findViewById(R.id.tv__place_overlander_water);
+        mOverlanderWater.setVisibility(View.VISIBLE);
+        mTvOverlanderWater.setText(service);
         break;
-      case "Kitchen":
-        View mOverlanderKitchen;
-        TextView mTvOverlanderKitchen;
-        mOverlanderKitchen = findViewById(R.id.ll__place_overlander_kitchen);
-        mTvOverlanderKitchen = findViewById(R.id.tv__place_overlander_kitchen);
-        mOverlanderKitchen.setVisibility(View.VISIBLE);
-        mTvOverlanderKitchen.setText(service);
+      case "Toilet":
+        View mOverlanderToilets;
+        TextView mTvOverlanderToilets;
+        mOverlanderToilets = findViewById(R.id.ll__place_overlander_toilets);
+        mTvOverlanderToilets = findViewById(R.id.tv__place_overlander_toilets);
+        mOverlanderToilets.setVisibility(View.VISIBLE);
+        mTvOverlanderToilets.setText(service);
         break;
-      case "Monuments":
-        View mOverlanderMonuments;
-        TextView mTvOverlanderMonuments;
-        mOverlanderMonuments = findViewById(R.id.ll__place_overlander_monuments);
-        mTvOverlanderMonuments = findViewById(R.id.tv__place_overlander_monuments);
-        mOverlanderMonuments.setVisibility(View.VISIBLE);
-        mTvOverlanderMonuments.setText(service);
-        break;
-      case "Nightlife":
-        View mOverlanderNightlife;
-        TextView mTvOverlanderNightlife;
-        mOverlanderNightlife = findViewById(R.id.ll__place_overlander_nightlife);
-        mTvOverlanderNightlife = findViewById(R.id.tv__place_overlander_nightlife);
-        mOverlanderNightlife.setVisibility(View.VISIBLE);
-        mTvOverlanderNightlife.setText(service);
-        break;
-      case "Pharmacy":
-        View mOverlanderPharmacy;
-        TextView mTvOverlanderPharmacy;
-        mOverlanderPharmacy = findViewById(R.id.ll__place_overlander_pharmacy);
-        mTvOverlanderPharmacy = findViewById(R.id.tv__place_overlander_pharmacy);
-        mOverlanderPharmacy.setVisibility(View.VISIBLE);
-        mTvOverlanderPharmacy.setText(service);
-        break;
-      case "Police":
-        View mOverlanderPolice;
-        TextView mTvOverlanderPolice;
-        mOverlanderPolice = findViewById(R.id.ll__place_overlander_police);
-        mTvOverlanderPolice = findViewById(R.id.tv__place_overlander_police);
-        mOverlanderPolice.setVisibility(View.VISIBLE);
-        mTvOverlanderPolice.setText(service);
-        break;
-      case "Post":
-        View mOverlanderPost;
-        TextView mTvOverlanderPost;
-        mOverlanderPost = findViewById(R.id.ll__place_overlander_post);
-        mTvOverlanderPost = findViewById(R.id.tv__place_overlander_post);
-        mOverlanderPost.setVisibility(View.VISIBLE);
-        mTvOverlanderPost.setText(service);
+      case "Sanidump":
+        View mOverlanderSanidump;
+        TextView mTvOverlanderSanidump;
+        mOverlanderSanidump = findViewById(R.id.ll__place_overlander_sanidump);
+        mTvOverlanderSanidump = findViewById(R.id.tv__place_overlander_sanidump);
+        mOverlanderSanidump.setVisibility(View.VISIBLE);
+        mTvOverlanderSanidump.setText(service);
         break;
       case "Propane":
         View mOverlanderPropane;
@@ -1543,13 +1474,13 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderPropane.setVisibility(View.VISIBLE);
         mTvOverlanderPropane.setText(service);
         break;
-      case "Park":
-        View mOverlanderPark;
-        TextView mTvOverlanderPark;
-        mOverlanderPark = findViewById(R.id.ll__place_overlander_park);
-        mTvOverlanderPark = findViewById(R.id.tv__place_overlander_park);
-        mOverlanderPark.setVisibility(View.VISIBLE);
-        mTvOverlanderPark.setText(service);
+      case "Mechanic":
+        View mOverlanderMechanic;
+        TextView mTvOverlanderMechanic;
+        mOverlanderMechanic = findViewById(R.id.ll__place_overlander_mechanic);
+        mTvOverlanderMechanic = findViewById(R.id.tv__place_overlander_mechanic);
+        mOverlanderMechanic.setVisibility(View.VISIBLE);
+        mTvOverlanderMechanic.setText(service);
         break;
       case "Parking":
         View mOverlanderParking;
@@ -1559,13 +1490,61 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderParking.setVisibility(View.VISIBLE);
         mTvOverlanderParking.setText(service);
         break;
-      case "PetFriendly":
+      case "Wifi":
+        View mOverlanderWifi;
+        TextView mTvOverlanderWifi;
+        mOverlanderWifi = findViewById(R.id.ll__place_overlander_wifi);
+        mTvOverlanderWifi = findViewById(R.id.tv__place_overlander_wifi);
+        mOverlanderWifi.setVisibility(View.VISIBLE);
+        mTvOverlanderWifi.setText(service);
+        break;
+      case "Fuel":
+        View mOverlanderFuel;
+        TextView mTvOverlanderFuel;
+        mOverlanderFuel = findViewById(R.id.ll__place_overlander_fuel);
+        mTvOverlanderFuel = findViewById(R.id.tv__place_overlander_fuel);
+        mOverlanderFuel.setVisibility(View.VISIBLE);
+        mTvOverlanderFuel.setText(service);
+        break;
+      case "lpg":
+        View mOverlanderLPG;
+        TextView mTvOverlanderLPG;
+        mOverlanderLPG = findViewById(R.id.ll__place_overlander_lpg);
+        mTvOverlanderLPG = findViewById(R.id.tv__place_overlander_lpg);
+        mOverlanderLPG.setVisibility(View.VISIBLE);
+        mTvOverlanderLPG.setText(service);
+        break;
+      case "Pets":
         View mOverlanderPetfriendly;
         TextView mTvOverlanderPetfriendly;
         mOverlanderPetfriendly = findViewById(R.id.ll__place_overlander_petfriendly);
         mTvOverlanderPetfriendly = findViewById(R.id.tv__place_overlander_petfriendly);
         mOverlanderPetfriendly.setVisibility(View.VISIBLE);
         mTvOverlanderPetfriendly.setText(service);
+        break;
+      case "Park":
+        View mOverlanderPark;
+        TextView mTvOverlanderPark;
+        mOverlanderPark = findViewById(R.id.ll__place_overlander_park);
+        mTvOverlanderPark = findViewById(R.id.tv__place_overlander_park);
+        mOverlanderPark.setVisibility(View.VISIBLE);
+        mTvOverlanderPark.setText(service);
+        break;
+      case "Garbage":
+        View mOverlanderGarbage;
+        TextView mTvOverlanderGarbage;
+        mOverlanderGarbage = findViewById(R.id.ll__place_overlander_garbage);
+        mTvOverlanderGarbage = findViewById(R.id.tv__place_overlander_garbage);
+        mOverlanderGarbage.setVisibility(View.VISIBLE);
+        mTvOverlanderGarbage.setText(service);
+        break;
+      case "Carwash":
+        View mOverlanderCarwash;
+        TextView mTvOverlanderCarwash;
+        mOverlanderCarwash = findViewById(R.id.ll__place_overlander_carwash);
+        mTvOverlanderCarwash = findViewById(R.id.tv__place_overlander_carwash);
+        mOverlanderCarwash.setVisibility(View.VISIBLE);
+        mTvOverlanderCarwash.setText(service);
         break;
       case "Picnic":
         View mOverlanderPicnic;
@@ -1575,7 +1554,167 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderPicnic.setVisibility(View.VISIBLE);
         mTvOverlanderPicnic.setText(service);
         break;
-      case "RestArea":
+      case "Warning":
+        View mOverlanderWarning;
+        TextView mTvOverlanderWarning;
+        mOverlanderWarning = findViewById(R.id.ll__place_overlander_warning);
+        mTvOverlanderWarning = findViewById(R.id.tv__place_overlander_warning);
+        mOverlanderWarning.setVisibility(View.VISIBLE);
+        mTvOverlanderWarning.setText(service);
+        break;
+      case "Police":
+        View mOverlanderPolice;
+        TextView mTvOverlanderPolice;
+        mOverlanderPolice = findViewById(R.id.ll__place_overlander_police);
+        mTvOverlanderPolice = findViewById(R.id.tv__place_overlander_police);
+        mOverlanderPolice.setVisibility(View.VISIBLE);
+        mTvOverlanderPolice.setText(service);
+        break;
+      case "Eat":
+        View mOverlanderEat;
+        TextView mTvOverlanderEat;
+        mOverlanderEat = findViewById(R.id.ll__place_overlander_eat);
+        mTvOverlanderEat = findViewById(R.id.tv__place_overlander_eat);
+        mOverlanderEat.setVisibility(View.VISIBLE);
+        mTvOverlanderEat.setText(service);
+        break;
+      case "Food":
+        View mOverlanderFood;
+        TextView mTvOverlanderFood;
+        mOverlanderFood = findViewById(R.id.ll__place_overlander_food);
+        mTvOverlanderFood = findViewById(R.id.tv__place_overlander_food);
+        mOverlanderFood.setVisibility(View.VISIBLE);
+        mTvOverlanderFood.setText(service);
+        break;
+      case "Transport":
+        View mOverlanderTransport;
+        TextView mTvOverlanderTransport;
+        mOverlanderTransport = findViewById(R.id.ll__place_overlander_transport);
+        mTvOverlanderTransport = findViewById(R.id.tv__place_overlander_transport);
+        mOverlanderTransport.setVisibility(View.VISIBLE);
+        mTvOverlanderTransport.setText(service);
+        break;
+      case "Shopping":
+        View mOverlanderShopping;
+        TextView mTvOverlanderShopping;
+        mOverlanderShopping = findViewById(R.id.ll__place_overlander_shopping);
+        mTvOverlanderShopping = findViewById(R.id.tv__place_overlander_shopping);
+        mOverlanderShopping.setVisibility(View.VISIBLE);
+        mTvOverlanderShopping.setText(service);
+        break;
+      case "Atm":
+        View mOverlanderAtm;
+        TextView mTvOverlanderAtm;
+        mOverlanderAtm = findViewById(R.id.ll__place_overlander_atm);
+        mTvOverlanderAtm = findViewById(R.id.tv__place_overlander_atm);
+        mOverlanderAtm.setVisibility(View.VISIBLE);
+        mTvOverlanderAtm.setText(service);
+        break;
+      case "Nightlife":
+        View mOverlanderNightlife;
+        TextView mTvOverlanderNightlife;
+        mOverlanderNightlife = findViewById(R.id.ll__place_overlander_nightlife);
+        mTvOverlanderNightlife = findViewById(R.id.tv__place_overlander_nightlife);
+        mOverlanderNightlife.setVisibility(View.VISIBLE);
+        mTvOverlanderNightlife.setText(service);
+        break;
+      case "Children":
+        View mOverlanderChildren;
+        TextView mTvOverlanderChildren;
+        mOverlanderChildren = findViewById(R.id.ll__place_overlander_children);
+        mTvOverlanderChildren = findViewById(R.id.tv__place_overlander_children);
+        mOverlanderChildren.setVisibility(View.VISIBLE);
+        mTvOverlanderChildren.setText(service);
+        break;
+      case "Entertainment":
+        View mOverlanderEntertainment;
+        TextView mTvOverlanderEntertainment;
+        mOverlanderEntertainment = findViewById(R.id.ll__place_overlander_entertainment);
+        mTvOverlanderEntertainment = findViewById(R.id.tv__place_overlander_entertainment);
+        mOverlanderEntertainment.setVisibility(View.VISIBLE);
+        mTvOverlanderEntertainment.setText(service);
+        break;
+      case "Hospital":
+        View mOverlanderHospital;
+        TextView mTvOverlanderHospital;
+        mOverlanderHospital = findViewById(R.id.ll__place_overlander_hospital);
+        mTvOverlanderHospital = findViewById(R.id.tv__place_overlander_hospital);
+        mOverlanderHospital.setVisibility(View.VISIBLE);
+        mTvOverlanderHospital.setText(service);
+        break;
+      case "Pharmacy":
+        View mOverlanderPharmacy;
+        TextView mTvOverlanderPharmacy;
+        mOverlanderPharmacy = findViewById(R.id.ll__place_overlander_pharmacy);
+        mTvOverlanderPharmacy = findViewById(R.id.tv__place_overlander_pharmacy);
+        mOverlanderPharmacy.setVisibility(View.VISIBLE);
+        mTvOverlanderPharmacy.setText(service);
+        break;
+      case "Post":
+        View mOverlanderPost;
+        TextView mTvOverlanderPost;
+        mOverlanderPost = findViewById(R.id.ll__place_overlander_post);
+        mTvOverlanderPost = findViewById(R.id.tv__place_overlander_post);
+        mOverlanderPost.setVisibility(View.VISIBLE);
+        mTvOverlanderPost.setText(service);
+        break;
+      case "Swimmingpool":
+        View mOverlanderSwimmingpool;
+        TextView mTvOverlanderSwimmingpool;
+        mOverlanderSwimmingpool = findViewById(R.id.ll__place_overlander_swimmingpool);
+        mTvOverlanderSwimmingpool = findViewById(R.id.tv__place_overlander_swimmingpool);
+        mOverlanderSwimmingpool.setVisibility(View.VISIBLE);
+        mTvOverlanderSwimmingpool.setText(service);
+        break;
+      case "Electricity":
+        View mOverlanderElectricity;
+        TextView mTvOverlanderElectricity;
+        mOverlanderElectricity = findViewById(R.id.ll__place_overlander_electricity);
+        mTvOverlanderElectricity = findViewById(R.id.tv__place_overlander_electricity);
+        mOverlanderElectricity.setVisibility(View.VISIBLE);
+        mTvOverlanderElectricity.setText(service);
+        break;
+      case "Tentfriendly":
+        View mOverlanderTentfriendly;
+        TextView mTvOverlanderTentfriendly;
+        mOverlanderTentfriendly = findViewById(R.id.ll__place_overlander_tentfriendly);
+        mTvOverlanderTentfriendly = findViewById(R.id.tv__place_overlander_tentfriendly);
+        mOverlanderTentfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderTentfriendly.setText(service);
+        break;
+      case "Bigrigfriendly":
+        View mOverlanderBigrigfriendly;
+        TextView mTvOverlanderBigrigfriendly;
+        mOverlanderBigrigfriendly = findViewById(R.id.ll__place_overlander_bigrigfriendly);
+        mTvOverlanderBigrigfriendly = findViewById(R.id.tv__place_overlander_bigrigfriendly);
+        mOverlanderBigrigfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderBigrigfriendly.setText(service);
+        break;
+      case "Kitchen":
+        View mOverlanderKitchen;
+        TextView mTvOverlanderKitchen;
+        mOverlanderKitchen = findViewById(R.id.ll__place_overlander_kitchen);
+        mTvOverlanderKitchen = findViewById(R.id.tv__place_overlander_kitchen);
+        mOverlanderKitchen.setVisibility(View.VISIBLE);
+        mTvOverlanderKitchen.setText(service);
+        break;
+      case "Campervanfriendly":
+        View mOverlanderCampervanfriendly;
+        TextView mTvOverlanderCampervanfriendly;
+        mOverlanderCampervanfriendly = findViewById(R.id.ll__place_overlander_campervanfriendly);
+        mTvOverlanderCampervanfriendly = findViewById(R.id.tv__place_overlander_campervanfriendly);
+        mOverlanderCampervanfriendly.setVisibility(View.VISIBLE);
+        mTvOverlanderCampervanfriendly.setText(service);
+        break;
+      case "Monuments":
+        View mOverlanderMonuments;
+        TextView mTvOverlanderMonuments;
+        mOverlanderMonuments = findViewById(R.id.ll__place_overlander_monuments);
+        mTvOverlanderMonuments = findViewById(R.id.tv__place_overlander_monuments);
+        mOverlanderMonuments.setVisibility(View.VISIBLE);
+        mTvOverlanderMonuments.setText(service);
+        break;
+      case "Restarea":
         View mOverlanderRestarea;
         TextView mTvOverlanderRestarea;
         mOverlanderRestarea = findViewById(R.id.ll__place_overlander_restarea);
@@ -1591,62 +1730,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderRestaurant.setVisibility(View.VISIBLE);
         mTvOverlanderRestaurant.setText(service);
         break;
-      case "Sanidump":
-        View mOverlanderSanidump;
-        TextView mTvOverlanderSanidump;
-        mOverlanderSanidump = findViewById(R.id.ll__place_overlander_sanidump);
-        mTvOverlanderSanidump = findViewById(R.id.tv__place_overlander_sanidump);
-        mOverlanderSanidump.setVisibility(View.VISIBLE);
-        mTvOverlanderSanidump.setText(service);
-        break;
-      case "Shopping":
-        View mOverlanderShopping;
-        TextView mTvOverlanderShopping;
-        mOverlanderShopping = findViewById(R.id.ll__place_overlander_shopping);
-        mTvOverlanderShopping = findViewById(R.id.tv__place_overlander_shopping);
-        mOverlanderShopping.setVisibility(View.VISIBLE);
-        mTvOverlanderShopping.setText(service);
-        break;
-      case "Showers":
-        View mOverlanderShowers;
-        TextView mTvOverlanderShowers;
-        mOverlanderShowers = findViewById(R.id.ll__place_overlander_showers);
-        mTvOverlanderShowers = findViewById(R.id.tv__place_overlander_showers);
-        mOverlanderShowers.setVisibility(View.VISIBLE);
-        mTvOverlanderShowers.setText(service);
-        break;
-      case "Swimmingpool":
-        View mOverlanderSwimmingpool;
-        TextView mTvOverlanderSwimmingpool;
-        mOverlanderSwimmingpool = findViewById(R.id.ll__place_overlander_swimmingpool);
-        mTvOverlanderSwimmingpool = findViewById(R.id.tv__place_overlander_swimmingpool);
-        mOverlanderSwimmingpool.setVisibility(View.VISIBLE);
-        mTvOverlanderSwimmingpool.setText(service);
-        break;
-      case "TentFriendly":
-        View mOverlanderTentfriendly;
-        TextView mTvOverlanderTentfriendly;
-        mOverlanderTentfriendly = findViewById(R.id.ll__place_overlander_tentfriendly);
-        mTvOverlanderTentfriendly = findViewById(R.id.tv__place_overlander_tentfriendly);
-        mOverlanderTentfriendly.setVisibility(View.VISIBLE);
-        mTvOverlanderTentfriendly.setText(service);
-        break;
-      case "Toilets":
-        View mOverlanderToilets;
-        TextView mTvOverlanderToilets;
-        mOverlanderToilets = findViewById(R.id.ll__place_overlander_toilets);
-        mTvOverlanderToilets = findViewById(R.id.tv__place_overlander_toilets);
-        mOverlanderToilets.setVisibility(View.VISIBLE);
-        mTvOverlanderToilets.setText(service);
-        break;
-      case "Transport":
-        View mOverlanderTransport;
-        TextView mTvOverlanderTransport;
-        mOverlanderTransport = findViewById(R.id.ll__place_overlander_transport);
-        mTvOverlanderTransport = findViewById(R.id.tv__place_overlander_transport);
-        mOverlanderTransport.setVisibility(View.VISIBLE);
-        mTvOverlanderTransport.setText(service);
-        break;
       case "Viewpoint":
         View mOverlanderViewpoint;
         TextView mTvOverlanderViewpoint;
@@ -1655,38 +1738,6 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderViewpoint.setVisibility(View.VISIBLE);
         mTvOverlanderViewpoint.setText(service);
         break;
-      case "Warning":
-        View mOverlanderWarning;
-        TextView mTvOverlanderWarning;
-        mOverlanderWarning = findViewById(R.id.ll__place_overlander_warning);
-        mTvOverlanderWarning = findViewById(R.id.tv__place_overlander_warning);
-        mOverlanderWarning.setVisibility(View.VISIBLE);
-        mTvOverlanderWarning.setText(service);
-        break;
-      case "Water":
-        View mOverlanderWater;
-        TextView mTvOverlanderWater;
-        mOverlanderWater = findViewById(R.id.ll__place_overlander_water);
-        mTvOverlanderWater = findViewById(R.id.tv__place_overlander_water);
-        mOverlanderWater.setVisibility(View.VISIBLE);
-        mTvOverlanderWater.setText(service);
-        break;
-      case "Wifi":
-        View mOverlanderWifi;
-        TextView mTvOverlanderWifi;
-        mOverlanderWifi = findViewById(R.id.ll__place_overlander_wifi);
-        mTvOverlanderWifi = findViewById(R.id.tv__place_overlander_wifi);
-        mOverlanderWifi.setVisibility(View.VISIBLE);
-        mTvOverlanderWifi.setText(service);
-        break;
-      case "BigRigFriendly":
-        View mOverlanderBigrigfriendly;
-        TextView mTvOverlanderBigrigfriendly;
-        mOverlanderBigrigfriendly = findViewById(R.id.ll__place_overlander_bigrigfriendly);
-        mTvOverlanderBigrigfriendly = findViewById(R.id.tv__place_overlander_bigrigfriendly);
-        mOverlanderBigrigfriendly.setVisibility(View.VISIBLE);
-        mTvOverlanderBigrigfriendly.setText(service);
-        break;
     }
   }
 
@@ -1694,7 +1745,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
   {
     switch (activity)
     {
-      case "Tourism":
+      case "tourism":
         View mOverlanderTourism;
         TextView mTvOverlanderTourism;
         mOverlanderTourism = findViewById(R.id.ll__place_overlander_tourism);
@@ -1702,7 +1753,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderTourism.setVisibility(View.VISIBLE);
         mTvOverlanderTourism.setText(activity);
         break;
-      case "Climbing":
+      case "climbing":
         View mOverlanderClimbing;
         TextView mTvOverlanderClimbing;
         mOverlanderClimbing = findViewById(R.id.ll__place_overlander_climbing);
@@ -1710,7 +1761,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderClimbing.setVisibility(View.VISIBLE);
         mTvOverlanderClimbing.setText(activity);
         break;
-      case "Fishing":
+      case "fishing":
         View mOverlanderFishing;
         TextView mTvOverlanderFishing;
         mOverlanderFishing = findViewById(R.id.ll__place_overlander_fishing);
@@ -1718,7 +1769,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderFishing.setVisibility(View.VISIBLE);
         mTvOverlanderFishing.setText(activity);
         break;
-      case "Hiking":
+      case "hiking":
         View mOverlanderHiking;
         TextView mTvOverlanderHiking;
         mOverlanderHiking = findViewById(R.id.ll__place_overlander_hiking);
@@ -1726,7 +1777,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderHiking.setVisibility(View.VISIBLE);
         mTvOverlanderHiking.setText(activity);
         break;
-      case "Kayak":
+      case "kayak":
         View mOverlanderKayak;
         TextView mTvOverlanderKayak;
         mOverlanderKayak = findViewById(R.id.ll__place_overlander_kayak);
@@ -1734,7 +1785,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderKayak.setVisibility(View.VISIBLE);
         mTvOverlanderKayak.setText(activity);
         break;
-      case "Motorcycle":
+      case "motorcycle":
         View mOverlanderMotorcycle;
         TextView mTvOverlanderMotorcycle;
         mOverlanderMotorcycle = findViewById(R.id.ll__place_overlander_motorcycle);
@@ -1742,7 +1793,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderMotorcycle.setVisibility(View.VISIBLE);
         mTvOverlanderMotorcycle.setText(activity);
         break;
-      case "Mountainbike":
+      case "mountainbike":
         View mOverlanderMountainbike;
         TextView mTvOverlanderMountainbike;
         mOverlanderMountainbike = findViewById(R.id.ll__place_overlander_mountainbike);
@@ -1750,7 +1801,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderMountainbike.setVisibility(View.VISIBLE);
         mTvOverlanderMountainbike.setText(activity);
         break;
-      case "Playground":
+      case "playground":
         View mOverlanderPlayground;
         TextView mTvOverlanderPlayground;
         mOverlanderPlayground = findViewById(R.id.ll__place_overlander_playground);
@@ -1758,7 +1809,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderPlayground.setVisibility(View.VISIBLE);
         mTvOverlanderPlayground.setText(activity);
         break;
-      case "Swimming":
+      case "swimming":
         View mOverlanderSwimming;
         TextView mTvOverlanderSwimming;
         mOverlanderSwimming = findViewById(R.id.ll__place_overlander_swimming);
@@ -1766,7 +1817,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderSwimming.setVisibility(View.VISIBLE);
         mTvOverlanderSwimming.setText(activity);
         break;
-      case "Surfing":
+      case "surfing":
         View mOverlanderSurfing;
         TextView mTvOverlanderSurfing;
         mOverlanderSurfing = findViewById(R.id.ll__place_overlander_surfing);
@@ -1774,7 +1825,7 @@ public class PlacePageView extends NestedScrollViewClickFixed
         mOverlanderSurfing.setVisibility(View.VISIBLE);
         mTvOverlanderSurfing.setText(activity);
         break;
-      case "BeachFishing":
+      case "beachfishing":
         View mOverlanderBeachfishing;
         TextView mTvOverlanderBeachfishing;
         mOverlanderBeachfishing = findViewById(R.id.ll__place_overlander_beachfishing);

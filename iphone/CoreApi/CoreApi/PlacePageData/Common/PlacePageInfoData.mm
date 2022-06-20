@@ -70,6 +70,14 @@ using namespace osm;
           _overlanderCheckin2 = @(rawData.GetOverlanderCheckin2().c_str());
         case Props::OverlanderCheckin1:
           _overlanderCheckin1 = @(rawData.GetOverlanderCheckin1().c_str());
+        case Props::OverlanderSpots:
+          _overlanderSpots = @(rawData.GetOverlanderSpots().c_str());
+        case Props::OverlanderOpen:
+          _overlanderOpen = @(rawData.GetOverlanderOpen().c_str());
+        case Props::OverlanderServiceprices:
+          _overlanderServiceprices = @(rawData.GetOverlanderServiceprices().c_str());
+        case Props::OverlanderParkingprices:
+          _overlanderParkingprices = @(rawData.GetOverlanderParkingprices().c_str());
         default:
           break;
       }

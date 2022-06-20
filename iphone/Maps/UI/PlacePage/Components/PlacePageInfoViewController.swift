@@ -79,6 +79,10 @@ class PlacePageInfoViewController: UIViewController {
   private var coordinatesView: InfoItemViewController?
   private var overlanderServicesView: InfoItemViewController?
   private var overlanderActivitiesView: InfoItemViewController?
+  private var overlanderSpotsView: InfoItemViewController?
+  private var overlanderOpenView: InfoItemViewController?
+  private var overlanderServicepricesView: InfoItemViewController?
+  private var overlanderParkingpricesView: InfoItemViewController?
   
 
   var placePageInfoData: PlacePageInfoData!
@@ -134,7 +138,7 @@ class PlacePageInfoViewController: UIViewController {
       for (_, service) in overlanderServices.enumerated() {
         let lowercaseServiceString = String(service).lowercased()
         let overlanderInfoString = L(String(service)) + " - " + L("Yes")
-        let overlanderInfoIcon = "ic_placepage_overlander_" + L(lowercaseServiceString)
+        let overlanderInfoIcon = "ic_placepage_overlander_" + lowercaseServiceString
         overlanderServicesView = createInfoItem(overlanderInfoString, icon: UIImage(named: overlanderInfoIcon))
       }
     }
@@ -153,6 +157,30 @@ class PlacePageInfoViewController: UIViewController {
       websiteView = createInfoItem(website, icon: UIImage(named: "ic_placepage_website"), style: .link) { [weak self] in
         self?.delegate?.didPressWebsite()
       }
+    }
+
+    if (placePageInfoData.overlanderSpots != nil) {
+      let overlanderSpotsInfoString = L("Spots")  + ": " + L(String(placePageInfoData.overlanderSpots ?? "0"))
+      let overlanderSpotsInfoIcon = "ic_placepage_overlander_spots"
+      overlanderSpotsView = createInfoItem(overlanderSpotsInfoString, icon: UIImage(named: overlanderSpotsInfoIcon))
+    }
+
+    if (placePageInfoData.overlanderOpen != nil) {
+      let overlanderOpenInfoString = L("Open")  + ": " + L(String(placePageInfoData.overlanderOpen ?? "?"))
+      let overlanderOpenInfoIcon = "ic_placepage_overlander_open"
+      overlanderOpenView = createInfoItem(overlanderOpenInfoString, icon: UIImage(named: overlanderOpenInfoIcon))
+    }
+
+    if (placePageInfoData.overlanderServiceprices != nil) {
+      let overlanderServicepricesInfoString = L("Service Prices")  + ": " + L(String(placePageInfoData.overlanderServiceprices ?? "?"))
+      let overlanderServicepricesInfoIcon = "ic_placepage_overlander_serviceprices"
+      overlanderServicepricesView = createInfoItem(overlanderServicepricesInfoString, icon: UIImage(named: overlanderServicepricesInfoIcon))
+    }
+
+    if (placePageInfoData.overlanderParkingprices != nil) {
+      let overlanderParkingpricesInfoString = L("Parking Prices")  + ": " + L(String(placePageInfoData.overlanderParkingprices ?? "?"))
+      let overlanderParkingpricesInfoIcon = "ic_placepage_overlander_parkingprices"
+      overlanderParkingpricesView = createInfoItem(overlanderParkingpricesInfoString, icon: UIImage(named: overlanderParkingpricesInfoIcon))
     }
 
     if placePageInfoData.wifiAvailable {

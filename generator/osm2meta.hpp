@@ -112,6 +112,10 @@ public:
     case Metadata::FMD_OVERLANDER_CHECKIN3: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_CHECKIN2: valid = ValidateAndFormat_overlander(v); break;
     case Metadata::FMD_OVERLANDER_CHECKIN1: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_SPOTS: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_OPEN: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_SERVICEPRICES: valid = ValidateAndFormat_overlander(v); break;
+    case Metadata::FMD_OVERLANDER_PARKINGPRICES: valid = ValidateAndFormat_overlander(v); break;
     }
     md.Set(mdType, valid);
   }

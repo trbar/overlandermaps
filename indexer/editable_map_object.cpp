@@ -614,6 +614,26 @@ void EditableMapObject::SetOverlanderCheckin1(std::string const & checkin1)
   m_metadata.Set(feature::Metadata::FMD_OVERLANDER_CHECKIN1, ValidateAndFormat_overlander(checkin1));
 }
 
+void EditableMapObject::SetOverlanderSpots(std::string const & spots)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SPOTS, ValidateAndFormat_overlander(spots));
+}
+
+void EditableMapObject::SetOverlanderOpen(std::string const & open)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_OPEN, ValidateAndFormat_overlander(open));
+}
+
+void EditableMapObject::SetOverlanderServiceprices(std::string const & serviceprices)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_SERVICEPRICES, ValidateAndFormat_overlander(serviceprices));
+}
+
+void EditableMapObject::SetOverlanderParkingprices(std::string const & parkingprices)
+{
+  m_metadata.Set(feature::Metadata::FMD_OVERLANDER_PARKINGPRICES, ValidateAndFormat_overlander(parkingprices));
+}
+
 void EditableMapObject::SetFlats(string const & flats)
 {
   m_metadata.Set(feature::Metadata::FMD_FLATS, flats);

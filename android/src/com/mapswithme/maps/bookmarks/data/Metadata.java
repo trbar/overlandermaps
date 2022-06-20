@@ -62,7 +62,11 @@ public class Metadata implements Parcelable
     FMD_OVERLANDER_TAGS(46),
     FMD_OVERLANDER_CHECKIN3(47),
     FMD_OVERLANDER_CHECKIN2(48),
-    FMD_OVERLANDER_CHECKIN1(49);
+    FMD_OVERLANDER_CHECKIN1(49),
+    FMD_OVERLANDER_SPOTS(50),
+    FMD_OVERLANDER_OPEN(51),
+    FMD_OVERLANDER_SERVICEPRICES(52),
+    FMD_OVERLANDER_PARKINGPRICES(53);
     private final int mMetaType;
 
     MetadataType(int metadataType)

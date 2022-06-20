@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly, nullable) NSString *overlanderCheckin3;
 @property(nonatomic, readonly, nullable) NSString *overlanderCheckin2;
 @property(nonatomic, readonly, nullable) NSString *overlanderCheckin1;
+@property(nonatomic, readonly, nullable) NSString *overlanderSpots;
+@property(nonatomic, readonly, nullable) NSString *overlanderOpen;
+@property(nonatomic, readonly, nullable) NSString *overlanderServiceprices;
+@property(nonatomic, readonly, nullable) NSString *overlanderParkingprices;
 
 
 @end

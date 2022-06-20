@@ -135,6 +135,14 @@ bool Metadata::TypeFromString(string const & k, Metadata::EType & outType)
     outType = Metadata::FMD_OVERLANDER_CHECKIN2;
   else if (k == "overlander:checkin1")
     outType = Metadata::FMD_OVERLANDER_CHECKIN1;
+  else if (k == "overlander:spots")
+    outType = Metadata::FMD_OVERLANDER_SPOTS;
+  else if (k == "overlander:open")
+    outType = Metadata::FMD_OVERLANDER_OPEN;
+  else if (k == "overlander:serviceprices")
+    outType = Metadata::FMD_OVERLANDER_SERVICEPRICES;
+  else if (k == "overlander:parkingprices")
+    outType = Metadata::FMD_OVERLANDER_PARKINGPRICES;
   else
     return false;
 
@@ -233,6 +241,10 @@ string ToString(Metadata::EType type)
   case Metadata::FMD_OVERLANDER_CHECKIN3: return "overlander:checkin3";
   case Metadata::FMD_OVERLANDER_CHECKIN2: return "overlander:checkin2";
   case Metadata::FMD_OVERLANDER_CHECKIN1: return "overlander:checkin1";
+  case Metadata::FMD_OVERLANDER_SPOTS: return "overlander:spots";
+  case Metadata::FMD_OVERLANDER_OPEN: return "overlander:open";
+  case Metadata::FMD_OVERLANDER_SERVICEPRICES: return "overlander:serviceprices";
+  case Metadata::FMD_OVERLANDER_PARKINGPRICES: return "overlander:parkingprices";
   };
 
   return string();

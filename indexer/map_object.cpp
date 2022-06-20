@@ -81,6 +81,10 @@ string DebugPrint(Props props)
   case osm::Props::OverlanderCheckin3: k = "overlander:checkin3"; break;
   case osm::Props::OverlanderCheckin2: k = "overlander:checkin2"; break;
   case osm::Props::OverlanderCheckin1: k = "overlander:checkin1"; break;
+  case osm::Props::OverlanderSpots: k = "overlander:spots"; break;
+  case osm::Props::OverlanderOpen: k = "overlander:open"; break;
+  case osm::Props::OverlanderServiceprices: k = "overlander:serviceprices"; break;
+  case osm::Props::OverlanderParkingprices: k = "overlander:parkingprices"; break;
   }
   return k;
 }
@@ -366,6 +370,26 @@ string MapObject::GetOverlanderCheckin2() const
 string MapObject::GetOverlanderCheckin1() const
 {
   return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_CHECKIN1);
+}
+
+string MapObject::GetOverlanderSpots() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SPOTS);
+}
+
+string MapObject::GetOverlanderOpen() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_OPEN);
+}
+
+string MapObject::GetOverlanderServiceprices() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_SERVICEPRICES);
+}
+
+string MapObject::GetOverlanderParkingprices() const
+{
+  return m_metadata.Get(feature::Metadata::FMD_OVERLANDER_PARKINGPRICES);
 }
 
 }  // namespace osm

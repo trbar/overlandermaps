@@ -178,6 +178,14 @@
 
     <include layout="@layout/place_page_overlander_viewpoint"/>
 
+    <include layout="@layout/place_page_overlander_spots"/>
+
+    <include layout="@layout/place_page_overlander_open"/>
+
+    <include layout="@layout/place_page_overlander_serviceprices"/>
+
+    <include layout="@layout/place_page_overlander_parkingprices"/>
+
     <include
       layout="@layout/place_page_checkins_header"
       android:layout_width="match_parent"
@@ -200,20 +208,6 @@
     
     <include
       layout="@layout/place_page_checkin3_layout"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="@dimen/margin_half"
-      tools:visibility="visible"/>
-    
-    <include
-      layout="@layout/place_page_checkin4_layout"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="@dimen/margin_half"
-      tools:visibility="visible"/>
-    
-    <include
-      layout="@layout/place_page_checkin5_layout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginBottom="@dimen/margin_half"

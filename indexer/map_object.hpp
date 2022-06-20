@@ -65,6 +65,10 @@ enum class Props : uint8_t
   OverlanderCheckin3 = 28,
   OverlanderCheckin2 = 29,
   OverlanderCheckin1 = 30,
+  OverlanderSpots = 31,
+  OverlanderOpen = 32,
+  OverlanderServiceprices = 33,
+  OverlanderParkingprices = 34,
 };
 std::string DebugPrint(Props props);
 
@@ -135,6 +139,10 @@ public:
   std::string GetOverlanderCheckin3() const;
   std::string GetOverlanderCheckin2() const;
   std::string GetOverlanderCheckin1() const;
+  std::string GetOverlanderSpots() const;
+  std::string GetOverlanderOpen() const;
+  std::string GetOverlanderServiceprices() const;
+  std::string GetOverlanderParkingprices() const;
 
   // TODO(Vlad, yunikkk): Use Props enum + getters instead of direct metadata access.
   // TODO: Remove this method.
@@ -204,6 +212,10 @@ std::vector<Props> MetadataToProps(std::vector<T> const & metadata)
     case Metadata::FMD_OVERLANDER_CHECKIN3: res.push_back(Props::OverlanderCheckin3); break;
     case Metadata::FMD_OVERLANDER_CHECKIN2: res.push_back(Props::OverlanderCheckin2); break;
     case Metadata::FMD_OVERLANDER_CHECKIN1: res.push_back(Props::OverlanderCheckin1); break;
+    case Metadata::FMD_OVERLANDER_SPOTS: res.push_back(Props::OverlanderSpots); break;
+    case Metadata::FMD_OVERLANDER_OPEN: res.push_back(Props::OverlanderOpen); break;
+    case Metadata::FMD_OVERLANDER_SERVICEPRICES: res.push_back(Props::OverlanderServiceprices); break;
+    case Metadata::FMD_OVERLANDER_PARKINGPRICES: res.push_back(Props::OverlanderParkingprices); break;
     case Metadata::FMD_FLATS: res.push_back(Props::Flats); break;
     case Metadata::FMD_BUILDING_LEVELS: res.push_back(Props::BuildingLevels); break;
     case Metadata::FMD_LEVEL: res.push_back(Props::Level); break;
