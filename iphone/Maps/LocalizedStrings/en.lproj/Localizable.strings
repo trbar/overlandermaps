@@ -342,6 +342,12 @@
 /* Search category */
 "swimming" = "Swimming";
 
+/* Search category */
+"tentfriendly" = "Tent Friendly";
+
+/* Search category */
+"bigrigfriendly" = "Big Rig Friendly";
+
 /* Notes field in Bookmarks view */
 "description" = "Notes";
 

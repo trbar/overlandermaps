@@ -159,25 +159,25 @@ class PlacePageInfoViewController: UIViewController {
       }
     }
 
-    if (placePageInfoData.overlanderSpots != nil) {
+    if (placePageInfoData.overlanderSpots != nil && placePageInfoData.overlanderSpots != "") {
       let overlanderSpotsInfoString = L("Spots")  + ": " + L(String(placePageInfoData.overlanderSpots ?? "0"))
       let overlanderSpotsInfoIcon = "ic_placepage_overlander_spots"
       overlanderSpotsView = createInfoItem(overlanderSpotsInfoString, icon: UIImage(named: overlanderSpotsInfoIcon))
     }
 
-    if (placePageInfoData.overlanderOpen != nil) {
+    if (placePageInfoData.overlanderOpen != nil && placePageInfoData.overlanderOpen != "") {
       let overlanderOpenInfoString = L("Open")  + ": " + L(String(placePageInfoData.overlanderOpen ?? "?"))
       let overlanderOpenInfoIcon = "ic_placepage_overlander_open"
       overlanderOpenView = createInfoItem(overlanderOpenInfoString, icon: UIImage(named: overlanderOpenInfoIcon))
     }
 
-    if (placePageInfoData.overlanderServiceprices != nil) {
+    if (placePageInfoData.overlanderServiceprices != nil && placePageInfoData.overlanderServiceprices != "") {
       let overlanderServicepricesInfoString = L("Service Prices")  + ": " + L(String(placePageInfoData.overlanderServiceprices ?? "?"))
       let overlanderServicepricesInfoIcon = "ic_placepage_overlander_serviceprices"
       overlanderServicepricesView = createInfoItem(overlanderServicepricesInfoString, icon: UIImage(named: overlanderServicepricesInfoIcon))
     }
 
-    if (placePageInfoData.overlanderParkingprices != nil) {
+    if (placePageInfoData.overlanderParkingprices != nil && placePageInfoData.overlanderParkingprices != "") {
       let overlanderParkingpricesInfoString = L("Parking Prices")  + ": " + L(String(placePageInfoData.overlanderParkingprices ?? "?"))
       let overlanderParkingpricesInfoIcon = "ic_placepage_overlander_parkingprices"
       overlanderParkingpricesView = createInfoItem(overlanderParkingpricesInfoString, icon: UIImage(named: overlanderParkingpricesInfoIcon))
